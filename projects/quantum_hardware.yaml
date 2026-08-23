@@ -1,0 +1,89 @@
+project_name: quantum_hardware
+display_name: Quantum Hardware Competitive Intelligence
+
+analysis_type: quantum_hardware
+
+page_categories:
+
+  technology:
+    - technology
+    - architecture
+    - qubit
+    - science
+    - photonics
+    - neutral atom
+    - trapped ion
+    - superconducting
+
+  systems:
+    - system
+    - systems
+    - hardware
+    - quantum computer
+    - qpu
+    - processor
+
+  roadmap:
+    - roadmap
+    - fault tolerant
+    - fault-tolerant
+    - error correction
+    - logical qubit
+
+  software:
+    - software
+    - sdk
+    - developer
+    - developers
+
+  access:
+    - cloud
+    - deployment
+    - on-premise
+    - on premise
+
+  customers:
+    - customers
+    - industries
+    - case studies
+    - partners
+
+  enterprise:
+    - enterprise
+    - commercial
+
+
+companies:
+
+  - name: Xanadu
+    url: https://www.xanadu.ai/
+
+  - name: Rigetti
+    url: https://www.rigetti.com/
+
+  - name: Infleqtion
+    url: https://infleqtion.com/
+
+  - name: IonQ
+    url: https://www.ionq.com/
+
+  - name: D-Wave
+    url: https://www.dwavequantum.com/
+
+  - name: Quantinuum
+    url: https://www.quantinuum.com/
+
+  - name: PsiQuantum
+    url: https://www.psiquantum.com/
+
+  - name: QuEra
+    url: https://www.quera.com/
+
+  - name: Atom Computing
+    url: https://atom-computing.com/
+
+  - name: Alice & Bob
+    url: https://alice-bob.com/
+
+  - name: Pasqal
+    url: https://www.pasqal.com/

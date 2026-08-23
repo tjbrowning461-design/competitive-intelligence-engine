@@ -1,0 +1,7 @@
+openai
+pydantic
+playwright
+streamlit
+PyYAML
+requests
+beautifulsoup4
