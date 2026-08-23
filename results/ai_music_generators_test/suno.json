@@ -1,0 +1,177 @@
+{
+  "company_name": "Suno",
+  "value_proposition": "Suno offers accessible AI-powered music creation, enabling users to generate complete songs—including vocals, lyrics, instrumentation, and production—from plain-language prompts, then edit, remix, share, and export the results through consumer-friendly and professional tools.",
+  "target_customers": [
+    "First-time and non-technical music creators",
+    "Hobbyists creating personalized songs, remixes, jokes, or music for social sharing",
+    "Songwriters and music producers",
+    "Content creators needing music for videos, YouTube, podcasts, or advertisements",
+    "Professional and serious creators seeking multitrack production and editing workflows"
+  ],
+  "products_services": [
+    "Free AI song generator: up to 10 songs per day using the v4.5-all model, subject to credits and shared-queue limits",
+    "Pro Plan: paid song generation using advanced models, commercial-use rights for newly created songs, personas, advanced editing, stem separation, longer audio uploads, custom voice recording, custom model tuning, and priority generation",
+    "Premier Plan: higher generation allowance plus Suno Studio, advanced stem separation, MIDI, effects, automation, and design-your-own-plugin capabilities",
+    "Suno Studio: a currently marketed web-based generative audio workstation combining multitrack/traditional DAW functionality with AI music generation",
+    "Song creation and editing tools: prompt-based generation, lyric rewriting, section reordering, extension, covers, speed adjustment, cropping, fades, and section replacement/addition",
+    "Audio workflows: upload or record audio, add vocals or instrumentals to existing songs, extract time-aligned WAV stems, and export assets for external DAWs",
+    "Discovery and sharing experience for browsing and distributing user-created music",
+    "iPhone and Android mobile applications",
+    "Announced future policy: monthly song-download limits are listed as starting September 3, 2026; these should not be treated as current limits"
+  ],
+  "core_technology": [
+    "Generative AI models for creating complete songs from text prompts or supplied lyrics",
+    "Suno v4, v4.5, v4.5+, v5, and v5.5 music-model families, with v5.5 described by Suno as its latest and most personalized model",
+    "AI-assisted generation of vocals, lyrics, melody, harmony, instrumentation, and production",
+    "Audio-conditioned generation using uploaded or recorded audio",
+    "Custom versions of v5.5 tuned using a subscriber's own audio",
+    "Voice and persona controls, including vocal gender, style exclusions, inspiration references, weirdness controls, and style sliders",
+    "Stem-separation technology supporting multiple separation modes and up to 12 time-aligned WAV stems",
+    "Browser-based generative audio workstation with multitrack editing, MIDI, effects, and automation"
+  ],
+  "use_cases": [
+    "Generate a complete song from a genre, mood, theme, idea, or lyrics",
+    "Create instrumental tracks and beats",
+    "Turn personal moments, inside jokes, or emotions into customized music",
+    "Create background or royalty-free music for videos, YouTube, podcasts, advertisements, and other commercial projects under eligible paid-plan terms",
+    "Draft, co-write, regenerate, extend, remix, cover, or refine songs",
+    "Upload or record original audio and build new songs around it",
+    "Add vocals or instrumentals to existing songs",
+    "Rewrite lyrics and rearrange or replace song sections",
+    "Extract stems for continued editing in an external DAW",
+    "Publish albums or share generated music with personal networks and Suno's broader audience",
+    "Create and tune personalized models or voices from the user's own audio"
+  ],
+  "industries_served": [
+    "Consumer entertainment",
+    "Music creation and production",
+    "Creator economy and digital content production",
+    "Advertising and media production",
+    "Podcasting and online video"
+  ],
+  "business_model": "Freemium subscription business. Suno provides a free, credit-limited tier and sells Pro and Premier subscriptions with greater generation capacity, advanced models and editing, priority processing, and commercial-use rights. Active paid subscribers can also purchase add-on credits.",
+  "pricing_model": "Credit-based tiered subscriptions with monthly or annual billing and a stated 20% annual discount. The supplied pricing display lists Pro at $8/month and Premier at $24/month when billed yearly, with 2,500 and 10,000 monthly credits respectively; the homepage FAQ separately cites $10/month for Pro and $30/month for Premier, indicating monthly pricing but creating presentation ambiguity. The Free Plan is $0 with 50 credits renewed daily, described as up to 10 songs. Subscription credits do not roll over; purchased top-up credits do not expire but require an active subscription to use. Taxes may be added at checkout.",
+  "deployment_model": [
+    "Web application at suno.com",
+    "Browser-based Suno Studio",
+    "Native iPhone application",
+    "Native Android application",
+    "Cloud-hosted generation queues, with shared processing for free users and priority processing for paid users"
+  ],
+  "integrations": [
+    "Exported WAV stems can be used in Ableton, Logic, or other DAWs; the evidence describes export compatibility rather than native integrations",
+    "MIDI export through Suno Studio",
+    "Audio file upload and export workflows"
+  ],
+  "developer_tools": [],
+  "enterprise_features": [],
+  "major_customers": [],
+  "major_partnerships": [],
+  "geographic_presence": [
+    "Web availability, with the homepage presented in English",
+    "Distribution through iPhone and Android app stores",
+    "The website says users can create, discover, and share from anywhere, but does not identify supported countries, offices, or regional availability"
+  ],
+  "strengths": [
+    "Broad creation workflow spanning prompt-based generation, audio upload, editing, remixing, stem extraction, and external DAW export",
+    "Low adoption barrier through a free plan, plain-language prompting, and no requirement for prior music experience",
+    "Generates complete songs with vocals, lyrics, instrumentation, and production rather than only short instrumental loops, according to Suno's marketing",
+    "Clear segmentation between casual free users, Pro creators, and Premier production users",
+    "Paid plans combine commercial-use rights for newly generated songs with substantial monthly generation allowances",
+    "Suno Studio extends the product beyond one-shot generation into a browser-based production environment",
+    "Mobile and web availability supports creation and discovery across devices",
+    "Homepage reports strong app-store signals—top-10 music-app positioning and hundreds of thousands of reviews—although these are company-displayed claims rather than independently verified evidence"
+  ],
+  "weaknesses": [
+    "No enterprise, team, administrative, security, compliance, service-level, or procurement features are disclosed",
+    "No public API, SDK, command-line tooling, or developer platform is identified",
+    "The evidence describes DAW-compatible exports but no deep or native third-party integrations",
+    "Pricing presentation is inconsistent: plan cards show $8/$24 monthly equivalents under annual billing, while the FAQ cites $10/$30 monthly prices",
+    "Commercial-rights marketing is broad, while the pricing page refers users to terms of service for limitations; the supplied evidence does not explain those limitations",
+    "Subscription credits expire at the end of each renewal period, and purchased credits require an active subscription",
+    "Free users have a shared generation queue, no commercial use, no stem separation, and no add-on-credit option",
+    "The announced September 3, 2026 download limits could reduce plan utility, but the website does not explain the rationale or operational details",
+    "Claims such as '#1 AI music app,' 'market-leading,' and 'best AI music generator' are marketing assertions without comparative methodology in the supplied evidence"
+  ],
+  "competitive_differentiators": [
+    "End-to-end generation of complete songs with vocals, lyrics, and production from a single text prompt",
+    "Combination of consumer-accessible generation with granular controls and professional editing workflows",
+    "Suno Studio positioned as a web-based generative audio workstation rather than only a song-generation interface",
+    "Ability to record or upload a user's own voice and tune custom versions of v5.5 using personal audio",
+    "Up to 12 time-aligned WAV stems for transfer into professional DAWs",
+    "Integrated creation, discovery, remixing, and social sharing experience",
+    "Free daily song generation alongside paid commercial-use tiers"
+  ],
+  "customer_problems_addressed": [
+    "High skill and software barriers to composing and producing complete music",
+    "Difficulty translating a mood, idea, theme, or lyrics into a produced song",
+    "Time required to create vocals, instrumentation, arrangements, and production manually",
+    "Need for customized music for personal expression and inside jokes",
+    "Need for editable background music for creator and commercial projects",
+    "Difficulty iterating on song sections, lyrics, vocals, instrumentation, and style",
+    "Need to bridge AI-generated material into conventional DAW workflows",
+    "Need to separate mixed audio into editable stems"
+  ],
+  "technical_risks": [
+    "Generated output quality and controllability are central to the value proposition, but the evidence provides no objective quality, consistency, latency, or failure-rate measurements",
+    "Generation depends on cloud queues; free users share a queue, and even paid users are limited to up to 10 concurrent songs",
+    "Custom voice recording and model tuning involve user audio, but the supplied pages do not explain safeguards, consent controls, retention, or abuse prevention",
+    "The website does not disclose model architecture, training-data provenance, evaluation methods, model safety controls, or technical limitations",
+    "Stem-separation quality is not quantified, despite its importance for professional workflows",
+    "Audio uploads are capped at 8 minutes on Free and 30 minutes on paid plans",
+    "No uptime commitments, disaster recovery details, data portability guarantees, or service-level agreements are disclosed"
+  ],
+  "business_risks": [
+    "Broad claims about originality, ownership, and commercial use are qualified by undisclosed terms-of-service limitations in the supplied evidence, potentially creating customer uncertainty",
+    "Pricing inconsistencies across the same website may confuse buyers or reduce trust",
+    "The freemium model incurs generation usage while relying on conversion to paid plans; conversion and unit economics are not disclosed",
+    "Subscription credits do not roll over, which may create perceived waste for irregular users",
+    "Future monthly download caps may create dissatisfaction or reduce value for high-output users",
+    "The site offers no evidence of enterprise revenue, customer concentration, retention, margins, or business diversification",
+    "Marketing differentiation depends heavily on model quality and feature breadth, but no objective competitor benchmarks are supplied",
+    "No named customers or partnerships are provided to validate professional or commercial adoption"
+  ],
+  "marketing_message": "“Make any song you can imagine.” Suno positions itself as an accessible, high-quality AI music generator and modern creative workspace where anyone—from first-time creators to professional producers—can create complete songs, edit and remix them, and share them globally.",
+  "messaging_gaps": [
+    "No substantiation or methodology is given for '#1,' 'market-leading,' or 'best' claims",
+    "The website does not clearly reconcile annual-equivalent pricing with the separate monthly prices stated in the FAQ",
+    "Commercial-use rights are promoted prominently, but their material limitations are not summarized",
+    "The difference between ownership, commercial-use rights, and 'royalty-free' use is not clearly explained in the supplied evidence",
+    "The announced download limits beginning September 3, 2026 are listed without explaining what qualifies as a download or how users can obtain additional downloads",
+    "No objective examples or benchmarks establish model quality, prompt adherence, stem quality, or production readiness",
+    "The current availability and exact plan eligibility of some features—such as MIDI export and persona voices—are not consistently described between plan cards and the FAQ",
+    "The website does not clearly explain whether app functionality and pricing are identical across web, iPhone, and Android"
+  ],
+  "data_gaps": [
+    "Company headquarters, offices, employee count, founding date, leadership, and ownership",
+    "Revenue, funding, profitability, growth, paid-subscriber count, retention, and unit economics",
+    "Named commercial customers, case studies, customer outcomes, or adoption by organizations",
+    "Named technology, distribution, music-industry, or channel partnerships",
+    "Enterprise plans, team collaboration, identity management, audit logs, security certifications, data residency, support SLAs, and procurement terms",
+    "Public API, SDKs, developer documentation, webhooks, automation options, or platform rate limits",
+    "Model architecture, training-data sources, licensing arrangements, provenance controls, and evaluation results",
+    "Detailed privacy, retention, deletion, consent, and security policies for uploaded audio, recorded voices, and custom model tuning",
+    "Exact commercial-use restrictions and the legal scope of generated-song ownership",
+    "Supported file formats, export specifications, audio resolution, maximum song length, generation latency, and reliability metrics",
+    "Exact geographic availability, supported languages, regional restrictions, and local pricing",
+    "Verified app-store rankings and review counts beyond Suno's own displayed claims",
+    "Clear current monthly versus annual pricing and whether the displayed $8/$24 rates require annual prepayment",
+    "Operational details of the planned September 3, 2026 download caps",
+    "Accessibility features and support for users with disabilities",
+    "Content moderation, impersonation prevention, voice-consent enforcement, and dispute processes",
+    "Roadmap beyond generic paid-plan 'early access to new features' claims"
+  ],
+  "website": "https://suno.com",
+  "sources": [
+    {
+      "url": "https://suno.com",
+      "category": "homepage",
+      "collected_at": "2026-08-23T10:22:08-07:00"
+    },
+    {
+      "url": "https://suno.com/pricing",
+      "category": "pricing",
+      "collected_at": "2026-08-23T10:22:11-07:00"
+    }
+  ]
+}

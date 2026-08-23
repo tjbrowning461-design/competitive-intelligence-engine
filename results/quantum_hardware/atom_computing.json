@@ -1,0 +1,169 @@
+{
+  "company_name": "Atom Computing",
+  "value_proposition": "Builds scalable, universal gate-based quantum computers from optically trapped neutral-atom nuclear-spin qubits, emphasizing high physical-qubit counts, all-to-all connectivity, long coherence, optical control, error-correction capabilities, and commercial on-premises deployment.",
+  "target_customers": [
+    "Enterprise customers",
+    "Government customers",
+    "Research customers",
+    "Quantum application and software developers",
+    "Organizations exploring materials science, pharmaceuticals, energy, logistics, cybersecurity, defense, drug discovery, and financial modeling"
+  ],
+  "qubit_modality": "Nuclear-spin qubits encoded in optically trapped neutral alkaline-earth atoms and controlled wirelessly with lasers.",
+  "computing_models": [
+    "Universal gate-based quantum computing",
+    "Error-corrected logical-qubit computation"
+  ],
+  "hardware_architecture": "Arrays of neutral atoms held microns apart by focused laser light, cooled, trapped, and controlled through free-space optical signals. The architecture avoids individual electrical control cables and supports mid-circuit measurement, qubit reset and reuse, and real-time conditional branching.",
+  "current_systems": [
+    "AC1000: commercially available universal gate-based platform with more than 1,200 physical qubits for on-premises deployment",
+    "Second-generation neutral-atom systems used in work with Microsoft on error correction and logical-qubit demonstrations"
+  ],
+  "physical_qubit_scale": "AC1000 has 1,200+ physical qubits. Atom Computing states that it developed systems with over 1,200 qubits and surpassed 1,000 qubits for a universal gate-based system in 2023.",
+  "demonstrated_logical_qubits": "The company reports a full demonstration of quantum error correction on its hardware and refers to logical-qubit demonstrations with Microsoft, but does not disclose the number, encoding, logical error rate, or logical circuit performance. The Microsoft-linked commercial system with logical qubits is described as currently being installed, not as an already completed deployment.",
+  "one_qubit_fidelity": null,
+  "two_qubit_fidelity": null,
+  "connectivity": "AC1000 is described as having all-to-all qubit connectivity. No measured connectivity constraints or performance under simultaneous operations are disclosed.",
+  "coherence": "Described as long and industry-leading due to the environmental insensitivity of alkaline-earth nuclear-spin qubits, but no quantitative coherence time is supplied.",
+  "gate_speed": null,
+  "error_correction_strategy": "Multiple physical qubits are encoded into logical qubits. Atom reports a full quantum-error-correction demonstration and is working with Microsoft to optimize error-correcting codes. AC1000 provides supporting functions including mid-circuit measurement, reset and reuse, and real-time conditional branching. The supplied material does not identify the code used in the reported full demonstration or provide logical-error suppression data.",
+  "fault_tolerance_strategy": "Scale neutral-atom arrays while improving fidelity and integrating hardware, software, control systems, and error correction. The near-term stated goal with Microsoft is Level 2 resilient computation through entangling multiple logical qubits with very low logical error rates; this is a roadmap target, not a demonstrated capability in the supplied material.",
+  "roadmap": [
+    "Scale next-generation systems to higher physical-qubit counts and improved fidelity",
+    "Advance software, control systems, and error-correction capabilities needed for logical-qubit operations",
+    "Near-term target with Microsoft: entangle multiple logical qubits with very low logical error rates for Level 2 resilient computation",
+    "Continue a claimed tenfold physical-qubit scaling cadence between system generations",
+    "Develop and deploy utility-scale, fault-tolerant quantum supercomputers",
+    "Expand global on-premises deployments for government, enterprise, and research customers",
+    "Use recent funding to grow engineering, research, and go-to-market teams"
+  ],
+  "cloud_access": null,
+  "on_premise_available": true,
+  "access_methods": [
+    "Commercial on-premises AC1000 deployment",
+    "Early system access and technical collaboration through Atom Computing's Partner Program"
+  ],
+  "manufacturing_strategy": null,
+  "software_stack": [
+    "Hardware and software stack integration with Microsoft for logical-qubit creation and fault-tolerant applications",
+    "Software and control-system development for logical-qubit operations"
+  ],
+  "developer_tools": [
+    "Partner Program offering early system access, collaboration with Atom's technical team, feedback channels, and application exploration"
+  ],
+  "commercial_deployments": [
+    "AC1000 is stated to be commercially available for on-premises deployment",
+    "Atom Computing sold its first commercial on-premises quantum computer to QuNorth in 2025",
+    "A commercial quantum computer with logical-qubit capabilities is described as being installed in partnership with Microsoft; installation is ongoing in the supplied source, so it should not be treated as a completed deployment"
+  ],
+  "major_partnerships": [
+    "Microsoft: co-development of error correction, logical qubits, algorithms, and fault-tolerant quantum supercomputers",
+    "QuNorth: purchaser of Atom Computing's first commercial on-premises quantum computer",
+    "DARPA Quantum Benchmarking Initiative: Atom Computing is participating in Stage B",
+    "Cisco: strategic collaboration and investment participation",
+    "NVIDIA: strategic collaboration",
+    "Nu Quantum: partnership announced to pursue utility-scale quantum computing, with no technical details supplied"
+  ],
+  "strengths": [
+    "Demonstrated physical scale of more than 1,200 qubits in a universal gate-based platform",
+    "Reported full quantum-error-correction demonstration on neutral-atom hardware",
+    "All-to-all connectivity can reduce routing overhead if maintained at useful fidelity and scale",
+    "Mid-circuit measurement, reset, qubit reuse, and real-time conditional branching provide important primitives for error correction",
+    "Nuclear-spin neutral-atom architecture is presented as offering long coherence and reduced wiring complexity",
+    "Commercial on-premises product model addresses customers requiring local or controlled infrastructure",
+    "Microsoft collaboration spans hardware, software, error correction, and fault-tolerant applications",
+    "More than $300 million reported as raised to support development and deployments"
+  ],
+  "weaknesses": [
+    "No quantitative one-qubit or two-qubit fidelity data is supplied",
+    "No quantitative coherence times, gate speeds, measurement fidelity, reset fidelity, or circuit-depth benchmarks are supplied",
+    "No number of demonstrated logical qubits or measured logical error rates is disclosed",
+    "The claim of better-than-threshold fidelity is not tied to a named error-correcting code, threshold, or experimental benchmark",
+    "Commercial evidence remains limited: one disclosed sale and one system described as currently being installed",
+    "No cloud-access offering is identified in the supplied material",
+    "The software stack and developer tooling are described only at a high level"
+  ],
+  "competitive_differentiators": [
+    "More than 1,200 physical qubits combined with universal gate-based operation",
+    "Claimed all-to-all connectivity across the AC1000 platform",
+    "Use of nuclear-spin qubits in optically trapped neutral atoms",
+    "Free-space optical control rather than separate electrical cabling for every qubit",
+    "Reported first full quantum-error-correction demonstration using neutral-atom technology",
+    "Commercially available on-premises system with logical-qubit-enabling features",
+    "Full-stack fault-tolerance collaboration with Microsoft"
+  ],
+  "technical_risks": [
+    "The supplied evidence does not establish that all-to-all operations retain sufficiently high fidelity under large-scale, parallel workloads",
+    "Scaling atom count does not by itself establish useful logical performance; logical-qubit count, logical error suppression, and fault-tolerant circuit results are undisclosed",
+    "The claimed tenfold increase in physical qubits per generation may create control, calibration, laser-delivery, measurement, and system-reliability challenges",
+    "Unquantified gate speed could limit error-correction cycle rates and useful computational throughput despite long coherence",
+    "Mid-circuit measurement, reset, reuse, and conditional branching must operate with adequate speed and fidelity at scale; no corresponding metrics are provided",
+    "The claim that no fundamental physics obstacles prevent fault-tolerant fidelity does not demonstrate that engineering requirements have been met",
+    "A full QEC demonstration does not by itself prove scalable fault tolerance without disclosed logical error rates, code distance scaling, repeated cycles, or multi-logical-qubit operations"
+  ],
+  "commercialization_risks": [
+    "The commercial model appears centered on complex on-premises installations, which may require substantial customer infrastructure, integration, service, and support",
+    "Only one completed sale is explicitly disclosed, limiting evidence of repeatable market adoption",
+    "The Microsoft-linked commercial installation is still underway in the supplied source, leaving deployment performance and customer usability unverified",
+    "No cloud access is described, potentially narrowing access for developers and customers unable to host on-premises systems",
+    "Commercial utility depends on future fault-tolerant and multi-logical-qubit milestones that have not yet been demonstrated in the supplied material",
+    "A planned $100 million from the U.S. Department of Commerce is based on a signed Letter of Intent and should not be treated as secured funding",
+    "Application claims span many industries, but no customer workload demonstrating commercial quantum advantage is supplied"
+  ],
+  "marketing_message": "Atom Computing presents neutral-atom arrays as the easiest and fastest path to quantum computing at scale, combining 1,200+ fully connected qubits, long coherence, optical-control simplicity, error-correction features, and on-premises availability to enter the logical-qubit era and ultimately deliver utility-scale fault-tolerant quantum supercomputers.",
+  "messaging_gaps": [
+    "The phrase “fully-connected” is not accompanied by operational fidelity, parallelism, or scaling qualifications",
+    "“Better-than-threshold fidelities” does not identify the relevant code, threshold, operation type, or measured values",
+    "“Logical qubit era” is not supported with a disclosed logical-qubit count or logical benchmark",
+    "“Full demonstration of quantum error correction” lacks experimental details in the supplied material",
+    "“Industry-leading coherence” is not supported by a numerical value or comparison methodology",
+    "The distinction between a system being commercially available, sold, installed, and operational is not consistently quantified",
+    "Claims of utility-scale leadership and future commercial advantage are not accompanied by demonstrated application-level performance"
+  ],
+  "data_gaps": [
+    "One-qubit gate fidelity",
+    "Two-qubit gate fidelity",
+    "State-preparation and measurement fidelity",
+    "Mid-circuit measurement fidelity and latency",
+    "Reset and reuse fidelity and latency",
+    "Quantitative coherence times",
+    "One-qubit and two-qubit gate speeds",
+    "Parallel-gate capacity and crosstalk measurements",
+    "Number of demonstrated logical qubits",
+    "Logical encoding and code distance used in the reported QEC demonstration",
+    "Physical-versus-logical error rates and evidence of error suppression",
+    "Number of QEC cycles demonstrated",
+    "Fault-tolerant logical gate or multi-logical-qubit benchmark results",
+    "Usable qubit yield and uptime",
+    "Application-level benchmark results or demonstrated quantum advantage",
+    "Cloud availability and pricing",
+    "On-premises pricing, delivery schedule, footprint, power, and facility requirements",
+    "Manufacturing and supply-chain strategy",
+    "Detailed software stack, APIs, SDKs, compiler, and supported programming frameworks",
+    "Operational status and performance of the QuNorth system",
+    "Completion date and operational status of the Microsoft-linked installation"
+  ],
+  "website": "https://atom-computing.com/",
+  "sources": [
+    {
+      "url": "https://atom-computing.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:13:49-07:00"
+    },
+    {
+      "url": "https://atom-computing.com/quantum-computing-technology",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:13:52-07:00"
+    },
+    {
+      "url": "https://atom-computing.com/building-quantum-supercomputers-with-microsoft",
+      "category": "systems",
+      "collected_at": "2026-08-21T20:13:55-07:00"
+    },
+    {
+      "url": "https://atom-computing.com/atom-computing-raises-more-than-300-million-to-accelerate-deployment-of-fault-tolerant-neutral-atom-quantum-computers",
+      "category": "roadmap",
+      "collected_at": "2026-08-21T20:13:59-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:14:51-07:00"
+}

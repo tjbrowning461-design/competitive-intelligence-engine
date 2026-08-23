@@ -1,0 +1,119 @@
+{
+  "company_name": "Alice & Bob",
+  "value_proposition": "Build a useful, universal, fault-tolerant quantum computer using cat qubits with intrinsic bit-flip protection, aiming to reduce quantum-error-correction overhead by leaving primarily phase-flip errors to correct.",
+  "target_customers": [
+    "High-performance-computing users and organizations"
+  ],
+  "qubit_modality": "Cat qubits: quantum information encoded in oscillator cat states with built-in bit-flip protection.",
+  "computing_models": [
+    "Universal quantum computing",
+    "Fault-tolerant quantum computing"
+  ],
+  "hardware_architecture": "A repetition-cat-code architecture based on oscillator-encoded cat qubits. The physical cat qubit suppresses bit flips, while a one-dimensional error-correction code addresses the remaining phase-flip errors. The website says a logical qubit could require as few as five physical cat qubits, but does not present this as currently demonstrated.",
+  "current_systems": [
+    "Helium — described as a testbed for error correction; specifications and availability are not provided."
+  ],
+  "physical_qubit_scale": null,
+  "demonstrated_logical_qubits": null,
+  "one_qubit_fidelity": null,
+  "two_qubit_fidelity": null,
+  "connectivity": null,
+  "coherence": "A cited 2023 experimental paper reports cat-qubit bit-flip times exceeding ten seconds. The supplied material does not disclose full coherence metrics or establish this as system-wide performance.",
+  "gate_speed": null,
+  "error_correction_strategy": "Hardware-level suppression of bit-flip errors in cat qubits, reducing the remaining correction problem primarily to phase flips and enabling use of a one-dimensional repetition code. A five-physical-cat-qubit logical qubit is presented as a possible low-overhead design, not a demonstrated result.",
+  "fault_tolerance_strategy": "Scale repetition-cat-code logical qubits into an early fault-tolerant quantum computer. The site cites theoretical analysis of fault-tolerant computation and a 126,133-cat-qubit architecture for a specific cryptographic calculation, but does not report that architecture as built or demonstrated.",
+  "roadmap": [
+    "Develop Helium as an error-correction testbed.",
+    "Target 100 logical qubits by 2030.",
+    "Target a useful quantum computer by 2030.",
+    "Longer-term vision of scaling quantum computers to thousands of logical qubits at lower error rates."
+  ],
+  "cloud_access": null,
+  "on_premise_available": null,
+  "access_methods": [],
+  "manufacturing_strategy": null,
+  "software_stack": [],
+  "developer_tools": [],
+  "commercial_deployments": [],
+  "major_partnerships": [],
+  "strengths": [
+    "Cat-qubit architecture directly targets quantum-error-correction overhead by suppressing one error channel at the physical-qubit level.",
+    "The cited experimental work reports bit-flip times exceeding ten seconds, supporting the core bit-flip-protection concept.",
+    "A one-dimensional phase-flip correction approach could be simpler than correcting both bit and phase errors through a conventional two-dimensional code.",
+    "The company discloses a concrete 2030 target of 100 logical qubits.",
+    "The homepage reports €100 million raised, which may support continued engineering and scale-up."
+  ],
+  "weaknesses": [
+    "No currently demonstrated logical-qubit count is disclosed.",
+    "No physical-qubit count or detailed specification for Helium is supplied.",
+    "No one- or two-qubit gate fidelities, gate speeds, connectivity, or complete coherence measurements are disclosed.",
+    "The five-physical-qubit logical-qubit claim is conditional rather than a demonstrated system result.",
+    "No commercial availability, customer deployment, or access mechanism is described.",
+    "The supplied roadmap page provides high-level targets but few intermediate engineering milestones or validation metrics."
+  ],
+  "competitive_differentiators": [
+    "Built-in physical protection against bit-flip errors.",
+    "Focus on converting a two-error-channel correction problem into primarily one-dimensional phase-flip correction.",
+    "Claimed potential for logical qubits using as few as five physical cat qubits, although this is not shown as achieved.",
+    "Architecture centered on reducing fault-tolerance overhead rather than maximizing raw physical-qubit count."
+  ],
+  "technical_risks": [
+    "Suppressing bit flips does not eliminate phase-flip errors; useful logical performance still depends on effective phase-error correction and fault-tolerant operations.",
+    "The supplied material does not demonstrate that low-overhead logical qubits have been realized with the stated five-cat-qubit configuration.",
+    "Scaling oscillator-based cat qubits from experimental devices to 100 reliable logical qubits may introduce control, calibration, coupling, fabrication, and correlated-error challenges.",
+    "Theoretical resource estimates, including the 126,133-cat-qubit cryptographic architecture, may not translate directly into buildable hardware with adequate logical error rates.",
+    "Absent gate-fidelity, connectivity, speed, and end-to-end logical benchmark data make current fault-tolerance readiness difficult to assess."
+  ],
+  "commercialization_risks": [
+    "No disclosed cloud, on-premises, or other customer-access model.",
+    "No supplied evidence of commercial deployments or customer validation.",
+    "The main value proposition depends on achieving a future 2030 logical-qubit target rather than disclosed current useful computation.",
+    "The lack of disclosed software tooling and developer ecosystem may impede adoption if not developed alongside hardware.",
+    "High-level roadmap messaging without intermediate milestones makes schedule credibility difficult to evaluate from the supplied material."
+  ],
+  "marketing_message": "Alice & Bob presents cat qubits as 'superior qubits' with built-in error correction and positions its low-overhead architecture as a route to the first useful, universal quantum computer, targeting 100 logical qubits by 2030 for early fault-tolerant high-performance computing.",
+  "messaging_gaps": [
+    "The phrase 'first qubit with built-in error correction' is not accompanied by comparative evidence in the supplied material.",
+    "The site does not clearly quantify present Helium performance relative to the 2030 target.",
+    "The distinction between physical error suppression and complete logical error correction could be explained more precisely.",
+    "The conditional five-physical-qubit logical-qubit claim lacks a disclosed experimental logical error rate.",
+    "The meaning of 'useful quantum computer' is not defined through application, runtime, logical gate, or error-rate thresholds in the supplied excerpts."
+  ],
+  "data_gaps": [
+    "Current physical-qubit count and Helium configuration.",
+    "Experimentally demonstrated logical-qubit count.",
+    "Logical error rates, break-even results, and logical-qubit lifetime.",
+    "One-qubit and two-qubit gate fidelities.",
+    "Measurement and state-preparation fidelities.",
+    "Connectivity topology.",
+    "Full coherence metrics beyond the cited bit-flip time.",
+    "Gate and measurement speeds.",
+    "Demonstrated fault-tolerant gate set.",
+    "Intermediate roadmap milestones before 2030.",
+    "Cloud, on-premises, or laboratory access availability.",
+    "Pricing and commercial terms.",
+    "Manufacturing and fabrication strategy.",
+    "Software stack, SDKs, compilers, and developer tools.",
+    "Commercial customers and deployments.",
+    "Technology, manufacturing, cloud, or research partnerships."
+  ],
+  "website": "https://alice-bob.com/",
+  "sources": [
+    {
+      "url": "https://alice-bob.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:15:37-07:00"
+    },
+    {
+      "url": "https://alice-bob.com/science",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:15:41-07:00"
+    },
+    {
+      "url": "https://alice-bob.com/roadmap",
+      "category": "roadmap",
+      "collected_at": "2026-08-21T20:15:45-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:16:15-07:00"
+}

@@ -1,0 +1,203 @@
+{
+  "company_name": "Infleqtion, Inc.",
+  "value_proposition": "Full-stack neutral-atom quantum computing combining Sqale hardware, logical-qubit/error-detection capabilities, individually addressed operations, all-to-all connectivity, and the Superstaq optimizing software stack. Infleqtion positions this architecture as a path toward scalable, commercially useful fault-tolerant computing, while also offering applications research and on-premise access.",
+  "target_customers": [
+    "Government and national-security organizations",
+    "National laboratories and research institutions",
+    "Corporations pursuing quantum applications",
+    "Life-sciences and pharmaceutical organizations",
+    "Energy and resource organizations",
+    "Materials-science researchers",
+    "Financial institutions",
+    "AI and machine-learning developers"
+  ],
+  "qubit_modality": "Optically trapped neutral-atom qubits, with dual-species atom arrays referenced as part of the error-correction platform and Rydberg excitation used for entangling operations.",
+  "computing_models": [
+    "Gate-based quantum computing",
+    "Logical-qubit computation with error detection",
+    "Hybrid quantum-classical application workflows",
+    "Quantum simulation, optimization, and machine-learning workloads"
+  ],
+  "hardware_architecture": "Sqale uses neutral atoms in large optical arrays, with individual optical addressing, individually addressed entangling gates, parallel gate addressing, 2D acousto-optic-deflector beam steering, non-destructive readout, and all-to-all connectivity. The company describes dual-species arrays and low-crosstalk measurements as foundations for error correction. Future systems are intended to incorporate photonic-integrated circuits for laser generation, frequency control, and atom addressing.",
+  "current_systems": [
+    "2025 Sqale system: available on-premise, private-beta cloud access, 100+ physical qubits, 8+ logical qubits with error detection, all-to-all connectivity, and mid-circuit measurement and feedback",
+    "Sqale installation at the UK National Quantum Computing Centre",
+    "Company-stated Sqale installations in national laboratories worldwide",
+    "Demonstrated UK neutral-atom array of 16×16 sites in February 2025"
+  ],
+  "physical_qubit_scale": "The current 2025 Sqale specification states 100+ physical qubits. Infleqtion separately reports demonstrated neutral-atom arrays of up to 1,600 sites; the supplied material does not establish that all 1,600 sites constitute an operational 1,600-qubit computer.",
+  "demonstrated_logical_qubits": "The current 2025 Sqale specification states 8+ logical qubits with error detection. Infleqtion also reports logically encoded materials-science computation and logical-qubit decryption demonstrations, but the supplied material does not state the logical-qubit counts for those demonstrations.",
+  "one_qubit_fidelity": "Current representative figures are 99.9% for local Rz operations and 99.98% for global R(theta,phi) operations. The source does not provide a single generalized one-qubit gate-fidelity metric.",
+  "two_qubit_fidelity": "For the current 2025 Sqale specification, representative CZ fidelity is 99.48% with post-selection and 98.8% raw. Separately, Infleqtion reports a published user-facing CZ fidelity of 99.73% ± 0.03% from August 2024. The supplied material does not reconcile the different test conditions or metrics.",
+  "connectivity": "All-to-all connectivity is stated for the current 2025 Sqale system and for the upcoming configuration.",
+  "coherence": null,
+  "gate_speed": "No numerical one- or two-qubit gate time is disclosed. The company claims a high shot rate and describes future QEC cycle time as order-of-milliseconds; the current QEC cycle time is listed as N/A.",
+  "error_correction_strategy": "Currently demonstrated capabilities center on logical encoding with quantum error detection, post-selection, mid-circuit measurement and feedback, and non-destructive readout. A December 2024 materials-science demonstration applied quantum error detection to logically encoded qubits. Infleqtion also reports a JP Morgan collaboration on an open-source QEC library intended to reduce physical-qubit requirements by 10–100×. The supplied sources do not demonstrate full active error correction at scale.",
+  "fault_tolerance_strategy": "Infleqtion plans to progress from error-detected logical qubits to utility-scale fault-tolerant systems using dual-species neutral-atom arrays, low-crosstalk measurement, logical operations, motion plus in-place entanglement, mid-circuit feedback, and scalable photonic control. Despite marketing Sqale as a line of fault-tolerant computers, the current specification lists error detection and no current QEC cycle time, so fault-tolerant operation is not established as currently achieved by the supplied evidence.",
+  "roadmap": [
+    "Upcoming Sqale configuration: 500+ physical qubits, 99.6% representative CZ fidelity, 99.9%+ local Rz fidelity, 99.98%+ global rotation fidelity, all-to-all connectivity, and order-of-milliseconds QEC cycle time; these are upcoming targets, not demonstrated current specifications.",
+    "The roadmap table lists upcoming logical-qubit targets of 50+ with error detection and also 10+ with error detection, but the supplied formatting does not clarify whether these correspond to separate configurations or milestones.",
+    "Cloud availability for the upcoming system is described as expected; current access is only a private beta.",
+    "The homepage targets more than 100 logical qubits by 2028; this is a future target, not an achieved capability.",
+    "Future QPUs are intended to scale to many thousands of qubits using photonic-integrated circuits, PIC-based laser arrays, miniature frequency combs, and MEMS spatial light modulators.",
+    "Future photonic integration is projected to reduce size, weight, and power by up to 10,000× and support desktop-class systems; these are projections rather than demonstrated system-level results."
+  ],
+  "cloud_access": true,
+  "on_premise_available": true,
+  "access_methods": [
+    "On-premise Sqale systems available now",
+    "Private-beta cloud access for the current system",
+    "Direct sales and demo requests",
+    "Superstaq interface supporting Qiskit, Cirq, OpenQASM, and OpenAPI",
+    "Applications workshops and collaborative research or co-development"
+  ],
+  "manufacturing_strategy": null,
+  "software_stack": [
+    "Superstaq cross-layer optimizing compiler and software platform",
+    "Deep Sqale integration with Cirq and Qiskit frontends",
+    "OpenQASM and OpenAPI support",
+    "Supermarq application-oriented benchmarking",
+    "Quantum characterization, verification, and validation tools",
+    "Interleaved Randomized Benchmarking and Cross-Entropy Benchmarking experiments",
+    "NVIDIA CUDA-Q integration demonstrated in a materials-science workflow"
+  ],
+  "developer_tools": [
+    "Public Superstaq documentation",
+    "Tutorials, API reference, and developer guide",
+    "Qiskit support",
+    "Cirq support",
+    "OpenQASM support",
+    "OpenAPI interface",
+    "Supermarq benchmarks",
+    "QCVV tools",
+    "Device-independent interface targeting Sqale, IBM backends, EeroQ Wonderlake, and other devices"
+  ],
+  "commercial_deployments": [
+    "Sqale installed at the UK National Quantum Computing Centre",
+    "Company-stated Sqale installations in national laboratories worldwide",
+    "More than three dozen active government and commercial programs are described as being in deployment across Infleqtion's broader computing, sensing, and timing portfolio; the sources do not identify how many are quantum-computing deployments"
+  ],
+  "major_partnerships": [
+    "UK National Quantum Computing Centre: installed Sqale system",
+    "Japan Science and Technology Agency Quantum Moonshot program: Infleqtion selected as its only foreign quantum-computing partner",
+    "NVIDIA: CUDA-Q collaboration and logically encoded materials-science demonstration",
+    "JP Morgan: collaboration on an open-source quantum-error-correction library",
+    "Wellcome Leap Q4Bio: biomolecular simulation and therapeutic-discovery collaboration",
+    "CSL Behring: quantum-enhanced drug-design and biologic-manufacturing work",
+    "DARPA IMPAQT: quantum machine-learning development for medical imaging, cancer detection, and disease modeling",
+    "SAIC: go-to-market partnership for government and defense customers"
+  ],
+  "strengths": [
+    "Current evidence of logical encoding and error detection, including an application-oriented materials-science demonstration rather than only component benchmarking",
+    "Current 8+ logical-qubit specification with error detection and 100+ physical-qubit on-premise system",
+    "All-to-all connectivity can reduce routing and SWAP overhead relative to connectivity-constrained architectures",
+    "Strong disclosed entangling-gate results, including 99.73% ± 0.03% user-facing CZ fidelity in a published 2024 result",
+    "Individual optical addressing, parallel addressing, mid-circuit measurement, feedback, and non-destructive readout provide relevant building blocks for error-corrected computation",
+    "Full-stack capability through Superstaq, with hardware-aware pulse-level optimization and support for major open development frameworks",
+    "Existing on-premise installation at the NQCC and private-beta cloud access demonstrate more than a laboratory-only model",
+    "Cross-industry and government partnerships provide application-development channels and potential early customers",
+    "Integrated-photonics work directly addresses the laser-system size, cost, and portability challenges identified by the company"
+  ],
+  "weaknesses": [
+    "Current evidence supports error detection, not demonstrated scalable active error correction or full fault tolerance",
+    "The current QEC cycle time is listed as N/A, leaving a central fault-tolerance performance metric unproven",
+    "Current raw representative CZ fidelity of 98.8% is materially lower than the post-selected 99.48% figure and the separately reported 99.73% result, making system-level performance difficult to compare without methodology details",
+    "The demonstrated 1,600-site array is not shown to be a fully operational 1,600-qubit processor",
+    "Cloud availability remains private beta rather than broad public access",
+    "No coherence times, numerical gate speeds, logical error rates, circuit depths, throughput figures, or application-scale reliability metrics are disclosed",
+    "The roadmap table is ambiguous about the upcoming logical-qubit figures of 50+ and 10+",
+    "Broad company deployment and revenue claims combine computing, sensing, and timing, obscuring quantum-computing-specific commercial traction"
+  ],
+  "competitive_differentiators": [
+    "Neutral-atom architecture combining large arrays, all-to-all connectivity, and individual optical addressing",
+    "Published 99.73% ± 0.03% user-facing CZ fidelity claimed as the highest neutral-atom entangling-gate fidelity",
+    "Application-level use of logically encoded qubits and error detection in materials science",
+    "Reported logical architecture combining atom motion and in-place entanglement",
+    "Cross-layer Superstaq optimization spanning algorithms, compilation, pulses, hardware connectivity, and noise",
+    "Multi-backend software strategy that supports Infleqtion hardware and competing hardware modalities",
+    "Integrated computing, sensing, timing, photonics, and software portfolio, potentially providing diversified customer relationships and funding pathways"
+  ],
+  "technical_risks": [
+    "Scaling from 100+ physical qubits and error-detected logical qubits to useful fault-tolerant computation requires active QEC cycles, low logical error rates, and sustained circuit depth that are not demonstrated in the supplied material",
+    "The gap between raw and post-selected CZ fidelity indicates that reported performance may depend substantially on discarding unsuccessful runs",
+    "Large site counts do not by themselves establish uniform loading, control, fidelity, usable qubit yield, or application-scale computation across the full array",
+    "Dual-species operation, atom motion, in-place entanglement, measurement, and feedback introduce integration and calibration complexity as system size grows",
+    "The order-of-milliseconds QEC cycle time is only an upcoming target and could constrain logical clock speed or correction effectiveness",
+    "Photonic integration must replace large optical-table components without degrading laser stability, frequency control, addressing precision, or fidelity",
+    "No disclosed coherence, gate-time, logical-error-rate, or end-to-end throughput data makes fault-tolerance and application-performance projections difficult to validate",
+    "The claim that an open-source QEC library can reduce physical-qubit requirements by 10–100× is not accompanied here by system-level demonstrations on Sqale"
+  ],
+  "commercialization_risks": [
+    "Private-beta cloud access limits broad developer experimentation and ecosystem growth relative to generally available services",
+    "On-premise neutral-atom systems may face substantial installation, maintenance, calibration, and customer-support requirements",
+    "Commercial value depends on progressing beyond error detection to reliable logical computation; the current sources do not establish quantum advantage on customer workloads",
+    "The path to 100+ logical qubits by 2028 is aggressive relative to the currently disclosed 8+ error-detected logical qubits",
+    "Broad revenue, pipeline, customer, and deployment claims cover Infleqtion's full portfolio and do not establish the commercial scale of Sqale specifically",
+    "The upcoming-system specifications are pre-order or expected capabilities rather than delivered performance",
+    "The company targets many industries, but most supplied application claims describe future opportunity, research, workshops, or co-development rather than production quantum-computing value"
+  ],
+  "marketing_message": "Infleqtion presents neutral atoms as naturally scalable qubits and Sqale as a full-stack path from today's error-detected logical computation to commercially viable fault-tolerant quantum advantage. Its message emphasizes high-fidelity entangling gates, all-to-all connectivity, individual addressing, integrated software, and future photonic miniaturization for real-world systems.",
+  "messaging_gaps": [
+    "The phrase 'fault-tolerant neutral atom quantum computers' is stronger than the disclosed current evidence, which shows error detection and lists current QEC cycle time as N/A",
+    "The claim that neutral atoms are scalable to millions of qubits is not supported by a demonstrated million-qubit system in the supplied sources",
+    "The 1,600-site demonstration is presented near system capabilities without clarifying usable qubit count, loading yield, or full-array computational performance",
+    "The relationship between the published 99.73% CZ result, current 99.48% post-selected fidelity, and current 98.8% raw fidelity is not explained",
+    "The roadmap table's two upcoming logical-qubit figures are not clearly labeled",
+    "Claims of systems in national labs worldwide do not identify installations, configurations, delivery dates, or operational usage beyond the NQCC example",
+    "Company-wide claims of hundreds of customers and more than three dozen deployed programs are not segmented by quantum computing, sensing, timing, or software",
+    "Application claims often describe potential impact without quantified customer outcomes or demonstrated quantum advantage"
+  ],
+  "data_gaps": [
+    "Coherence times for physical and logical qubits",
+    "Numerical one-qubit, two-qubit, measurement, reset, and atom-transport operation times",
+    "Logical error rates and comparison with constituent physical error rates",
+    "Evidence of break-even error correction or error suppression improving with code distance",
+    "Current active-QEC cycle time and number of repeated correction cycles demonstrated",
+    "Definition and code family underlying the current 8+ logical qubits",
+    "Physical-qubit overhead per logical qubit and treatment of post-selection",
+    "Operational qubit count and performance across the demonstrated 1,600-site array",
+    "Atom loading probability, qubit loss rate, leakage, measurement fidelity, and reset fidelity",
+    "Circuit depth, quantum volume or comparable application-level capacity metrics",
+    "Shot rate and end-to-end workload throughput",
+    "Detailed methodology reconciling the different reported CZ fidelities",
+    "Public-cloud launch date, pricing, queue availability, and service-level commitments",
+    "Sqale-specific customer count, revenue, deployments, and production workloads",
+    "Manufacturing approach, supply chain, production capacity, and system delivery cadence",
+    "Power, footprint, cryogenic or vacuum requirements, and maintenance needs of current Sqale systems",
+    "Independent validation of the roadmap targets and projected 10,000× photonics-based size, weight, and power reduction"
+  ],
+  "website": "https://infleqtion.com/",
+  "sources": [
+    {
+      "url": "https://infleqtion.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:01:05-07:00"
+    },
+    {
+      "url": "https://infleqtion.com/life-sciences-and-drug-discovery",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:01:09-07:00"
+    },
+    {
+      "url": "https://infleqtion.com/infleqtion-raises-100m-to-scale-atom-based-quantum-solutions-for-national-security-and-next-generation-intelligent-systems",
+      "category": "systems",
+      "collected_at": "2026-08-21T20:01:12-07:00"
+    },
+    {
+      "url": "https://infleqtion.com/quantum-computing",
+      "category": "roadmap",
+      "collected_at": "2026-08-21T20:01:15-07:00"
+    },
+    {
+      "url": "https://infleqtion.com/quantum-software",
+      "category": "software",
+      "collected_at": "2026-08-21T20:01:18-07:00"
+    },
+    {
+      "url": "https://infleqtion.com/infleqtion-secures-11-million-dod-apfit-award-to-accelerate-deployment-of-quantum-timing-for-defense-applications",
+      "category": "access",
+      "collected_at": "2026-08-21T20:01:21-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:02:20-07:00"
+}

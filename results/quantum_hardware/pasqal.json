@@ -1,0 +1,224 @@
+{
+  "company_name": "Pasqal",
+  "value_proposition": "Full-stack neutral-atom quantum computing for hybrid industrial workloads, offered through cloud services and on-premise QPUs. Pasqal emphasizes dual analog-digital processing, room-temperature operation, reconfigurable atom arrays, and integration with classical, HPC, and cloud workflows.",
+  "target_customers": [
+    "Enterprises pursuing optimization, simulation, and graph-machine-learning applications",
+    "Government and public-sector organizations",
+    "Aerospace and defense organizations",
+    "Banks and financial institutions",
+    "Energy and utility companies",
+    "Manufacturing and materials-science organizations",
+    "Pharmaceutical and healthcare organizations",
+    "Transportation, mobility, and logistics companies",
+    "Academic researchers, students, and quantum-algorithm developers"
+  ],
+  "qubit_modality": "Neutral rubidium atoms trapped and controlled by focused lasers/optical tweezers.",
+  "computing_models": [
+    "Analog quantum computing/simulation",
+    "Digital quantum computing",
+    "Hybrid analog-digital processing",
+    "Hybrid quantum-classical workflows"
+  ],
+  "hardware_architecture": "Arrays of individual rubidium atoms held in optical tweezers inside a vacuum chamber and controlled with lasers. Atoms are inherently identical, and the architecture supports reconfigurable atom arrangements. Pasqal states that the system operates at room temperature without deep cryogenics and is designed for HPC, cloud, and on-premise integration.",
+  "current_systems": [
+    "Pasqal Orion: commercially accessible neutral-atom QPU described as having 100+ qubits; individual cloud offers refer to a 100-qubit QPU",
+    "Commercial-grade on-premise neutral-atom QPUs, with no specific on-premise model or configuration disclosed",
+    "Quantum emulators available locally and through Pasqal Cloud"
+  ],
+  "physical_qubit_scale": "Currently offered Orion cloud hardware is described as 100+ qubits, while individual plans specify a 100-qubit QPU. Pasqal separately reports exceeding 1,000 atoms in a quantum processor, but the supplied material does not establish that all 1,000+ atoms constitute an operational, customer-accessible qubit system.",
+  "demonstrated_logical_qubits": null,
+  "one_qubit_fidelity": null,
+  "two_qubit_fidelity": null,
+  "connectivity": "Reconfigurable atom arrangements are supported by neutral-atom technology. Dynamic atom rearrangement and dynamic qubit architectures have been explored with KAIST on Pasqal hardware, but no quantitative connectivity graph, interaction range, or production-system topology is disclosed.",
+  "coherence": null,
+  "gate_speed": null,
+  "error_correction_strategy": null,
+  "fault_tolerance_strategy": "Pasqal says its roadmap is intended to progress from NISQ Orion systems toward fault-tolerant architectures, with improvements in logical fidelity and a goal of 200+ logical qubits by 2029. No specific error-correcting code, physical-to-logical overhead, threshold result, or demonstrated fault-tolerant operation is disclosed.",
+  "roadmap": [
+    "Targeted demonstration of quantum advantage by the end of Q1 2026; this is a future target in the supplied roadmap, not an achieved result",
+    "Continuous planned increases in physical-qubit counts, logical fidelities, and algorithmic integration beyond the current Orion generation",
+    "Progression from current NISQ systems toward broad-scale fault-tolerant quantum computing",
+    "Goal of reaching more than 200 logical qubits by 2029; no demonstrated logical-qubit count or supporting error-correction metrics are supplied"
+  ],
+  "cloud_access": true,
+  "on_premise_available": true,
+  "access_methods": [
+    "Pasqal Cloud",
+    "Google Cloud",
+    "Microsoft Azure",
+    "OVH Cloud",
+    "Scaleway",
+    "Pay-as-you-go QPU access",
+    "Academic and premium cloud plans",
+    "Direct connection to an on-premise Pasqal QPU",
+    "Local emulators for development"
+  ],
+  "manufacturing_strategy": null,
+  "software_stack": [
+    "Pasqal Software Suite",
+    "Pulser open-source programming tools",
+    "Pulser Studio visual platform",
+    "Python-native SDKs",
+    "Neutral-atom compilation tools",
+    "Quantum emulators",
+    "MIS Solver for maximum-independent-set optimization",
+    "QEK Quantum Evolution Kernel for graph classification and machine learning",
+    "Cloud execution infrastructure and real-time job monitoring",
+    "Middleware for hybrid quantum-classical and HPC workflows"
+  ],
+  "developer_tools": [
+    "Multi-level SDK for designing and compiling neutral-atom algorithms",
+    "Pulser",
+    "Pulser Studio",
+    "Python-native development interfaces",
+    "Local and cloud emulators",
+    "Developer SDK integrations",
+    "Documentation and cloud portal"
+  ],
+  "commercial_deployments": [
+    "Cloud access to Orion 100+ qubit QPUs through Pasqal Cloud and third-party clouds",
+    "On-premise QPU deployment is commercially offered, although customer-specific deployment details are limited",
+    "Aramco and Pasqal announced the launch of Saudi Arabia's first quantum computer and the Middle East's first commercial Quantum Computing as a Service platform",
+    "Pasqal states that its software is used across 25+ commercial use cases",
+    "The homepage reports 35+ customer engagements and 25 clients, while another supplied page states collaboration with 40+ global clients; the basis for these different counts is not explained"
+  ],
+  "major_partnerships": [
+    "Aramco",
+    "Crédit Agricole CIB",
+    "KAIST",
+    "Google",
+    "Microsoft",
+    "IBM",
+    "NVIDIA",
+    "OVH Cloud",
+    "Scaleway",
+    "Capgemini",
+    "BMW Group",
+    "Thales",
+    "EDF",
+    "BASF",
+    "Siemens",
+    "Sumitomo",
+    "Institut d’Optique Graduate School",
+    "POSCO Holdings",
+    "Qunova Computing"
+  ],
+  "strengths": [
+    "Multiple commercial access paths, including Pasqal Cloud, major third-party clouds, and on-premise hardware",
+    "Full-stack offering spanning QPUs, emulators, SDKs, solvers, middleware, and hybrid workflow integration",
+    "Dual analog-digital capability supports both quantum simulation and programmable algorithm development",
+    "Room-temperature neutral-atom architecture avoids deep-cryogenic infrastructure requirements",
+    "Reconfigurable atom arrays provide architectural flexibility compared with fixed-connectivity systems",
+    "Evidence of broad enterprise and academic engagement across finance, energy, logistics, materials, defense, and mobility",
+    "Open-source developer tooling and Python-native SDKs lower experimentation barriers",
+    "Reported 1,000+ atom processor achievement indicates progress in atom-array scale, although usable-qubit performance is not established"
+  ],
+  "weaknesses": [
+    "No supplied one-qubit or two-qubit fidelity data",
+    "No coherence-time, gate-speed, readout-fidelity, uptime, or throughput metrics",
+    "No demonstrated logical-qubit count or disclosed error-correction performance",
+    "The 1,000+ atom claim is not connected to an accessible 1,000-qubit system or to useful logical computation",
+    "No evidence in the supplied material that quantum advantage has already been achieved; it remains a roadmap target",
+    "Commercially accessible hardware remains described at approximately 100 to 100+ qubits despite the larger atom-array research claim",
+    "Customer and engagement counts vary across supplied pages without reconciliation",
+    "Claims of measurable real-world impact and industrial utility are not accompanied by comparative performance results against leading classical methods"
+  ],
+  "competitive_differentiators": [
+    "Neutral rubidium atoms provide inherently identical qubits",
+    "Optical-tweezer arrays allow reconfigurable geometries and exploration of dynamic atom rearrangement",
+    "Combination of analog and digital quantum processing in one platform",
+    "Room-temperature operation without deep cryogenics",
+    "Choice of cloud-native, third-party-cloud, and on-premise deployment",
+    "Application-focused software including optimization and graph-machine-learning solvers",
+    "Positioning around integration with HPC and accelerated-computing environments"
+  ],
+  "technical_risks": [
+    "Scaling atom count may not translate into high-fidelity gates, long computations, or useful logical qubits; the supplied sources provide no supporting fidelity or error-rate metrics",
+    "Dynamic rearrangement is described as still in its infancy, creating uncertainty around control precision, latency, atom loss, and scalability during computation",
+    "No disclosed error-correction code or demonstrated logical operation makes the path to 200+ logical qubits difficult to assess",
+    "Room-temperature system operation does not remove the need for precise lasers, vacuum systems, calibration, and atom-control infrastructure",
+    "Analog and hybrid algorithms may be difficult to benchmark rigorously against advanced classical methods",
+    "The targeted quantum-advantage milestone lacks disclosed workload definitions, success criteria, and reproducible benchmark methodology",
+    "No coherence, gate-speed, connectivity, readout, or uptime data are supplied to evaluate useful circuit depth and reliability"
+  ],
+  "commercialization_risks": [
+    "Commercial use-case and customer-engagement claims do not establish production-scale quantum advantage or customer return on investment",
+    "The roadmap depends on substantial progress from NISQ hardware to fault-tolerant logical qubits without disclosed intermediate error-correction milestones",
+    "Inconsistent client figures may make commercial traction difficult to evaluate",
+    "Pay-as-you-go and cloud availability improve access, but restricted hardware access in some plans and undisclosed pricing may limit adoption",
+    "On-premise neutral-atom systems may require specialized installation, maintenance, laser, and vacuum expertise despite avoiding cryogenics",
+    "Enterprise customers may defer larger deployments until Pasqal demonstrates repeatable advantage over classical and quantum-inspired alternatives",
+    "The proposed financing and public-listing process could introduce execution and funding risk if expected capital is delayed or not secured"
+  ],
+  "marketing_message": "Pasqal presents itself as a global neutral-atom quantum-computing leader delivering commercial-grade, room-temperature, dual analog-digital QPUs through cloud and on-premise channels. Its message centers on full-stack enterprise integration, scalable atom arrays, hybrid industrial applications, and a roadmap from current NISQ systems toward quantum advantage and fault-tolerant computation.",
+  "messaging_gaps": [
+    "The relationship between the reported 1,000+ atoms and the customer-accessible 100/100+ qubit Orion systems is not explained",
+    "No distinction is quantified between trapped atoms, initialized qubits, simultaneously usable qubits, and successfully measured qubits",
+    "The claimed commercial-grade status is not supported with availability, uptime, calibration, reliability, or service-level metrics",
+    "Industrial-use-case claims lack disclosed speedup, accuracy, cost, or business-impact comparisons",
+    "Quantum-advantage messaging does not define the target benchmark or comparison baseline",
+    "The path from current NISQ hardware to 200+ logical qubits lacks intermediate logical-qubit and error-correction milestones",
+    "Different pages cite 25 clients, 35+ engagements, and 40+ global clients without explaining scope or timing"
+  ],
+  "data_gaps": [
+    "One-qubit gate fidelity",
+    "Two-qubit gate fidelity",
+    "State-preparation and measurement fidelity",
+    "Coherence times",
+    "Gate and measurement speeds",
+    "Atom-loss and qubit-yield rates",
+    "Quantitative connectivity and interaction-range specifications",
+    "Accessible circuit depth and execution throughput",
+    "System uptime, queue times, and service-level commitments",
+    "Demonstrated logical-qubit count",
+    "Logical error rates and break-even results",
+    "Error-correcting code and decoding strategy",
+    "Physical-qubit overhead per logical qubit",
+    "Fault-tolerance thresholds and demonstrated fault-tolerant gates",
+    "Detailed specifications for the 1,000+ atom processor",
+    "Evidence that 1,000+ atoms were simultaneously controlled as usable qubits",
+    "Customer-accessible on-premise system specifications and deployment count",
+    "Independent or reproducible evidence of quantum advantage",
+    "Manufacturing process, supply-chain strategy, production capacity, and system yield",
+    "Cloud and on-premise pricing beyond high-level plan descriptions"
+  ],
+  "website": "https://www.pasqal.com/",
+  "sources": [
+    {
+      "url": "https://www.pasqal.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:17:07-07:00"
+    },
+    {
+      "url": "https://www.pasqal.com/success-story/kaist",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:17:10-07:00"
+    },
+    {
+      "url": "https://www.pasqal.com/technology",
+      "category": "systems",
+      "collected_at": "2026-08-21T20:17:13-07:00"
+    },
+    {
+      "url": "https://www.pasqal.com/technology/roadmap",
+      "category": "roadmap",
+      "collected_at": "2026-08-21T20:17:16-07:00"
+    },
+    {
+      "url": "https://www.pasqal.com/solutions/software",
+      "category": "software",
+      "collected_at": "2026-08-21T20:17:19-07:00"
+    },
+    {
+      "url": "https://www.pasqal.com/solutions/cloud",
+      "category": "access",
+      "collected_at": "2026-08-21T20:17:22-07:00"
+    },
+    {
+      "url": "https://www.pasqal.com/industries",
+      "category": "customers",
+      "collected_at": "2026-08-21T20:17:25-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:18:15-07:00"
+}

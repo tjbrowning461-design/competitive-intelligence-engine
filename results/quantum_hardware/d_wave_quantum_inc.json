@@ -1,0 +1,194 @@
+{
+  "company_name": "D-Wave Quantum Inc.",
+  "value_proposition": "Provides commercially accessible annealing quantum computers, quantum-classical hybrid solvers, open-source development tools, and professional services for enterprise optimization and research. D-Wave positions its developing gate-model program as a future expansion beyond its currently available annealing platform.",
+  "target_customers": [
+    "Enterprises with complex optimization and operational-planning problems",
+    "Manufacturing and logistics organizations",
+    "Telecommunications companies",
+    "Retailers",
+    "Financial-services organizations",
+    "Public-sector organizations",
+    "Life-sciences and materials-science researchers",
+    "Quantum application developers",
+    "Organizations requiring on-premises quantum infrastructure"
+  ],
+  "qubit_modality": "Superconducting qubits for the currently available Advantage2 annealing QPU; the supplied material does not specify the physical modality of the developing gate-model system.",
+  "computing_models": [
+    "Quantum annealing (currently available)",
+    "Quantum-classical hybrid optimization (currently available)",
+    "Gate-model quantum computing (under development, not presented as available hardware)"
+  ],
+  "hardware_architecture": "Advantage2 uses a QPU with 4,400+ superconducting qubits and Zephyr topology providing 20-way connectivity. The system includes electromagnetic shielding and dilution refrigeration. It is accessible through Leap and can be integrated with classical/HPC infrastructure in on-premises installations.",
+  "current_systems": [
+    "Advantage2 annealing quantum computer, described as generally available through Leap and available for enterprise purchase",
+    "Advantage annealing quantum computer, accessible through Leap",
+    "Leap hybrid solvers supporting submitted problems with up to two million variables and constraints; this is hybrid problem capacity, not physical-qubit scale"
+  ],
+  "physical_qubit_scale": "Advantage2 contains 4,400+ physical superconducting qubits. No physical-qubit count is supplied for D-Wave's developing gate-model hardware.",
+  "demonstrated_logical_qubits": null,
+  "one_qubit_fidelity": null,
+  "two_qubit_fidelity": null,
+  "connectivity": "Advantage2 uses Zephyr topology with 20-way connectivity.",
+  "coherence": "D-Wave claims Advantage2 has a twofold increase in coherence, but the supplied material provides neither an absolute coherence time nor the comparison baseline.",
+  "gate_speed": null,
+  "error_correction_strategy": "No currently demonstrated error-correction scheme is described. The material says D-Wave is developing gate-model technology intended to make quantum errors easier to detect, understand, and correct, and references an error-correction paper without supplying technical results.",
+  "fault_tolerance_strategy": null,
+  "roadmap": [
+    "Develop gate-model quantum-computing technology to complement the currently commercial annealing platform",
+    "Use the future gate-model platform to expand into problem areas including quantum chemistry, materials science, and AI",
+    "Develop advanced analog-digital features for on-premises Advantage2 systems",
+    "Advance error detection, understanding, and correction as gate-model systems scale"
+  ],
+  "cloud_access": true,
+  "on_premise_available": true,
+  "access_methods": [
+    "Leap quantum cloud service",
+    "On-premises Advantage2 system purchase and installation",
+    "Ocean Python SDK and APIs",
+    "Point-and-click interfaces and demos",
+    "Local or cloud IDEs supporting the Development Containers specification",
+    "Professional-services-assisted access through D-Wave Launch",
+    "Leap free trial and Quantum LaunchPad program"
+  ],
+  "manufacturing_strategy": null,
+  "software_stack": [
+    "Leap quantum cloud service",
+    "Ocean open-source Python SDK",
+    "Quantum-classical hybrid solvers",
+    "Uniform Sampler API",
+    "Mapping tools for converting application problems into quantum-suitable forms",
+    "BQM and DQM problem representations",
+    "QPU and classical samplers",
+    "Visual problem inspector"
+  ],
+  "developer_tools": [
+    "Ocean tools on GitHub",
+    "Python APIs",
+    "Documentation",
+    "Code examples",
+    "Demos",
+    "Libraries and templates",
+    "dwave_networkx",
+    "Codespaces and compatible IDE support",
+    "Community forums",
+    "Online training"
+  ],
+  "commercial_deployments": [
+    "NTT DOCOMO application reported to improve network performance by 15%",
+    "Pattison Food Group auto-scheduler reported to reduce weekly scheduling effort from 80 hours to 15 hours",
+    "Ford Otosan production scheduling reported to be 83% faster",
+    "Volkswagen hybrid-solver demonstration reported an 80% reduction in paint waste and a five-fold improvement over the factory plan",
+    "Hybrid-quantum applications reported in production for workforce scheduling, vehicle routing, and other use cases; the supplied material does not enumerate all production customers",
+    "Leap is reported to have addressed hundreds of millions of business and research problems"
+  ],
+  "major_partnerships": [
+    "NTT DOCOMO, identified as a customer using D-Wave systems in network operations",
+    "AT&T, which signed an agreement to expand use of D-Wave technology across network operations",
+    "BASF, which completed a proof-of-concept project with D-Wave",
+    "Volkswagen, associated with a hybrid-solver paint-optimization demonstration",
+    "Pattison Food Group, associated with workforce scheduling",
+    "Ford Otosan, associated with production scheduling"
+  ],
+  "strengths": [
+    "Currently commercial annealing hardware is available through both cloud access and on-premises purchase",
+    "Advantage2 combines 4,400+ superconducting qubits with disclosed 20-way Zephyr connectivity, although useful performance cannot be inferred from qubit count alone",
+    "Leap advertises enterprise-oriented features including 99.9% uptime and availability, subsecond QPU response times, and SOC 2 Type 2 compliance",
+    "Integrated hybrid solvers accept business-scale formulations with up to two million variables and constraints",
+    "Open-source Ocean tooling, Python access, examples, training, and professional services lower adoption barriers",
+    "Multiple supplied customer examples report measurable operational benefits",
+    "The cloud, software, hardware, and professional-services offering supports progression from use-case discovery through production"
+  ],
+  "weaknesses": [
+    "The currently available hardware is annealing-based and therefore targets a narrower problem class than general-purpose gate-model quantum computing",
+    "No demonstrated logical qubits, fault-tolerant operation, absolute coherence values, or gate-fidelity metrics are supplied",
+    "The developing gate-model platform has no disclosed physical-qubit count, hardware specifications, availability date, or demonstrated computational capability in the supplied material",
+    "Several performance statements are relative or marketing-oriented, such as higher energy scale, reduced noise, and doubled coherence, without absolute benchmarks or full comparison methodology",
+    "The two-million-variable capacity refers to hybrid solvers and should not be interpreted as direct QPU capacity or evidence of quantum advantage",
+    "Many customer-result claims do not disclose the classical baselines, quantum contribution, workload details, or independent validation needed for rigorous comparison"
+  ],
+  "competitive_differentiators": [
+    "A dual-platform strategy spanning currently available annealing technology and a future gate-model platform",
+    "Commercial availability through both real-time cloud service and on-premises system purchase",
+    "Enterprise-focused hybrid optimization supporting formulations with up to two million variables and constraints",
+    "A full-stack offering combining hardware, cloud access, open-source software, training, and professional services",
+    "Reported production-oriented service characteristics including 99.9% uptime and SOC 2 Type 2 compliance",
+    "An established set of optimization-focused customer stories with reported business outcomes"
+  ],
+  "technical_risks": [
+    "Sparse-connectivity embedding and analog-control requirements may limit usable problem size or solution quality despite the 4,400+ physical-qubit count",
+    "No logical-qubit or fault-tolerance evidence is provided, leaving the path to reliable error-corrected computation unsubstantiated",
+    "Relative improvements in noise, coherence, and energy scale do not establish absolute computational advantage or reliability",
+    "Hybrid-solver outcomes may depend substantially on classical computation, making the QPU's incremental contribution difficult to evaluate from the supplied evidence",
+    "The gate-model program is still under development and lacks disclosed hardware scale, fidelity, error-correction architecture, and milestones",
+    "Expanding from optimization-focused annealing into chemistry, materials science, and AI depends on successful delivery of the future gate-model platform"
+  ],
+  "commercialization_risks": [
+    "Customer value may be use-case-specific and difficult to generalize without disclosed benchmark methodologies",
+    "Claims of outperforming classical approaches are not supported here by detailed, reproducible comparisons",
+    "Dependence on hybrid workflows may expose D-Wave to improving classical optimization methods and competing cloud solvers",
+    "On-premises systems require specialized cryogenic, shielding, integration, and support infrastructure",
+    "The broad dual-platform message could create expectations for gate-model capabilities before commercial gate-model hardware is available",
+    "The supplied material does not disclose pricing, system sales volume, renewal rates, utilization, or the number of sustained production deployments"
+  ],
+  "marketing_message": "D-Wave presents quantum annealing as commercially ready today for real-world optimization, emphasizing measurable enterprise outcomes, production-grade cloud access, on-premises availability, and an end-to-end adoption path. It positions its developing gate-model technology as a future complement that will broaden the addressable problem set.",
+  "messaging_gaps": [
+    "The material does not clearly quantify how much reported application value comes from the QPU versus classical components of the hybrid solver",
+    "The phrase 'world's largest quantum computers' is not accompanied by a cross-vendor comparison methodology",
+    "Production claims lack consistent definitions distinguishing demonstrations, proofs of concept, pilots, and sustained operational deployments",
+    "The gate-model narrative lacks timelines, hardware specifications, and demonstrated milestones",
+    "Claims such as 'most advanced quantum hardware' and 'only full-stack quantum computing company' are not substantiated with comparative criteria in the supplied material",
+    "The relationship between physical-qubit count, embedding overhead, effective problem size, solution quality, and time-to-solution is not explained"
+  ],
+  "data_gaps": [
+    "Absolute coherence measurements",
+    "One-qubit and two-qubit fidelities",
+    "Annealing-control precision and calibration metrics",
+    "Gate or anneal duration and detailed timing metrics; subsecond cloud/QPU response is not a gate-speed measurement",
+    "Logical-qubit count or demonstrated logical operations",
+    "Current error-correction implementation and results",
+    "Fault-tolerance architecture and thresholds",
+    "Independent quantum-advantage benchmarks against leading classical methods",
+    "Advantage2 yield, defective-qubit count, and usable-qubit distribution",
+    "Detailed embedding overhead and effective QPU problem sizes",
+    "Gate-model physical modality, qubit count, connectivity, fidelity, and availability timeline",
+    "Pricing for cloud access and on-premises systems",
+    "Number and duration of paid production deployments",
+    "Manufacturing, fabrication, packaging, and supply-chain strategy",
+    "Energy-consumption measurements supporting the 'energy-efficient' description",
+    "Technical details behind the claimed 40% energy-scale increase, 75% noise reduction, and twofold coherence increase"
+  ],
+  "website": "https://www.dwavequantum.com/",
+  "sources": [
+    {
+      "url": "https://www.dwavequantum.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:05:33-07:00"
+    },
+    {
+      "url": "https://www.dwavequantum.com/solutions-and-products/technology-business-leader",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:05:36-07:00"
+    },
+    {
+      "url": "https://www.dwavequantum.com/solutions-and-products/systems/annealing-quantum-computing",
+      "category": "systems",
+      "collected_at": "2026-08-21T20:05:39-07:00"
+    },
+    {
+      "url": "https://www.dwavequantum.com/solutions-and-products/ocean",
+      "category": "software",
+      "collected_at": "2026-08-21T20:05:41-07:00"
+    },
+    {
+      "url": "https://www.dwavequantum.com/solutions-and-products/cloud-platform",
+      "category": "access",
+      "collected_at": "2026-08-21T20:05:44-07:00"
+    },
+    {
+      "url": "https://www.dwavequantum.com/solutions-and-products/professional-services",
+      "category": "enterprise",
+      "collected_at": "2026-08-21T20:05:47-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:06:26-07:00"
+}

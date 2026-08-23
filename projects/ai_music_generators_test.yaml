@@ -1,5 +1,5 @@
-project_name: test_project
-display_name: Test Project
+project_name: ai_music_generators_test
+display_name: AI Music Generators Test
 analysis_type: generic_business
 page_categories:
   products:
@@ -10,9 +10,9 @@ page_categories:
   - services
   technology:
   - technology
-  - how it works
-  - architecture
   - features
+  - architecture
+  - how it works
   pricing:
   - pricing
   - plans
@@ -38,5 +38,9 @@ page_categories:
   - partnerships
   - ecosystem
 companies:
-- name: OpenAI
-  url: https://openai.com
+- name: Suno
+  url: https://suno.com
+- name: Udio
+  url: https://www.udio.com
+- name: SOUNDRAW
+  url: https://soundraw.io

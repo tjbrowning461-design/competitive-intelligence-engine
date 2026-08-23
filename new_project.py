@@ -1,4 +1,5 @@
 import re
+import subprocess
 from pathlib import Path
 
 import yaml
@@ -17,9 +18,9 @@ GENERIC_PAGE_CATEGORIES = {
     ],
     "technology": [
         "technology",
-        "how it works",
-        "architecture",
         "features",
+        "architecture",
+        "how it works",
     ],
     "pricing": [
         "pricing",
@@ -83,7 +84,6 @@ QUANTUM_HARDWARE_PAGE_CATEGORIES = {
         "software",
         "sdk",
         "developer",
-        "developers",
     ],
     "access": [
         "cloud",
@@ -97,16 +97,6 @@ QUANTUM_HARDWARE_PAGE_CATEGORIES = {
         "case studies",
         "partners",
     ],
-    "enterprise": [
-        "enterprise",
-        "commercial",
-    ],
-}
-
-
-ANALYSIS_TYPES = {
-    "1": "generic_business",
-    "2": "quantum_hardware",
 }
 
 
@@ -125,75 +115,61 @@ def slugify(text):
 
 def choose_analysis_type():
 
-    print("\nChoose analysis type:\n")
+    print("\nAnalysis type:")
+    print("Press ENTER for Generic Business")
+    print("Or type: quantum")
 
-    print(
-        "1. Generic Business"
-    )
+    choice = input(
+        "\nAnalysis type: "
+    ).strip().lower()
 
-    print(
-        "2. Quantum Hardware"
-    )
+    if choice in {
+        "quantum",
+        "quantum_hardware",
+        "2"
+    }:
+        return "quantum_hardware"
 
-    while True:
-
-        choice = input(
-            "\nEnter 1 or 2: "
-        ).strip()
-
-        if choice in ANALYSIS_TYPES:
-
-            return ANALYSIS_TYPES[
-                choice
-            ]
-
-        print(
-            "Please enter 1 or 2."
-        )
+    return "generic_business"
 
 
-def get_page_categories(
+def page_categories_for(
     analysis_type
 ):
 
-    if (
-        analysis_type
-        == "quantum_hardware"
-    ):
-
-        return (
-            QUANTUM_HARDWARE_PAGE_CATEGORIES
-        )
+    if analysis_type == "quantum_hardware":
+        return QUANTUM_HARDWARE_PAGE_CATEGORIES
 
     return GENERIC_PAGE_CATEGORIES
 
 
-def collect_companies():
+def collect_company_block():
+
+    print("\nPaste ALL companies now.")
+    print("")
+    print("Use this format:")
+    print("")
+    print(
+        "Runway | https://runwayml.com"
+    )
+    print(
+        "OpenArt | https://openart.ai"
+    )
+    print(
+        "Kling | https://klingai.com"
+    )
+    print("")
+    print(
+        "Press ENTER on a blank line "
+        "when finished."
+    )
+    print("")
 
     companies = []
 
-    print(
-        "\nPaste companies one at a time."
-    )
-
-    print(
-        "Use this format:"
-    )
-
-    print(
-        "Company Name | https://company.com"
-    )
-
-    print(
-        "\nPress Enter on a blank line "
-        "when finished.\n"
-    )
-
     while True:
 
-        line = input(
-            "Company: "
-        ).strip()
+        line = input().strip()
 
         if not line:
             break
@@ -201,12 +177,8 @@ def collect_companies():
         if "|" not in line:
 
             print(
-                "Use this format:"
-            )
-
-            print(
-                "Company Name | "
-                "https://company.com"
+                f"Skipped invalid line: "
+                f"{line}"
             )
 
             continue
@@ -222,33 +194,23 @@ def collect_companies():
         if not name or not url:
 
             print(
-                "Both company name "
-                "and URL are required."
+                f"Skipped invalid line: "
+                f"{line}"
             )
 
             continue
 
         if not url.startswith(
-            (
-                "http://",
-                "https://"
-            )
+            ("http://", "https://")
         ):
 
-            url = (
-                "https://"
-                + url
-            )
+            url = "https://" + url
 
         companies.append(
             {
                 "name": name,
                 "url": url,
             }
-        )
-
-        print(
-            f"Added: {name}"
         )
 
     return companies
@@ -258,27 +220,25 @@ def create_project():
 
     print(
         "\n"
-        + "=" * 60
+        + "=" * 65
     )
 
     print(
-        "NEW COMPETITIVE "
-        "INTELLIGENCE PROJECT"
+        "NEW COMPETITIVE INTELLIGENCE ANALYSIS"
     )
 
     print(
-        "=" * 60
+        "=" * 65
     )
 
     display_name = input(
-        "\nProject name: "
+        "\nWhat should we call this analysis? "
     ).strip()
 
     if not display_name:
 
         raise ValueError(
-            "Project name cannot "
-            "be empty."
+            "Project name cannot be empty."
         )
 
     project_name = slugify(
@@ -290,14 +250,13 @@ def create_project():
     )
 
     companies = (
-        collect_companies()
+        collect_company_block()
     )
 
     if not companies:
 
         raise ValueError(
-            "You must add at least "
-            "one company."
+            "No companies were entered."
         )
 
     config = {
@@ -311,7 +270,7 @@ def create_project():
             analysis_type,
 
         "page_categories":
-            get_page_categories(
+            page_categories_for(
                 analysis_type
             ),
 
@@ -344,25 +303,20 @@ def create_project():
 
     print(
         "\n"
-        + "=" * 60
+        + "=" * 65
     )
 
     print(
-        "PROJECT CREATED"
+        "PROJECT READY"
     )
 
     print(
-        "=" * 60
+        "=" * 65
     )
 
     print(
-        f"\nProject file:"
-        f"\n{output_path}"
-    )
-
-    print(
-        f"\nCompanies: "
-        f"{len(companies)}"
+        f"\nProject: "
+        f"{display_name}"
     )
 
     print(
@@ -371,35 +325,73 @@ def create_project():
     )
 
     print(
-        "\nRun analysis:"
+        f"Companies: "
+        f"{len(companies)}"
     )
 
     print(
-        f"\npython run.py "
+        f"Config: "
         f"{output_path}"
     )
 
     print(
-        "\nAnalyze and publish "
-        "to GitHub:"
+        "\nWhat do you want to do?"
     )
 
     print(
-        f"\npython run.py "
-        f"{output_path} "
-        f"--publish"
+        "1 = Create project only"
     )
 
     print(
-        "\nForce fresh research "
-        "and publish:"
+        "2 = Run analysis"
     )
 
     print(
-        f"\npython run.py "
-        f"{output_path} "
-        f"--refresh --publish"
+        "3 = Run analysis + publish to GitHub"
     )
+
+    choice = input(
+        "\nChoose 1, 2, or 3: "
+    ).strip()
+
+    if choice == "2":
+
+        subprocess.run(
+            [
+                "python",
+                "run.py",
+                str(output_path)
+            ],
+            check=True
+        )
+
+    elif choice == "3":
+
+        subprocess.run(
+            [
+                "python",
+                "run.py",
+                str(output_path),
+                "--publish"
+            ],
+            check=True
+        )
+
+    else:
+
+        print(
+            "\nProject created."
+        )
+
+        print(
+            "You can run it later with:"
+        )
+
+        print(
+            f"\npython run.py "
+            f"{output_path} "
+            f"--publish"
+        )
 
 
 if __name__ == "__main__":

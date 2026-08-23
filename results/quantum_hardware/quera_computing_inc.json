@@ -1,0 +1,203 @@
+{
+  "company_name": "QuEra Computing Inc.",
+  "value_proposition": "Provides neutral-atom quantum systems, software, cloud and on-premises access, and application co-design, emphasizing reconfigurable arrays, room-temperature system operation, HPC integration, and a path toward fault-tolerant logical computation.",
+  "target_customers": [
+    "Enterprises and enterprise innovation teams",
+    "High-performance computing centers",
+    "Government and national quantum programs",
+    "Public-sector and national research organizations",
+    "Academic and scientific researchers",
+    "Pharmaceutical and chemical organizations",
+    "Financial-services organizations",
+    "Manufacturing and optimization users"
+  ],
+  "qubit_modality": "Neutral atoms using Rydberg-array technology; the supplied material does not identify the atomic species.",
+  "computing_models": [
+    "Analog quantum computing, currently available through Aquila",
+    "Digital/gate-based quantum computing through Gemini-class systems and emulators; Premium Access says Gemini hardware access is coming soon",
+    "Fault-tolerant logical gate-based computing, planned for future Libra and gigaquop-class systems",
+    "Hybrid quantum-classical/HPC workflows"
+  ],
+  "hardware_architecture": "Reconfigurable neutral-atom qubit arrays with hardware layouts adaptable to algorithms. QuEra states its systems operate without cryogenic infrastructure and can integrate with HPC environments. Its future fault-tolerant architecture is designed around flexible long-range connectivity, parallel atom control, heterogeneous operating zones, atom movement, and the ability to combine multiple QEC-code families for memory, operations, and magic-state generation.",
+  "current_systems": [
+    "Aquila: currently demonstrated 256-qubit analog neutral-atom computer, available through Amazon Braket since 2022 and available through QuEra Premium Cloud Access",
+    "Gemini: neutral-atom system described as having logical-qubit capabilities and being co-located with Japan's ABCI-Q supercomputer; the supplied material does not give its physical or logical qubit count, and Premium Access states Gemini access is 'coming soon'",
+    "On-premises neutral-atom systems: QuEra claims operational systems and proven deployments at leading HPC and research centers, but the supplied sources do not identify systems, customers, configurations, or dates",
+    "Digital emulator: available through the Bloqade execution environment; this is software rather than quantum hardware"
+  ],
+  "physical_qubit_scale": "Currently disclosed: Aquila has 256 physical qubits. No current physical-qubit count is supplied for Gemini or on-premises installations. Future target only: the 2028–2029 gigaquop-class system is projected to have more than 20,000 physical qubits in one processing core.",
+  "demonstrated_logical_qubits": "Gemini is described as having 'logical-qubit capabilities,' but no demonstrated logical-qubit count, logical error rate, experiment, or benchmark is supplied. The more-than-1,000 logical-qubit figure applies only to a projected 2028–2029 system and is not currently demonstrated.",
+  "one_qubit_fidelity": null,
+  "two_qubit_fidelity": null,
+  "connectivity": "Current products are described as having reconfigurable qubit arrays, but no quantitative current connectivity graph or interaction range is supplied. Flexible long-range connectivity is emphasized as a design feature of the planned fault-tolerant architecture.",
+  "coherence": null,
+  "gate_speed": null,
+  "error_correction_strategy": "QuEra is developing a heterogeneous QEC approach rather than committing to one code family. The roadmap discusses ultra-high-rate qLDPC codes, high-throughput syndrome extraction, low-depth logical operations, efficient magic-state generation, tricycle codes, neural-network decoders, and hardware/software co-design. Research cited by QuEra projects qLDPC encoding rates near 50% and memory errors in the 10^-13 regime, but these are projected research results and not demonstrated specifications of a current commercial system.",
+  "fault_tolerance_strategy": "Future strategy: combine reconfigurable long-range neutral-atom connectivity, parallel controls, separate operating zones, multiple specialized QEC codes, efficient magic-state generation, and accelerated real-time decoding. QuEra is collaborating with NVIDIA on quantum-GPU integration for error correction and calibration. Libra is planned as the first fault-tolerant system in 2028; no currently available fault-tolerant computer is established by the supplied material.",
+  "roadmap": [
+    "2028 target — Libra: planned first fault-tolerant QuEra computer, expected on Amazon Braket under the AWS collaboration; designed for megaquop-class performance, approximately one million reliable logical operations. No physical- or logical-qubit count is supplied here.",
+    "2028–2029 target — next-generation gigaquop-class system: designed for approximately one billion reliable logical operations, more than 1,000 logical qubits, a 10^-9 logical error rate, and more than 20,000 physical qubits in one processing core; targeted initially for use at QuEra.",
+    "Longer-term research direction — reduce space and time overhead through high-rate qLDPC codes, low-depth syndrome extraction and logical operations, efficient magic-state generation, and faster classical decoding. QuEra says these techniques could help open a path toward teraquop performance, but no date or system specification is provided.",
+    "Commercial preparation through 2029 — FTQC Founders Circle participants are intended to co-design applications and receive a path toward priority access where technical and business fit are established."
+  ],
+  "cloud_access": true,
+  "on_premise_available": true,
+  "access_methods": [
+    "Amazon Braket access to Aquila",
+    "QuEra Premium Cloud Access with reserved capacity, flexible SLAs, onboarding, mentoring, and scientific support",
+    "Gemini Premium Cloud Access is announced as coming soon, not currently established",
+    "On-premises installation with site assessment, delivery, calibration, HPC and authentication integration, support, upgrades, and staff training",
+    "FTQC Founders Circle for multi-year co-design and potential priority access to future fault-tolerant systems",
+    "Bloqade local execution and emulation",
+    "Bloqade execution in HPC environments",
+    "Access to Aquila through qBraid via Amazon Braket"
+  ],
+  "manufacturing_strategy": "The sources state that QuEra engineers handle on-premises delivery, installation, calibration, support, and upgrades. No fabrication process, atom-source supply chain, manufacturing partners, production capacity, or volume-manufacturing plan is disclosed.",
+  "software_stack": [
+    "Bloqade, an open-source neutral-atom software stack",
+    "Bloqade Analog for analog programming",
+    "Bloqade Digital for gate-based circuits",
+    "Kirin compiler infrastructure",
+    "Tsim non-Clifford QEC simulator",
+    "QuEra digital emulator",
+    "Amazon Braket integration",
+    "HPC scheduler, authentication, and hybrid-framework integration for on-premises systems"
+  ],
+  "developer_tools": [
+    "Python SDKs and embedded domain-specific languages for analog and digital modes",
+    "Processor-geometry design tools",
+    "Parameter sweeps",
+    "Built-in visualization",
+    "Local, HPC, emulator, and QPU execution workflows",
+    "Tsim with Stim circuit-format and API compatibility",
+    "GPU-accelerated QEC simulation supporting T gates and circuits of more than 80 qubits",
+    "GitHub repositories, documentation, user forum, Slack, tutorials, and monthly open-source community calls"
+  ],
+  "commercial_deployments": [
+    "Aquila has been commercially accessible on Amazon Braket since 2022",
+    "Gemini is co-located with the ABCI-Q supercomputer in Japan, although customer access is described as coming soon",
+    "QuEra claims operational on-premises systems at leading HPC and research centers, but provides no named installation, hardware specification, or operational benchmark in these sources",
+    "Premium Cloud Access currently accepts Aquila jobs and includes support and service-level options"
+  ],
+  "major_partnerships": [
+    "AWS/Amazon Braket: current Aquila cloud access and planned Libra availability in 2028 under an expanded multi-generation strategic collaboration",
+    "NVIDIA: quantum-GPU supercomputing collaboration, including planned real-time QEC and calibration at scale",
+    "ABCI-Q in Japan: Gemini system co-location with the supercomputer",
+    "DARPA: support through ONISQ, MeasQuIT, and SBIR programs",
+    "IARPA: support through the ELQ program",
+    "U.S. Department of Energy Quantum Systems Accelerator",
+    "U.S. National Science Foundation",
+    "QuEra Quantum Alliance members include Algorithmiq, BIP, BlueQubit, Boston Consulting Group, Classiq, E4 Computer Engineering, Horizon Quantum, Jij, Kipu Quantum, Lawrence Berkeley National Laboratory/NERSC, NTT DATA, Pawsey Supercomputing Research Centre, Phasecraft, qBraid, Q-CTRL, QC Ware, Quantum Machines, QunaSys, SAS, Strangeworks, Wolfram Research, Zapata Quantum, and others listed in the supplied partner source"
+  ],
+  "strengths": [
+    "Aquila provides a clearly identified, currently accessible 256-qubit analog system rather than only a future hardware promise",
+    "Reconfigurable neutral-atom arrays provide architectural flexibility for different geometries, algorithms, and proposed QEC schemes",
+    "Cloud, premium-access, co-design, and on-premises engagement models address multiple customer security, integration, and support requirements",
+    "The open-source Bloqade stack spans analog, digital, emulator, HPC, and QEC-development workflows",
+    "Strong HPC and ecosystem orientation, including AWS, NVIDIA, ABCI-Q, NERSC, Pawsey, software vendors, and application partners",
+    "Fault-tolerance roadmap addresses logical-operation reliability, space-time overhead, magic-state generation, and classical decoder throughput rather than relying solely on physical-qubit counts",
+    "QuEra explicitly acknowledges that quantum computing is not yet a general-purpose business tool and positions current enterprise activity around pilots, skills, problem fit, and co-design"
+  ],
+  "weaknesses": [
+    "No current one-qubit or two-qubit fidelity, coherence, gate-speed, uptime, throughput, or quantitative connectivity data is supplied",
+    "No quantified demonstrated logical-qubit count or logical error rate is supplied for Gemini despite the claim of logical-qubit capabilities",
+    "Current generally accessible hardware evidence centers on a 256-qubit analog system; access to Gemini is still described as coming soon",
+    "The supplied sources do not provide application benchmarks showing practical advantage over classical methods",
+    "Claims of on-premises operational deployments and enterprise results lack named customers, configurations, dates, utilization data, or performance evidence",
+    "The largest fault-tolerant performance claims are roadmap targets for 2028–2029 rather than achieved capabilities",
+    "The source does not disclose the physical-resource specifications for Libra, limiting evaluation of the feasibility of its megaquop target"
+  ],
+  "competitive_differentiators": [
+    "Combination of analog and planned digital/fault-tolerant operation on one neutral-atom technology family",
+    "Reconfigurable atom layouts and proposed flexible long-range connectivity",
+    "Proposed heterogeneous QEC architecture that can assign different code families to memory, logical operations, and magic-state generation",
+    "Room-temperature system operation without customer cryogenic infrastructure",
+    "Emphasis on co-design across applications, algorithms, QEC, compilation, and hardware to reduce fault-tolerant resource costs",
+    "Full engagement range from open-source emulation and public cloud to supported premium access and on-premises HPC integration",
+    "Current 256-qubit Aquila availability through a major public cloud platform"
+  ],
+  "technical_risks": [
+    "The progression from currently disclosed 256-qubit analog hardware to more than 20,000 physical qubits and more than 1,000 logical qubits by 2028–2029 requires substantial scaling not demonstrated in these sources",
+    "Gigaquop performance depends on simultaneous reductions in QEC space overhead, time overhead, and decoding latency; QuEra itself identifies all three as necessary areas of progress",
+    "Projected qLDPC rates and 10^-13 memory errors are research projections, not demonstrated system-level performance",
+    "Real-time decoding may become a classical bottleneck as syndrome-data volume increases, creating dependence on successful quantum-GPU integration and decoder development",
+    "Combining atom movement, parallel control, long-range interaction, heterogeneous zones, syndrome extraction, and magic-state generation could introduce control and scheduling complexity",
+    "No disclosed physical gate fidelities, coherence, gate speeds, or loss rates are available to assess whether the proposed QEC thresholds and operation volumes are feasible",
+    "The roadmap's logical error-rate and operation-volume targets are not accompanied by disclosed end-to-end hardware benchmarks in the supplied material"
+  ],
+  "commercialization_risks": [
+    "QuEra states quantum computing is not yet a general-purpose business tool, so near-term enterprise demand may remain concentrated in R&D, pilots, and strategic preparation rather than production workloads",
+    "Commercially useful fault tolerance depends on future Libra and gigaquop systems arriving on schedule and meeting projected reliability and scale",
+    "Premium and FTQC access appear consultative, capacity-limited, or application-fit dependent, which may constrain broad adoption",
+    "The FTQC Founders Circle has five total memberships listed and runs through 2029, indicating a selective rather than mass-market access model",
+    "On-premises deployments require site planning, calibration, software integration, support, training, and upgrades, potentially lengthening sales and deployment cycles",
+    "The supplied material does not provide pricing, utilization, renewal, revenue, or customer-ROI evidence",
+    "Enterprise use cases are presented as opportunities to explore rather than validated production applications or proven quantum advantage"
+  ],
+  "marketing_message": "“Putting quantum to work,” with neutral-atom systems positioned as scalable and flexible today and fault-tolerant quantum computing targeted to arrive in 2028. QuEra emphasizes practical access, application co-design, HPC integration, and preparation for future commercially valuable logical computation.",
+  "messaging_gaps": [
+    "The homepage's “Fault Tolerance, Arriving 2028” message does not itself explain the distinction between today's analog Aquila, Gemini's unspecified logical capabilities, and future fully fault-tolerant Libra",
+    "Terms such as megaquop, gigaquop, and “reliable logical operations” are not tied to disclosed benchmark workloads or standardized validation methods",
+    "“Superior,” “most flexible, scalable, and high-performing,” and “unmatched scale” claims are not supported here with comparative data",
+    "Claims that platforms are delivering proven enterprise results do not include customer names, quantified outcomes, or classical baselines",
+    "The on-premises page claims operational systems in the field but does not identify deployments or configurations",
+    "The material does not clearly explain which Gemini capabilities are operational, demonstrated, commercially usable, or still awaiting access"
+  ],
+  "data_gaps": [
+    "Current one-qubit and two-qubit gate fidelities",
+    "State-preparation and measurement fidelity",
+    "Coherence times and atom-loss rates",
+    "Analog and digital operation speeds, circuit depth, cycle time, and QEC cycle time",
+    "Quantitative current connectivity and parallel-operation limits",
+    "Current Gemini physical-qubit count, logical-qubit count, code type, logical error rate, and benchmark results",
+    "Evidence and specifications for current on-premises deployments",
+    "Libra physical-qubit count, logical-qubit count, QEC code, logical error rate, and detailed performance assumptions",
+    "Independent validation methodology for megaquop and gigaquop claims",
+    "Availability date and service terms for Gemini access",
+    "Hardware uptime, calibration frequency, queue times, throughput, and SLA metrics",
+    "Pricing for cloud, premium, co-design, Founders Circle, and on-premises offerings",
+    "Named enterprise deployments and quantified application outcomes",
+    "Manufacturing capacity, component supply chain, production yield, and scale-up plan",
+    "Energy-consumption measurements supporting the low-energy claim",
+    "Comparative benchmarks against classical HPC and competing quantum modalities"
+  ],
+  "website": "https://www.quera.com/",
+  "sources": [
+    {
+      "url": "https://www.quera.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:11:18-07:00"
+    },
+    {
+      "url": "https://www.quera.com/on-premise-quantum-computers",
+      "category": "systems",
+      "collected_at": "2026-08-21T20:11:21-07:00"
+    },
+    {
+      "url": "https://www.quera.com/press-releases/quera-unveils-gigaquop-class-fault-tolerant-roadmap-and-invites-organizations-to-co-design-quantum-applications",
+      "category": "roadmap",
+      "collected_at": "2026-08-21T20:11:23-07:00"
+    },
+    {
+      "url": "https://www.quera.com/bloqade",
+      "category": "software",
+      "collected_at": "2026-08-21T20:11:26-07:00"
+    },
+    {
+      "url": "https://www.quera.com/premium-access",
+      "category": "access",
+      "collected_at": "2026-08-21T20:11:29-07:00"
+    },
+    {
+      "url": "https://www.quera.com/partners",
+      "category": "customers",
+      "collected_at": "2026-08-21T20:11:31-07:00"
+    },
+    {
+      "url": "https://www.quera.com/enterprise-innovators",
+      "category": "enterprise",
+      "collected_at": "2026-08-21T20:11:34-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:12:30-07:00"
+}

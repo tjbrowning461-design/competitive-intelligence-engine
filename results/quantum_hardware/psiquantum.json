@@ -1,0 +1,164 @@
+{
+  "company_name": "PsiQuantum",
+  "value_proposition": "Build and deploy commercially useful, fault-tolerant quantum computers using a manufacturable, modular silicon-photonics platform that leverages semiconductor foundries, telecom fiber networking, integrated control systems, and purpose-built FTQC software.",
+  "target_customers": [
+    "Enterprises developing fault-tolerant quantum applications",
+    "Governments and government research programs",
+    "Quantum-computing researchers",
+    "Developers of quantum algorithms",
+    "Organizations in energy, materials, pharmaceuticals, and finance",
+    "AI-infrastructure and optical-networking organizations"
+  ],
+  "qubit_modality": "Dual-rail photonic qubits implemented on a silicon-photonics platform, with on-chip single-photon sources and superconducting single-photon detectors.",
+  "computing_models": [
+    "Fault-tolerant quantum computing",
+    "Photonic quantum computing using two-qubit fusion operations"
+  ],
+  "hardware_architecture": "A modular architecture progressing from 300 mm wafers to chips, packages, blades, cabinets, and complete quantum computers. The Omega chipset integrates single-photon sources, superconducting single-photon detectors, interferometric/optical components, edge couplers, and high-performance optical switches on an ultra-low-loss silicon-nitride platform. Modules are intended to network over standard telecom optical fiber, with control electronics integrated near the qubits in modular packaging.",
+  "current_systems": [
+    "Omega silicon-photonic chipset/platform manufactured in a commercial semiconductor foundry",
+    "Demonstrated integrated photonic components and benchmark operations, including qubit initialization/readout, interference between independent photon sources, chip-to-chip transmission, and two-qubit fusion",
+    "No completed utility-scale quantum computer is identified in the supplied material"
+  ],
+  "physical_qubit_scale": null,
+  "demonstrated_logical_qubits": null,
+  "one_qubit_fidelity": "99.98% ± 0.01% single-qubit SPAM fidelity. This is an initialization-and-readout metric, not a disclosed one-qubit gate fidelity.",
+  "two_qubit_fidelity": "99.22% ± 0.12% two-qubit fusion fidelity, described as validating entangling-operation accuracy.",
+  "connectivity": "Demonstrated chip-to-chip qubit transmission over optical fiber at 99.72% ± 0.04% fidelity. The proposed scaling architecture connects modules using standard telecom optical fiber without transduction. System-scale connectivity topology and fan-out are not disclosed.",
+  "coherence": null,
+  "gate_speed": null,
+  "error_correction_strategy": null,
+  "fault_tolerance_strategy": "The platform is explicitly designed for fault-tolerant quantum computing and combines photonic chips, fusion-based entangling operations, networking, cryogenics, controls, and FTQC software. However, the supplied material does not disclose the error-correcting code, threshold, physical-to-logical overhead, decoding implementation, or a demonstrated fault-tolerant logical operation.",
+  "roadmap": [
+    "Scale the modular silicon-photonics platform from chips and packages into blades, cabinets, and utility-scale quantum computers",
+    "Build the first planned utility-scale sites in the City of Moreton Bay, Queensland, Australia, and Chicago, Illinois, USA",
+    "Move quantum computing from laboratory systems into utility-scale infrastructure in partnership with US and allied governments",
+    "Continuously improve the modular platform as new technologies and capabilities become available",
+    "Prepare enterprises, governments, researchers, and developers for future fault-tolerant hardware through the Construct software platform"
+  ],
+  "cloud_access": null,
+  "on_premise_available": null,
+  "access_methods": [
+    "Open-access access to the PsiQuantum Construct software platform",
+    "Publicly available/open-source and open-access software tools are described; no access method for operating PsiQuantum quantum hardware is disclosed"
+  ],
+  "manufacturing_strategy": "PsiQuantum designs its chips and manufactures Omega at GlobalFoundries' flagship commercial semiconductor fab in Malta, New York. The process uses standard 300 mm silicon wafers and a 45 nm lithography node. The company states that wafers are built by the thousands and that more than one million devices have been tested.",
+  "software_stack": [
+    "PsiQuantum Construct",
+    "PsiQuantum Development Kit",
+    "Workbench",
+    "Algorithms collection",
+    "Circuit Designer",
+    "Resource Analyzer",
+    "Learning tools"
+  ],
+  "developer_tools": [
+    "Python library for defining numeric and symbolic FTQC algorithms",
+    "Simulation of thousands of operations",
+    "Circuit-code generation for circuits containing billions of operations",
+    "Visual circuit design and sharing",
+    "Pre-defined Qubricks for algorithm exploration",
+    "Quantum resource estimation at FTQC scale",
+    "Resource-hotspot analysis and algorithm optimization"
+  ],
+  "commercial_deployments": [],
+  "major_partnerships": [
+    "GlobalFoundries for commercial semiconductor manufacturing in Malta, New York",
+    "DARPA through a disclosed $125 million Quantum Benchmarking Initiative agreement",
+    "US and allied governments for planned utility-scale infrastructure",
+    "Planned site development in Moreton Bay, Queensland",
+    "Planned site development at the Illinois Quantum & Microelectronics Park in Chicago"
+  ],
+  "strengths": [
+    "Uses established high-volume semiconductor manufacturing infrastructure rather than relying solely on small research fabs",
+    "Discloses strong component-level metrics, including 99.98% SPAM fidelity, 99.22% two-qubit fusion fidelity, and 99.72% chip-to-chip transmission fidelity",
+    "Optical-fiber networking provides a plausible modular scaling path without microwave-to-optical or other transduction",
+    "Integration of sources, detectors, and switches on the Omega platform could reduce system complexity",
+    "Photonic qubits are presented as less sensitive to heat and electromagnetic interference, allowing control electronics to be placed closer to the qubit",
+    "Construct addresses FTQC algorithm design, simulation, optimization, and resource estimation before hardware availability",
+    "Government support and the expanded DARPA agreement provide external engagement around the utility-scale roadmap"
+  ],
+  "weaknesses": [
+    "No physical-qubit count or complete quantum-computer scale is disclosed",
+    "No logical qubit, logical error rate, error-correction cycle, or fault-tolerant logical operation is demonstrated in the supplied material",
+    "Reported benchmarks are component- or operation-level metrics rather than evidence of an integrated utility-scale computer",
+    "The reported single-qubit metric is SPAM fidelity, not one-qubit gate fidelity",
+    "No coherence, gate-speed, photon-loss, multiplexing, system uptime, or end-to-end workload benchmark is provided",
+    "No currently operational customer-accessible quantum hardware or completed commercial deployment is identified",
+    "Planned sites and utility-scale systems remain future targets rather than demonstrated capabilities"
+  ],
+  "competitive_differentiators": [
+    "Foundry-manufactured silicon photonics using 300 mm wafers and a 45 nm process",
+    "Integrated Omega platform combining photon sources, superconducting detectors, and optical switching",
+    "Modular scale-out over standard telecom optical fiber without transduction",
+    "Potential colocation of control electronics near photonic qubits due to reduced heat and electromagnetic sensitivity",
+    "FTQC-focused software capable of representing and estimating circuits with very large operation counts",
+    "Explicit focus on utility-scale, fault-tolerant infrastructure rather than incremental small-system qubit-count milestones"
+  ],
+  "technical_risks": [
+    "Scaling strong component-level fidelities into a reliable, integrated machine may introduce compounded loss and operational errors",
+    "Two-qubit fusion fidelity of 99.22% may require substantial error-correction overhead; no threshold or overhead analysis is supplied",
+    "Photon generation, indistinguishability, routing, switching, detection, and fiber transmission must all operate concurrently at large scale",
+    "The architecture uses superconducting detectors and references operation at 10 mK, leaving cryogenic integration and scaling challenges despite the thermal advantages claimed for photons",
+    "No demonstrated logical qubits or fault-tolerant operations are disclosed, so the path from physical photonic components to useful logical computation remains unvalidated in the supplied material",
+    "The absence of disclosed gate speed, loss rates, multiplexing performance, decoder implementation, and end-to-end reliability prevents assessment of practical computational throughput",
+    "Large-scale packaging, control integration, fiber networking, and synchronization across blades and cabinets may create engineering complexity not captured by individual component benchmarks"
+  ],
+  "commercialization_risks": [
+    "No completed utility-scale system or current hardware-access model is disclosed",
+    "Commercial value depends on successful delivery of planned Moreton Bay and Chicago infrastructure",
+    "The capital and infrastructure requirements of utility-scale systems may limit deployment flexibility and customer access",
+    "Lack of disclosed timelines, pricing, service model, uptime, and performance commitments makes adoption readiness difficult to assess",
+    "The software platform can prepare users for FTQC, but its near-term commercial value may be constrained until compatible hardware exists",
+    "Reliance on government partnerships and large infrastructure projects may expose deployment schedules to funding, permitting, construction, and policy risks"
+  ],
+  "marketing_message": "PsiQuantum presents itself as moving quantum computing out of the laboratory and into utility-scale infrastructure by combining manufacturable silicon photonics, modular optical networking, integrated controls, and FTQC-focused software to build the world's first useful quantum computers.",
+  "messaging_gaps": [
+    "The phrase 'world's first useful quantum computers' is aspirational in the supplied material and is not supported by a disclosed completed system or useful quantum workload",
+    "Component metrics are prominent, but their relationship to logical error rates and application-level performance is not quantified",
+    "No clear distinction is provided between demonstrated chipset capabilities and the performance of the planned full-scale computer",
+    "No delivery dates are stated for the planned Moreton Bay or Chicago systems",
+    "No explanation is provided for how customers will access, purchase, or deploy future hardware",
+    "The claimed 'beyond-state-of-the-art performance' is not accompanied by competitor-normalized comparisons in the supplied pages"
+  ],
+  "data_gaps": [
+    "Current physical-qubit count",
+    "Demonstrated logical-qubit count",
+    "Logical error rate and logical-qubit lifetime",
+    "One-qubit gate fidelity distinct from SPAM fidelity",
+    "Gate and fusion-operation speed",
+    "Coherence or photonic storage lifetime",
+    "Photon-loss rates across sources, switching, coupling, detection, and networking",
+    "Source brightness, repetition rate, detector efficiency, and detector dead time",
+    "Multiplexing performance at system scale",
+    "Error-correcting code and fault-tolerance threshold",
+    "Physical-qubit and hardware overhead per logical qubit",
+    "Decoder design, speed, and hardware implementation",
+    "End-to-end benchmark results on an integrated quantum computer",
+    "System availability, uptime, calibration requirements, and reliability",
+    "Current hardware access, cloud availability, and on-premises availability",
+    "Commercial pricing and contracting model",
+    "Confirmed deployment dates and specifications for Moreton Bay and Chicago",
+    "Power, footprint, cryogenic, and networking requirements for a full system",
+    "Application-level quantum advantage or utility demonstration"
+  ],
+  "website": "https://www.psiquantum.com/",
+  "sources": [
+    {
+      "url": "https://www.psiquantum.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:09:02-07:00"
+    },
+    {
+      "url": "https://www.psiquantum.com/technology",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:09:05-07:00"
+    },
+    {
+      "url": "https://www.psiquantum.com/psiquantum-software",
+      "category": "software",
+      "collected_at": "2026-08-21T20:09:08-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:09:51-07:00"
+}

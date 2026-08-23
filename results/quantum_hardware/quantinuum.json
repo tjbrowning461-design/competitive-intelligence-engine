@@ -1,0 +1,201 @@
+{
+  "company_name": "Quantinuum",
+  "value_proposition": "A full-stack quantum-computing platform centered on high-fidelity, fully connected trapped-ion hardware, fault-tolerance research, cloud and on-premises access, and integrated application and developer software.",
+  "target_customers": [
+    "Enterprises pursuing chemistry and materials-science applications",
+    "Pharmaceutical and drug-discovery organizations",
+    "Automotive and sustainable-mobility companies",
+    "Financial-services organizations",
+    "Cybersecurity users",
+    "Energy companies",
+    "Government and research institutions",
+    "Quantum software developers and researchers"
+  ],
+  "qubit_modality": "Trapped-ion qubits",
+  "computing_models": [
+    "Gate-based quantum computing",
+    "Hybrid quantum-classical computing using integrated NVIDIA GPU control resources",
+    "Streaming quantum computation through the disclosed gate-streaming feature"
+  ],
+  "hardware_architecture": "Quantum Charge-Coupled Device (QCCD) trapped-ion architecture with ion movement, all-to-all connectivity, mid-circuit measurement, and qubit reuse. Helios integrates NVIDIA Grace Hopper GPU resources into its control system.",
+  "current_systems": [
+    "System Model H1",
+    "System Model H2",
+    "Quantinuum Helios"
+  ],
+  "physical_qubit_scale": "Helios: 98 fully connected physical qubits. Physical-qubit counts for H1 and H2 are not supplied.",
+  "demonstrated_logical_qubits": "Helios is presented as having 50 logical qubits. The supplied material does not specify the error-correcting code, physical-to-logical encoding, logical error rate, or workload conditions supporting this figure, so its relationship to fault-tolerant logical computation cannot be independently assessed from these sources.",
+  "one_qubit_fidelity": "Helios: 99.9975% single-qubit gate fidelity.",
+  "two_qubit_fidelity": "Helios: 99.921% average two-qubit gate fidelity, cited to Ransford et al. 2025. The website characterizes this as the highest average two-qubit gate fidelity among commercial quantum computers.",
+  "connectivity": "All-to-all connectivity; Helios is described as having 98 fully connected qubits. Quantinuum says this eliminates swap gates required by fixed-connectivity architectures.",
+  "coherence": null,
+  "gate_speed": null,
+  "error_correction_strategy": "Demonstrated capabilities are described as including real-time error correction, lattice surgery, break-even error rates, and beyond-break-even error rates. The architecture also supports mid-circuit measurement and qubit reuse, and all-to-all connectivity is positioned as enabling a wider selection of efficient or exotic error-correcting codes. Specific codes and Helios logical-error metrics are not supplied.",
+  "fault_tolerance_strategy": "Scale high-fidelity QCCD trapped-ion systems while combining all-to-all connectivity, mid-circuit measurement, qubit reuse, real-time error correction, and software support. Large-scale, fully fault-tolerant quantum computing remains a future objective rather than a currently achieved capability.",
+  "roadmap": [
+    "Current: commercially launched Helios with 98 physical qubits and a stated 50 logical qubits.",
+    "Planned for 2027: Sol.",
+    "Planned for 2029: Apollo.",
+    "Long-term target: large-scale, fully fault-tolerant quantum computing.",
+    "BMW is expected to access Helios and successive planned generations, allowing progress to be validated at each stage; this does not establish that Sol or Apollo capabilities have already been achieved."
+  ],
+  "cloud_access": true,
+  "on_premise_available": true,
+  "access_methods": [
+    "Quantinuum cloud service",
+    "Direct subscription to Quantinuum Systems",
+    "Helios Hardware-as-a-Service",
+    "On-premises Helios offering",
+    "Microsoft Azure access to Quantinuum Systems",
+    "Quantinuum Nexus unified cloud platform",
+    "InQuanto license for chemistry and materials workflows",
+    "ORNL Quantum Computing User Program credits for eligible U.S. researchers"
+  ],
+  "manufacturing_strategy": "The systems use Quantinuum's implementation of the QCCD architecture, and Helios is branded as powered by Honeywell. No fabrication partners, production volumes, supply-chain model, or detailed manufacturing strategy are disclosed.",
+  "software_stack": [
+    "Nexus unified cloud platform",
+    "Guppy high-level quantum programming language",
+    "TKET quantum software toolkit and compiler",
+    "pytket Python interface",
+    "HUGR",
+    "InQuanto chemistry and materials software",
+    "Helios next-generation software stack",
+    "NVIDIA Grace Hopper integration in the Helios control system"
+  ],
+  "developer_tools": [
+    "Open-source TKET toolkit",
+    "pytket Python interface",
+    "TKET extension modules for devices and simulators",
+    "Guppy programming language",
+    "HUGR",
+    "Documentation",
+    "Q-Net user community"
+  ],
+  "commercial_deployments": [
+    "Multiple generations of QCCD-based Quantinuum systems are described as commercially deployed.",
+    "Helios is commercially launched and available through Quantinuum's cloud service and an on-premises offering.",
+    "System Model H1 is described as a commercial quantum computer.",
+    "BMW Group is using Quantinuum's trapped-ion systems for molecular and electrochemical simulation research and is to access Helios and future generations under a multi-year partnership.",
+    "More than 150 organizations are stated to be building on Nexus."
+  ],
+  "major_partnerships": [
+    "BMW Group: multi-year collaboration in advanced materials, catalyst chemistry, electrochemistry, and sustainable mobility",
+    "JPMorganChase: financial analytics research and a Helios gate-streaming space-advantage project",
+    "Microsoft Azure: cloud access channel for Quantinuum Systems",
+    "ORNL: Quantum Computing User Program access for eligible U.S. researchers",
+    "NVIDIA: Grace Hopper GPU integrated into the Helios control system",
+    "Oracle: announced partnership to accelerate hybrid quantum-compute adoption on Oracle Cloud Infrastructure",
+    "SoftBank: battery-development work highlighted as a Helios use case",
+    "Amgen: biologics discovery use case",
+    "BP and Synopsys: identified as customer-spotlight organizations"
+  ],
+  "strengths": [
+    "High disclosed physical-gate quality: 99.9975% one-qubit and 99.921% average two-qubit fidelity on Helios.",
+    "All-to-all connectivity can reduce circuit-routing overhead and avoid swap gates.",
+    "QCCD architecture provides flexible ion movement and supports mid-circuit measurement and qubit reuse.",
+    "The supplied material reports demonstrations of real-time error correction, lattice surgery, and beyond-break-even error rates.",
+    "Commercial access spans direct subscription, cloud, Microsoft Azure, Hardware-as-a-Service, and on-premises deployment.",
+    "Broad full-stack ecosystem covering programming, compilation, cloud orchestration, chemistry applications, and community support.",
+    "Sustained enterprise collaborations, including BMW since 2021, provide pathways for validating industrial use cases.",
+    "Helios combines quantum hardware with integrated NVIDIA GPU resources for hybrid control and computation."
+  ],
+  "weaknesses": [
+    "Helios currently contains 98 physical qubits, while useful large-scale fault-tolerant computation remains a future goal.",
+    "The stated 50 logical-qubit figure lacks supporting details in the supplied material about encoding, code distance, logical fidelity, or error-corrected workloads.",
+    "No coherence measurements or gate-speed data are provided, limiting balanced comparisons against other modalities.",
+    "The sources provide component fidelity figures but not enough detailed logical-level performance data to evaluate sustained fault-tolerant computation.",
+    "Many highlighted applications are described as research, simulation, exploration, or potential capability rather than established production quantum advantage or quantified recurring customer value.",
+    "Comparative claims such as 'most powerful,' 'most accurate,' and 'only company who has solved the wiring problem' are not fully substantiated by comparative methodology in the supplied pages."
+  ],
+  "competitive_differentiators": [
+    "Combination of high average two-qubit fidelity and all-to-all physical connectivity on a commercially accessible system",
+    "QCCD ion-transport architecture rather than fixed-location qubits",
+    "Mid-circuit measurement and qubit reuse for error-corrected and streaming workflows",
+    "Reported demonstrations of real-time error correction, lattice surgery, and beyond-break-even error rates",
+    "A stated 50 logical qubits on a 98-physical-qubit Helios system, although logical-qubit methodology is not disclosed here",
+    "Integrated full stack spanning Helios hardware, Nexus, Guppy, TKET, HUGR, and InQuanto",
+    "Cloud, Hardware-as-a-Service, and on-premises delivery models",
+    "NVIDIA Grace Hopper GPU integrated into the Helios control system"
+  ],
+  "technical_risks": [
+    "Maintaining current gate fidelity and all-to-all effective connectivity while scaling QCCD systems to substantially larger qubit counts may increase ion-transport, control, calibration, and system-integration complexity.",
+    "The disclosed logical-qubit count cannot be translated into fault-tolerant computational capacity without logical error rates, code details, and logical gate benchmarks.",
+    "Demonstrated error-correction milestones may not yet support long, commercially useful fault-tolerant algorithms at scale.",
+    "The absence of coherence and gate-speed disclosures prevents assessment of runtime limitations and the trade-off between high fidelity and execution speed.",
+    "Integrated real-time control, mid-circuit measurement, qubit reuse, ion transport, and GPU coordination create substantial hardware-software orchestration complexity.",
+    "Sol and Apollo require major scaling progress on fixed planned dates, creating execution risk even though the company states it has historically delivered systems on time and to specification."
+  ],
+  "commercialization_risks": [
+    "Current customer examples emphasize collaborative research and exploratory value; broad evidence of production workloads with quantified economic advantage is not supplied.",
+    "Enterprise access appears oriented toward subscriptions, partnerships, grants, and sales engagement, which may limit frictionless adoption compared with fully self-service access.",
+    "On-premises deployment can introduce installation, support, service, and infrastructure complexity; commercial terms and deployment lead times are not disclosed.",
+    "The commercial proposition depends partly on planned Sol and Apollo systems arriving in 2027 and 2029 with meaningful performance improvements.",
+    "Claims of classical intractability, space advantage, and commercial value are not accompanied here by detailed customer ROI or repeatable production benchmarks.",
+    "Unspecified pricing, capacity, queue availability, service levels, and system production volumes make commercial scalability difficult to assess."
+  ],
+  "marketing_message": "Quantinuum presents Helios as the most accurate commercial quantum computer and positions its high-fidelity, fully connected trapped-ion architecture and integrated software stack as a credible path from current enterprise experimentation to useful, large-scale fault-tolerant quantum computing.",
+  "messaging_gaps": [
+    "The meaning and measurement methodology of Helios's 50 logical qubits are not explained.",
+    "No logical gate fidelity, logical error rate, code distance, or duration of logical operation is stated.",
+    "The phrase 'useful quantum computing' is not tied to a consistent quantified threshold for customer value or fault tolerance.",
+    "Claims of solving classically impossible problems are not accompanied on these pages by sufficient benchmark conditions for evaluation.",
+    "The assertion that Quantinuum is the only company to have solved the wiring problem is not technically defined or comparatively substantiated.",
+    "Roadmap descriptions do not provide target qubit counts, logical performance, fidelity, or application milestones for Sol and Apollo.",
+    "The relationship between Hardware-as-a-Service and the on-premises commercial offering is not clarified."
+  ],
+  "data_gaps": [
+    "Physical-qubit counts and detailed specifications for H1 and H2",
+    "Coherence times",
+    "One- and two-qubit gate durations",
+    "Measurement and reset fidelity and speed",
+    "Ion-transport speed and transport-error rates",
+    "Logical-qubit encoding and error-correcting code used for the stated 50 logical qubits",
+    "Logical gate fidelity and logical error rates",
+    "Code distance and physical-qubit overhead per protected logical qubit",
+    "Whether all 50 stated logical qubits can operate simultaneously in an error-corrected workload",
+    "Fault-tolerant logical gate set and demonstrated logical circuit depth",
+    "Detailed Quantum Volume and Random Circuit Sampling values",
+    "Benchmark methodology and uncertainty for the reported fidelity figures",
+    "Target physical and logical qubit counts for Sol and Apollo",
+    "Sol and Apollo target fidelities, connectivity, speed, and fault-tolerance milestones",
+    "System pricing, utilization limits, queue times, and service-level commitments",
+    "Number and location of installed on-premises Helios systems",
+    "Manufacturing capacity, yields, production partners, and supply-chain strategy",
+    "Quantified customer ROI and production deployment outcomes",
+    "Total power consumption including Helios support infrastructure"
+  ],
+  "website": "https://www.quantinuum.com/",
+  "sources": [
+    {
+      "url": "https://www.quantinuum.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:07:20-07:00"
+    },
+    {
+      "url": "https://www.quantinuum.com/products-solutions/hardware-h-series",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:07:22-07:00"
+    },
+    {
+      "url": "https://www.quantinuum.com/products-solutions/quantinuum-systems",
+      "category": "systems",
+      "collected_at": "2026-08-21T20:07:25-07:00"
+    },
+    {
+      "url": "https://www.quantinuum.com/products-solutions/developer-tools",
+      "category": "software",
+      "collected_at": "2026-08-21T20:07:28-07:00"
+    },
+    {
+      "url": "https://www.quantinuum.com/products-solutions/quantinuum-systems/helios",
+      "category": "access",
+      "collected_at": "2026-08-21T20:07:30-07:00"
+    },
+    {
+      "url": "https://www.quantinuum.com/press-releases/quantinuum-and-bmw-group-expand-landmark-quantum-computing-collaboration-with-new-multi-year-partnership",
+      "category": "customers",
+      "collected_at": "2026-08-21T20:07:33-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:08:18-07:00"
+}

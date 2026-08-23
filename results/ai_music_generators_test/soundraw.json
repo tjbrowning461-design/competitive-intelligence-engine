@@ -1,0 +1,255 @@
+{
+  "company_name": "SOUNDRAW",
+  "value_proposition": "SOUNDRAW markets an AI music generation and editing platform for creators, artists, developers, and organizations, emphasizing customizable instrumental music, rapid generation, commercial licensing, and reduced copyright risk because it claims its models are trained exclusively on music produced and controlled in-house.",
+  "target_customers": [
+    "Individual content creators producing videos, podcasts, advertisements, demos, livestreams, and social content",
+    "Independent music artists, rappers, songwriters, and producers",
+    "Independent developers and very small companies",
+    "Startups and small companies embedding music generation into software",
+    "Companies with 10 or more employees and content-production teams",
+    "Video platforms and video-editing tools",
+    "Game developers and interactive-experience providers",
+    "Marketing agencies, ad-tech companies, and creator-tool providers",
+    "Retailers, cafés, shops, and operators of physical spaces",
+    "Schools, academic users, researchers, and students",
+    "Consumer-electronics companies",
+    "Platforms seeking white-label or custom music workflows"
+  ],
+  "products_services": [
+    "Currently offered: browser-based AI music generator for creating instrumental tracks by genre, mood, theme, and other inputs",
+    "Currently offered: browser-based music customization and Mixer tools for changing instruments, intensity, length, flow, tempo, key, and instrument layers",
+    "Currently offered: Creator subscription for background music and commercial or personal content use",
+    "Currently offered: Artist Starter, Artist Pro, and Artist Unlimited subscriptions for music distribution and monetization, with plan-dependent MP3, WAV, and stem downloads",
+    "Currently offered: SOUNDRAW AI Music API for embedding generation into products, apps, services, games, video platforms, and ambient-music systems",
+    "Currently offered: Enterprise web-app plan for teams requiring high-volume generation without API integration",
+    "Currently offered: Store BGM/Space Music offering for shops, cafés, and other physical environments",
+    "Advertised service: academic and school music solutions",
+    "Advertised service: white-label solutions, bespoke licensing, custom requests, and tailored music workflows",
+    "Advertised product: SOUNDRAW Grid for Mac and iOS; the supplied evidence does not explain its functionality or availability in detail"
+  ],
+  "core_technology": [
+    "Proprietary AI music-generation algorithms, according to the company",
+    "Training corpus claimed to consist exclusively of music written and recorded by SOUNDRAW's in-house producers",
+    "Company claims ownership of the master-recording and publishing rights to all music used for training",
+    "Generation conditioned on genres, moods, themes, length, and other user choices",
+    "Genre-fusion capability, such as combining Hip-Hop with Orchestra or Trap with Lo-Fi",
+    "Track reconstruction after users modify instruments, intensity, length, or related parameters",
+    "Browser-based mixing and track editing without requiring a digital audio workstation",
+    "Generation and export of full mixes and, on qualifying plans, separate stems",
+    "API supporting multi-user generation environments; scalability is asserted but no performance data is supplied"
+  ],
+  "use_cases": [
+    "Royalty-free background scores for videos, podcasts, movies, apps, and games",
+    "Rap-ready beat generation and beat making for recording artists",
+    "Song distribution and monetization through services such as Spotify, Apple Music, and TikTok",
+    "YouTube and Twitch content requiring copyright- or DMCA-safe music",
+    "Podcast intros",
+    "Music for TikTok, Instagram, Meta, UGC, and other video advertisements",
+    "Music for explainer videos, product demos, Amazon product videos, LinkedIn videos, and app trailers",
+    "Travel-vlog and ASMR background music",
+    "Music for Shopify stores and other online commerce content",
+    "Retail, café, shop, kiosk, and ambient physical-space music",
+    "Embedded music generation in SaaS products, creator tools, video editors, and social platforms",
+    "Dynamic music for games, metaverses, and interactive experiences",
+    "Music for presentations",
+    "Academic learning, research, and student work",
+    "Global team campaigns and multi-account content production",
+    "Establishing a more distinctive sonic identity than stock audio libraries"
+  ],
+  "industries_served": [
+    "Music and recording",
+    "Creator economy and social media",
+    "Video production and editing",
+    "Software and SaaS",
+    "Gaming and interactive entertainment",
+    "Advertising and marketing",
+    "Retail and hospitality",
+    "Podcasting and streaming",
+    "Consumer electronics",
+    "Education and academic research",
+    "E-commerce",
+    "Physical-space and ambient-music systems"
+  ],
+  "business_model": "Freemium or free-trial customer acquisition followed by recurring individual subscriptions, artist subscriptions, API subscriptions, custom enterprise contracts, and custom licensing or white-label engagements. Enterprise pricing varies by team size, accounts, and business needs and carries a stated one-year minimum commitment.",
+  "pricing_model": "Consumer plans are shown with monthly and discounted annual-billing equivalents: Creator $16.99/month or $11.04/month with annual billing; Artist Starter $29.99 or $19.49; Artist Pro $35.99 or $23.39; Artist Unlimited $50 or $32.50. API Starter is $29.99/month for up to 100 songs per month and is limited to new signups and organizations with up to three employees. API Pro is $300/month for up to 1,000 songs per month with a six-month minimum commitment. Custom API plans are available. Enterprise uses custom pricing and flexible terms, with a one-year minimum commitment. The website also states that API pricing may be based on generations, minutes, or volume tiers, creating some ambiguity relative to the published song-count plans.",
+  "deployment_model": [
+    "Cloud/browser-based web application",
+    "API embedded into third-party products and workflows",
+    "Enterprise access through the SOUNDRAW web app without direct software integration",
+    "Physical-space/store background-music deployment",
+    "Mac and iOS presence advertised through SOUNDRAW Grid, although deployment details are not provided"
+  ],
+  "integrations": [
+    "SOUNDRAW API integration with Canva for adding generated background audio to presentations and designs",
+    "SOUNDRAW API integration with Wondershare Filmora for generating and editing music within the video application",
+    "SOUNDRAW API integration with Captions' Mirage for AI-generated music inside a video-creation workflow",
+    "Distribution use is advertised for Spotify, Apple Music, and TikTok, but the evidence does not establish direct technical integrations with those platforms",
+    "API is presented as suitable for apps, SaaS products, games, video tools, social or UGC tools, kiosks, and ambient-music systems"
+  ],
+  "developer_tools": [
+    "SOUNDRAW AI Music API",
+    "API documentation",
+    "React setup guide",
+    "Basic self-service API signup",
+    "Custom API plans and implementation discussions",
+    "Dedicated technical support for business API integrations",
+    "Inputs for genre, mood, and theme generation",
+    "Multi-user generation support claimed for platforms with many end users"
+  ],
+  "enterprise_features": [
+    "Unlimited or tailored high-volume music downloads",
+    "Full-track and stem downloads in high-quality formats including WAV",
+    "Perpetual rights for existing projects containing music downloaded during the subscription",
+    "Worldwide licensing across channels, platforms, and locations",
+    "Company-addressed invoicing and invoice payment upon request",
+    "VIP and tailored support, including online meetings and hands-on guidance",
+    "Priority feature and genre requests",
+    "Flexible terms and pricing based on team size, accounts, and business requirements",
+    "Multiple-account and team-oriented use",
+    "Web-app access without requiring direct integration",
+    "API option for companies requiring software integration",
+    "White-label solutions, bespoke licensing, and tailored workflows are advertised"
+  ],
+  "major_customers": [
+    "Canva",
+    "Wondershare Filmora",
+    "Captions / Captions Mirage",
+    "Gameology Space"
+  ],
+  "major_partnerships": [
+    "Canva API relationship",
+    "Wondershare Filmora API relationship",
+    "Captions Mirage API relationship",
+    "Supporter of the aiformusic responsible-AI initiative alongside Roland and UMG",
+    "Promoted hip-hop collaborations with French Montana, Fivio Foreign, and Trippie Redd; the exact commercial or contractual nature is not disclosed"
+  ],
+  "geographic_presence": [
+    "Worldwide commercial-use licensing is claimed",
+    "Website language options include English and Japanese",
+    "No office locations, headquarters, employee distribution, or country-by-country operating presence are disclosed in the supplied evidence"
+  ],
+  "strengths": [
+    "A clearly articulated data-provenance position: SOUNDRAW claims it trains only on music created in-house and controls both master and publishing rights",
+    "Combines generation with granular browser-based editing rather than offering only finished, fixed tracks",
+    "Supports outputs ranging from MP3 to WAV and separate stems, depending on plan",
+    "Serves both end users through a web application and software companies through an API",
+    "Published entry-level API pricing lowers the barrier for independent developers and small organizations",
+    "Evidence of API deployment in prominent creative applications including Canva, Filmora, and Captions Mirage",
+    "Broad use-case coverage across creators, artists, enterprises, developers, and physical spaces",
+    "Licensing is presented as worldwide and allows completed projects to remain online after subscription termination",
+    "Enterprise support includes feature and genre requests, invoicing, and direct guidance",
+    "Genre blending, adjustable duration, looping, and bar-level customization address practical workflow needs beyond basic prompt-to-song generation"
+  ],
+  "weaknesses": [
+    "Many central assertions—including '100% copyright-safe,' 'no copyright claims ever,' '#1 ethical,' and 'trusted by millions'—are company marketing claims without independent substantiation in the supplied evidence",
+    "The licensing language is potentially confusing: broad claims of perpetual use and keeping royalties 'for life' coexist with an enterprise clarification that a subscription is required to use downloaded music in new projects",
+    "Detailed functionality, documentation quality, output limits, latency, uptime, and API service levels are not disclosed",
+    "The evidence does not explain how musical originality, similarity detection, or duplicate-output risk is managed",
+    "Enterprise and custom API pricing lack transparent ranges",
+    "The consumer plan table does not fully explain all feature differences, download accounting, or why Creator has unlimited downloads but only MP3 while some Artist plans are capped",
+    "The store BGM claim that AI adapts music to a store's atmosphere lacks implementation and availability details",
+    "SOUNDRAW Grid is advertised but not sufficiently described to assess its maturity or differentiation",
+    "No independently verified customer outcomes, retention data, or quantified productivity improvements are supplied"
+  ],
+  "competitive_differentiators": [
+    "Claimed exclusive use of an in-house-produced and rights-controlled training catalog rather than scraped third-party songs",
+    "Positioning around ethical AI and copyright-risk reduction",
+    "Track-level customization through a browser Mixer, including instruments, intensity, length, tempo, key, layers, and flow",
+    "Genre mixing intended to produce less predictable combinations",
+    "Full-track, WAV, and stem export options on qualifying plans",
+    "A single product family spanning creators, recording artists, embedded API users, enterprise teams, schools, and physical spaces",
+    "Claimed worldwide and continuing usage rights for completed projects",
+    "Published low-end API plans in addition to negotiated enterprise access"
+  ],
+  "customer_problems_addressed": [
+    "Time spent sourcing suitable stock or background music",
+    "Difficulty editing stock music to match exact video or project duration",
+    "Need for loops, stems, instrument control, and energy changes without using a DAW",
+    "Copyright claims, DMCA strikes, takedowns, and licensing uncertainty",
+    "Repetitive use of the same audio-library tracks across creators and brands",
+    "Cost and complexity of commissioned music production",
+    "Need for rapid beat creation by independent artists and rappers",
+    "Need to embed music generation into software without building an internal music model",
+    "Need for scalable music supply across teams, stores, campaigns, and global channels",
+    "Need to monetize music-enabled content while retaining revenue",
+    "Need for consistent sonic identity across digital and physical experiences",
+    "Lack of music-production expertise among creators and business users"
+  ],
+  "technical_risks": [
+    "No model architecture, training-catalog size, update methodology, evaluation process, or output-quality benchmarks are disclosed",
+    "The claim of rights-controlled training reduces one category of risk but does not establish that generated outputs cannot resemble existing works or one another",
+    "No similarity detection, fingerprinting, content-ID handling, or dispute-resolution mechanism is described",
+    "API scalability is claimed, but uptime, latency, concurrency, rate limits, geographic infrastructure, and service-level commitments are absent",
+    "No information is provided about data security, tenant isolation, user-content retention, prompt privacy, or enterprise security certifications",
+    "No details are supplied about music-generation determinism, reproducibility, versioning, or model-change management",
+    "Store-atmosphere adaptation and SOUNDRAW Grid lack enough technical detail to assess whether they are production-ready capabilities",
+    "Reliance on SOUNDRAW's proprietary generation service may create integration and continuity risk for embedded-product customers",
+    "Export quality and available formats differ by plan, potentially constraining downstream professional workflows"
+  ],
+  "business_risks": [
+    "Very strong absolute copyright promises could create reputational or legal exposure if users receive claims, disputes, or platform enforcement",
+    "Licensing ambiguity between perpetual rights language and restrictions on using downloaded music in new projects may create customer confusion or disputes",
+    "Minimum commitments of six months for API Pro and one year for Enterprise may slow adoption among uncertain buyers",
+    "Dependence on subscription revenue may make churn sensitive to output quality, novelty, and competing AI music products",
+    "The company discloses no financial scale, growth, retention, margins, funding, or profitability information",
+    "Large third-party platform relationships may introduce customer concentration or bargaining-power risk, but contract economics are undisclosed",
+    "The business must continually expand genres and quality while relying on an internally produced training catalog, which may be costly or slower than using broader datasets",
+    "Music distribution platforms and content-identification systems may change policies affecting AI-generated music regardless of SOUNDRAW's license",
+    "Claims such as 'trusted by millions' cite third-party platform user bases in some examples, which may not equal direct SOUNDRAW customers or active users"
+  ],
+  "marketing_message": "SOUNDRAW positions itself as the safest and most ethical AI beat maker: a fast, customizable, studio-ready music generator trained only on rights-controlled in-house recordings, allowing creators, artists, developers, and businesses to make, edit, monetize, and embed royalty-free music without copyright concerns.",
+  "messaging_gaps": [
+    "The website does not consistently explain the boundary between ownership, licensing, royalty-free use, and restrictions after subscription cancellation",
+    "Absolute statements such as 'legally yours,' 'copyright-free,' 'no strikes ever,' and '100% safe' are not accompanied by caveats, enforcement procedures, or legal guarantees in the supplied evidence",
+    "The '#1 ethical AI music generator' and 'trusted by millions' claims lack methodology or direct-user definitions",
+    "It is unclear which capabilities are universally available versus restricted by plan, especially stems, WAV downloads, tempo and key editing, looping, and video preview",
+    "The distinction among Store BGM, Space Music, BGM for Physical Spaces, and custom ambient-music systems is not clearly articulated",
+    "SOUNDRAW Grid's purpose, pricing, availability, and relationship to the web product are missing",
+    "The practical meaning of 'infinite' or 'unlimited' generation and downloads is not reconciled with fair-use rules or API quotas",
+    "The website offers both fixed API song-count plans and a statement that pricing may depend on generations, minutes, or volume, without clarifying when each applies"
+  ],
+  "data_gaps": [
+    "Corporate headquarters, founding date, ownership, leadership, employee count, and legal entity information",
+    "Funding history, investors, revenue, profitability, growth, retention, churn, and customer-acquisition metrics",
+    "Verified count of direct customers, subscribers, generated tracks, downloads, and active users",
+    "Independent evidence supporting copyright-safety, ethical-training, and market-leadership claims",
+    "Full license terms by plan, including ownership of outputs, exclusivity, sublicensing, redistribution, Content ID registration, and treatment of new projects after cancellation",
+    "Procedures and remedies if a copyright claim or platform strike occurs",
+    "Training-catalog size, contributor compensation, producer contracts, rights-audit procedures, and catalog expansion process",
+    "Model architecture, version history, quality benchmarks, supported track lengths, generation latency, and maximum concurrency",
+    "API authentication, endpoints, SDKs, webhooks, rate limits, sandbox availability, versioning, uptime, SLA, and overage pricing",
+    "Security certifications, data-processing locations, encryption, privacy controls, incident-response practices, and enterprise compliance",
+    "Detailed plan comparison, trial limits, cancellation rules, refunds, taxes, overages, and fair-use restrictions",
+    "Enterprise price ranges and custom API economics",
+    "Contract duration, revenue contribution, and usage volumes for Canva, Filmora, and Captions relationships",
+    "Customer case-study metrics demonstrating time savings, conversion impact, engagement, or cost reduction",
+    "Specific countries served, office locations, support coverage, currencies, and regional restrictions",
+    "Status and detailed capabilities of SOUNDRAW Grid, school products, store-atmosphere adaptation, white-label solutions, and bespoke workflows",
+    "Roadmap, announced future functionality, release timelines, and product deprecation policies",
+    "Mechanisms for detecting similar or duplicate generated tracks and whether outputs can be exclusive",
+    "Supported genres, moods, themes, instruments, languages, musical keys, tempos, and file specifications in complete detail"
+  ],
+  "website": "https://soundraw.io",
+  "sources": [
+    {
+      "url": "https://soundraw.io",
+      "category": "homepage",
+      "collected_at": "2026-08-23T10:24:09-07:00"
+    },
+    {
+      "url": "https://soundraw.io/ai-music-generator",
+      "category": "customers",
+      "collected_at": "2026-08-23T10:24:12-07:00"
+    },
+    {
+      "url": "https://soundraw.io/api",
+      "category": "developers",
+      "collected_at": "2026-08-23T10:24:15-07:00"
+    },
+    {
+      "url": "https://soundraw.io/enterprise",
+      "category": "enterprise",
+      "collected_at": "2026-08-23T10:24:18-07:00"
+    }
+  ]
+}

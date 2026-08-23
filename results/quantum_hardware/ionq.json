@@ -1,0 +1,230 @@
+{
+  "company_name": "IonQ",
+  "value_proposition": "A full-stack quantum platform centered on high-fidelity, fully connected trapped-ion quantum computers, offered through cloud and on-premises access and supported by optimization software, simulators, SDK integrations, and applications expertise. IonQ positions the platform for practical hybrid workflows today and modular, fault-tolerant logical computation in the future.",
+  "target_customers": [
+    "Enterprises pursuing quantum and hybrid quantum-classical workflows",
+    "Pharmaceutical and chemistry organizations",
+    "Automotive and materials-science companies",
+    "Medical-device and engineering organizations",
+    "AI and machine-learning developers",
+    "Government and national-defense organizations",
+    "Academic researchers",
+    "Cloud developers and quantum-software teams"
+  ],
+  "qubit_modality": "Trapped ion qubits using individual ionized ytterbium atoms (Yb+) confined in linear ion traps and prepared, controlled, entangled, and read out using lasers. The roadmap introduces microwave gate operations and an Electronic Qubit Control architecture.",
+  "computing_models": [
+    "Gate-based quantum computing",
+    "Hybrid quantum-classical computing",
+    "Quantum-accelerated AI and machine learning",
+    "Cloud QPU and simulator computing"
+  ],
+  "hardware_architecture": "Current disclosed architecture uses chains of ytterbium ions in lithographically produced linear ion traps with roughly 100 electrodes, housed in ultra-high-vacuum chambers around 10^-11 Torr. Individual and global laser beams perform gates; fluorescence provides simultaneous readout. Current systems use optical gate operations and acoustic-optic-deflector gate control. Ion chains provide all-to-all connectivity. The future scaling architecture is modular, with 2D arrays, microwave operations, Electronic Qubit Control, and eventually photonic interconnects between modules.",
+  "current_systems": [
+    "IonQ Forte: 36 physical qubits, 99.6% two-qubit-gate fidelity, 99.98% one-qubit-gate fidelity, all-to-all connectivity; described elsewhere as being in limited-access beta",
+    "IonQ Forte Enterprise: 36 physical qubits, 99.6% two-qubit-gate fidelity, 99.98% one-qubit-gate fidelity, all-to-all connectivity; rack-mounted and intended for on-premises, production-ready hybrid workflows",
+    "IonQ Aria: described as commercially available, but no specifications are supplied",
+    "IonQ simulators: noisy simulators and an ideal state simulator",
+    "IonQ Harmony: named in the product navigation, but no current specifications or availability details are supplied"
+  ],
+  "physical_qubit_scale": "Currently specified Forte and Forte Enterprise systems have 36 physical qubits. IonQ reports single-qubit gates on a 79-ion chain and complex algorithms on chains of 35+ ions; these are demonstrations, not stated commercial-system capacities. A customer case study also references benefits from 46 qubits without identifying the underlying system. Tempo's 100 qubits and all larger figures are future targets, not current capabilities.",
+  "demonstrated_logical_qubits": null,
+  "one_qubit_fidelity": "Current Forte and Forte Enterprise specification: 99.98% one-qubit-gate fidelity. A 99.99% figure appears as a broader world-record/roadmap claim, but it is not identified as the current commercial-system one-qubit specification.",
+  "two_qubit_fidelity": "Current Forte and Forte Enterprise specification: 99.6% two-qubit-gate fidelity. The homepage separately claims a world-record 99.99% two-qubit-gate fidelity, but the supplied material does not identify the system, test conditions, or whether this is sustained across a commercial QPU.",
+  "connectivity": "Current Forte and Forte Enterprise systems have all-to-all connectivity. The technology page says every qubit can interact with every other qubit without intermediary routing. Tempo is specified as future many-to-many connectivity, while the broader roadmap targets all-to-all connectivity in later generations.",
+  "coherence": "The homepage reports T1 and T2 time as '10–100s, ~1s,' apparently indicating a 10–100-second range and approximately 1 second, but it does not unambiguously map each value to T1 or T2 or identify the measured system. The technology page says prepared ytterbium states are long-lived but provides no additional measured coherence benchmark.",
+  "gate_speed": null,
+  "error_correction_strategy": "No currently demonstrated quantum-error-correction implementation or logical-qubit result is disclosed. Current cloud features include error mitigation, proprietary compilation, circuit optimization, and noisy simulation. The roadmap proposes applying quantum error correction to high-fidelity physical qubits, supplemented by quantum-memory technology, with a target of 12 logical qubits and logical error below 1.00E-7 in 2026.",
+  "fault_tolerance_strategy": "Future strategy: combine high-fidelity trapped-ion physical qubits, quantum error correction, long-lived quantum memory, modular trapped-ion subsystems, Electronic Qubit Control, 2D arrays, mid-circuit measurement, parallel operations, and later photonic interconnects. No fault-tolerant system is shown as currently demonstrated in the supplied material.",
+  "roadmap": [
+    "Late 2026 Tempo target: 100 physical qubits, 99.9% two-qubit-gate fidelity, 99.99% one-qubit-gate fidelity, and many-to-many connectivity",
+    "2026 roadmap target: 100–256+ physical qubits, 99.99% physical-qubit fidelity, 12 logical qubits, logical error below 1.00E-7, microwave gates, 2D arrays, mid-circuit measurement, and parallel operations",
+    "2026 next-generation EQC architecture: begin with a 256-qubit system and provide a semiconductor-oriented path toward 10,000 qubits and beyond",
+    "2027 target: 10,000 physical qubits and 800 logical qubits with logical error below 1.00E-7",
+    "2028 target: 20,000 physical qubits and 1,600 logical qubits with logical error below 1.00E-7",
+    "2029 target: 200,000 physical qubits and 8,000 logical qubits, logical error stated as below 1.00^-12, and photonic interconnects",
+    "2030 target: 2,000,000 physical qubits and 80,000 logical qubits, logical error stated as below 1.00^-12, and photonic interconnects",
+    "IonQ also states a broader 2030 conversion range of 40,000–80,000 logical qubits from more than 2,000,000 physical qubits; this differs from the roadmap's specific 80,000-logical-qubit target"
+  ],
+  "cloud_access": true,
+  "on_premise_available": true,
+  "access_methods": [
+    "IonQ Quantum Cloud console",
+    "IonQ direct API",
+    "On-demand QPU access",
+    "Reserved QPU time",
+    "Amazon Braket",
+    "Microsoft Azure Quantum",
+    "Google Cloud",
+    "Partner-cloud access also advertised for NVIDIA",
+    "Rack-mounted Forte Enterprise on-premises deployment",
+    "Noisy simulators and ideal state simulator",
+    "Applications and developer support",
+    "Research Credits Program for eligible academics"
+  ],
+  "manufacturing_strategy": "Current ion traps use precisely designed and lithographed electrode chips. Future scaling is presented as a modular architecture and an Electronic Qubit Control semiconductor path. The homepage also discusses quantum-grade diamond thin films and foundry-scale semiconductor manufacturing, but the supplied material does not establish that this is the manufacturing process for the current ytterbium trapped-ion QPUs.",
+  "software_stack": [
+    "IonQ Quantum Cloud",
+    "IonQ Cloud Console",
+    "IonQ API",
+    "Proprietary compiler and circuit optimization software",
+    "Native-gate access",
+    "Noisy QPU simulators",
+    "Ideal state simulator",
+    "Hybrid workflow environment",
+    "QPU/job dashboard",
+    "Organization, project, administration, and usage-management tools",
+    "System-status reporting"
+  ],
+  "developer_tools": [
+    "Qiskit and qiskit-ionq",
+    "Cirq and cirq.ionq",
+    "CUDA-Q",
+    "Quantinuum TKET/CQ tket",
+    "Microsoft Q#",
+    "Amazon Braket SDK",
+    "PennyLane",
+    "ProjectQ",
+    "TensorFlow",
+    "QCW Forge",
+    "Cloud and SDK quickstarts",
+    "Native-gate and best-practice documentation"
+  ],
+  "commercial_deployments": [
+    "Forte and Forte Enterprise are presented as accessible QPUs; Forte is also described as limited-access beta",
+    "Aria is described as commercially available, without supplied specifications",
+    "Forte Enterprise is offered as a rack-mounted on-premises system",
+    "IonQ reports commercial-system activity at sites in Washington, DC; Seattle; Toronto; and Basel, but does not identify which are customer deployments",
+    "AstraZeneca/AWS/NVIDIA hybrid chemistry work: reported 20x faster time-to-solution than the best previously published implementation; the homepage separately claims at least 656x acceleration for a complex chemistry simulation",
+    "Ansys medical-device optimization: reported 12% improvement over classical computing on a problem with more than 2.6 million vertices and 40 million edges",
+    "Hyundai road-sign image recognition: an 8-qubit quantum-machine-learning demonstration using fewer input parameters than comparable classical approaches",
+    "Industrial materials and AI work: reported 3.14% accuracy improvement and reduced energy use at scale from a 46-qubit hybrid workflow; the customer is not named in the supplied material"
+  ],
+  "major_partnerships": [
+    "AstraZeneca",
+    "Amazon Web Services",
+    "NVIDIA",
+    "Ansys",
+    "Hyundai",
+    "Microsoft Azure",
+    "Google Cloud",
+    "CMC Microsystems"
+  ],
+  "strengths": [
+    "Current commercial systems disclose strong 99.6% two-qubit and 99.98% one-qubit fidelity rather than relying only on qubit count",
+    "All-to-all connectivity reduces routing and swap overhead for current systems",
+    "Long-lived atomic qubits and ultra-high-vacuum isolation provide a strong physical basis for stable computation",
+    "Broad access model spanning direct cloud, major public clouds, on-demand use, reservations, simulators, and on-premises deployment",
+    "Extensive SDK compatibility lowers developer lock-in and integration effort",
+    "Multiple disclosed enterprise-oriented hybrid demonstrations across chemistry, engineering, automotive, materials, and AI",
+    "Modular scaling and photonic interconnect plans directly address the limits of monolithic ion chains",
+    "Enterprise features include organization management, dashboards, usage reporting, support, and system-status monitoring"
+  ],
+  "weaknesses": [
+    "Current specified commercial scale is only 36 physical qubits, while useful fault-tolerant computation remains a roadmap objective",
+    "No currently demonstrated logical qubit count or logical error rate is supplied",
+    "The claimed 99.99% two-qubit world record is not reconciled with the 99.6% specification of Forte and Forte Enterprise",
+    "Forte is described as limited-access beta, indicating access or product maturity constraints",
+    "No gate-duration or throughput benchmark is supplied, limiting time-to-solution comparison at the hardware level",
+    "Coherence information is ambiguously formatted and is not tied to a named system or measurement protocol",
+    "Several application claims lack enough methodological detail in the supplied pages to independently assess classical baselines, workload boundaries, or the quantum hardware's exact contribution",
+    "The roadmap requires an exceptionally large scale-up from tens or hundreds of physical qubits to 10,000 in 2027 and 2 million in 2030"
+  ],
+  "competitive_differentiators": [
+    "Natural, identical ytterbium atomic qubits rather than fabricated synthetic qubits",
+    "All-to-all interaction within current ion chains",
+    "Room-temperature supporting hardware, despite laser cooling of the ions",
+    "Software-configurable and on-demand ion-chain sizing without fabricating a new trap for each qubit count",
+    "Combination of cloud access, multi-cloud integrations, direct access, and rack-mounted on-premises systems",
+    "Native support for a broad range of third-party SDKs and libraries",
+    "Future modular trapped-ion strategy combining Electronic Qubit Control, quantum memory, and photonic interconnects",
+    "Emphasis on application-level metrics such as solution quality and time-to-solution rather than physical-qubit count alone"
+  ],
+  "technical_risks": [
+    "Scaling from 36-qubit commercial systems to thousands or millions of physical qubits requires major advances in control electronics, traps, optical or microwave control, packaging, calibration, and interconnects",
+    "Maintaining current fidelity and connectivity while moving from 1D optical-control systems to 2D microwave/EQC architectures is not demonstrated in the supplied material",
+    "The roadmap's logical-qubit and logical-error targets depend on an undisclosed error-correcting code, resource model, and experimentally validated fault-tolerance stack",
+    "Photonic interconnects are not planned until 2029 in the stated roadmap, creating dependence on later-stage networking technology for the largest systems",
+    "Longer ion chains can face increased control complexity and collective-motion challenges; the supplied material shows complex algorithms only on 35+ ion chains",
+    "Ultra-high-vacuum operation and precision laser, optical, mechanical, and firmware control create substantial systems-engineering and reliability requirements",
+    "The architecture's gate speed is undisclosed, so high fidelity and connectivity may not necessarily translate into superior workload throughput",
+    "Roadmap notation for logical error rates ('1.00^-12') is unclear, reducing technical interpretability"
+  ],
+  "commercialization_risks": [
+    "The commercial value proposition depends heavily on roadmap achievements that are far beyond the currently specified 36-qubit systems",
+    "Limited-access status for Forte may constrain customer experimentation and revenue scalability",
+    "On-premises trapped-ion systems may require specialized installation, calibration, maintenance, vacuum, and precision-control support",
+    "Strong application claims may be difficult for buyers to evaluate without fuller disclosure of baselines, costs, runtimes, hardware configurations, and reproducibility details",
+    "Large-scale fault-tolerant systems depend on delivering multiple new technologies on aggressive annual timelines",
+    "The supplied material does not disclose pricing for direct QPU access or on-premises systems, apart from volume-based and custom-pricing language",
+    "Inconsistent figures—such as 99.99% record fidelity versus 99.6% commercial specification, 40,000–80,000 versus 80,000 logical qubits, and 20x versus 656x chemistry acceleration—may create buyer confusion",
+    "The 46-qubit application claim is not reconciled with the 36-qubit specifications of the named current systems"
+  ],
+  "marketing_message": "IonQ presents itself as the only full-stack quantum platform and the leader in high-fidelity trapped-ion computing, offering enterprise-accessible quantum systems and practical hybrid results today while pursuing the fastest modular path to millions of physical qubits and tens of thousands of fault-tolerant logical qubits by 2030.",
+  "messaging_gaps": [
+    "Current achievements and future targets are often presented close together, making maturity boundaries difficult to distinguish",
+    "The 99.99% world-record two-qubit fidelity claim is not tied to a named commercial system, qubit count, test method, or sustained device-wide result",
+    "The site does not reconcile its current 36-qubit products with a case study referencing 46 qubits",
+    "Chemistry acceleration is described as both 20x and at least 656x without explaining whether these are different comparisons or workflow stages",
+    "The roadmap alternates between 40,000–80,000 and exactly 80,000 logical qubits for 2030",
+    "The phrase 'physical qubit fidelity' in the roadmap is not defined as one-qubit, two-qubit, measurement, or aggregate fidelity",
+    "Commercial advantage and quantum advantage claims lack sufficient experimental context on the supplied pages",
+    "The relationship between current optical-control systems and future microwave/EQC systems is not explained in enough detail to assess transition risk"
+  ],
+  "data_gaps": [
+    "No demonstrated logical-qubit count",
+    "No demonstrated logical error rate or break-even error-correction result",
+    "No current error-correcting code, encoding overhead, syndrome-extraction method, or fault-tolerant gate demonstration",
+    "No gate-speed, circuit-layer-rate, CLOPS-like throughput, queue-time, or end-to-end runtime specifications",
+    "No unambiguous system-specific T1 and T2 measurements",
+    "No measurement/readout fidelity figures",
+    "No device-wide fidelity distributions, calibration stability, or uptime/reliability data",
+    "No detailed specifications for Aria or Harmony",
+    "No clear present availability matrix for each system in the extracted comparison table",
+    "No pricing figures for QPU use or on-premises acquisition",
+    "No named customer-site deployments for Forte Enterprise",
+    "No resource estimates supporting the physical-to-logical qubit roadmap conversions",
+    "No details of the quantum error-correction code underlying the 2026–2030 logical-qubit targets",
+    "No technical specifications or demonstrated milestones for Electronic Qubit Control, quantum memory, or photonic interconnects",
+    "No independent validation details for the reported application-performance and quantum-advantage claims",
+    "No explanation of how the 46-qubit case-study workload was executed given the named current systems' 36-qubit specifications"
+  ],
+  "website": "https://www.ionq.com/",
+  "sources": [
+    {
+      "url": "https://www.ionq.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T20:03:00-07:00"
+    },
+    {
+      "url": "https://www.ionq.com/technology",
+      "category": "technology",
+      "collected_at": "2026-08-21T20:03:03-07:00"
+    },
+    {
+      "url": "https://www.ionq.com/quantum-systems/compare",
+      "category": "systems",
+      "collected_at": "2026-08-21T20:03:05-07:00"
+    },
+    {
+      "url": "https://www.ionq.com/roadmap",
+      "category": "roadmap",
+      "collected_at": "2026-08-21T20:03:08-07:00"
+    },
+    {
+      "url": "https://www.ionq.com/quantum-cloud",
+      "category": "access",
+      "collected_at": "2026-08-21T20:03:10-07:00"
+    },
+    {
+      "url": "https://www.ionq.com/customers-and-partners",
+      "category": "customers",
+      "collected_at": "2026-08-21T20:03:13-07:00"
+    },
+    {
+      "url": "https://www.ionq.com/resources/ionqs-enterprise-grade-capabilities-meeting-real-world-needs",
+      "category": "enterprise",
+      "collected_at": "2026-08-21T20:03:16-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T20:04:20-07:00"
+}

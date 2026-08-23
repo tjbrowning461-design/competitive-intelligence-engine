@@ -1,0 +1,133 @@
+{
+  "company_name": "Rigetti Computing",
+  "value_proposition": "Provides superconducting quantum processors and supporting technology for research and innovation, emphasizing rapid access through a 9-qubit Novera QPU advertised as ready to ship.",
+  "target_customers": [
+    "Quantum-computing researchers",
+    "Organizations conducting quantum hardware and algorithm R&D",
+    "Developers exploring quantum optimization and other applications"
+  ],
+  "qubit_modality": "Superconducting transmon qubits",
+  "computing_models": [
+    "Gate-based quantum computing"
+  ],
+  "hardware_architecture": "Superconducting quantum hardware cooled by a dilution refrigerator. The supplied R&D material also describes fixed-frequency transmons with a floating tunable coupler for CZ gates, but it does not establish that this exact architecture is used in every commercial system.",
+  "current_systems": [
+    "Novera — 9-qubit QPU advertised as ready to ship and available to order",
+    "Cepheus-1-108Q — listed under 'Rigetti Right Now' with 107 qubits and a deployment date of 04.07.26"
+  ],
+  "physical_qubit_scale": "Currently advertised systems span 9 qubits for Novera and 107 reported qubits for Cepheus-1-108Q, despite the latter's 108Q model name.",
+  "demonstrated_logical_qubits": null,
+  "one_qubit_fidelity": "Cepheus-1-108Q: 99.85% median fidelity per single-qubit gate operation.",
+  "two_qubit_fidelity": "Cepheus-1-108Q: 98.79% median fidelity per two-qubit CZ operation.",
+  "connectivity": null,
+  "coherence": "Cepheus-1-108Q: median T1 lifetime of 27 µs and median T2 lifetime of 11 µs.",
+  "gate_speed": null,
+  "error_correction_strategy": "Rigetti reports demonstrating low-latency feedback using a scalable FPGA decoder integrated into the control system of a superconducting quantum processor. The source does not identify the error-correcting code, logical error rate, code distance, or demonstrated logical-qubit count.",
+  "fault_tolerance_strategy": "The research direction is to support scalable, low-latency real-time decoding and maintain a fast logical clock rate while advancing toward a universal fault-tolerant logical gate set. A universal fault-tolerant gate set is described as a future objective, not a demonstrated capability.",
+  "roadmap": [
+    "Research direction: advance toward demonstrating a universal fault-tolerant logical gate set",
+    "Develop scalable, low-latency real-time decoding to avoid excessive logical-computation slowdown",
+    "Continue R&D on fast, high-fidelity CZ gates, residual-ZZ cancellation, and integrated on-chip thermometry"
+  ],
+  "cloud_access": null,
+  "on_premise_available": null,
+  "access_methods": [
+    "Direct ordering of the Novera QPU",
+    "QCS sign-in, documentation, and support links are provided, although the supplied material does not define the service or confirm cloud hardware availability"
+  ],
+  "manufacturing_strategy": null,
+  "software_stack": [
+    "QCS",
+    "Forest",
+    "QVM",
+    "Quil",
+    "Quil-T",
+    "Quilc",
+    "pyQuil"
+  ],
+  "developer_tools": [
+    "QCS documentation",
+    "QCS support",
+    "pyQuil",
+    "Quil",
+    "Quil-T",
+    "Quilc",
+    "QVM"
+  ],
+  "commercial_deployments": [
+    "Cepheus-1-108Q is labeled 'Deployed' with the date 04.07.26, but no customer, location, use case, or access terms are disclosed"
+  ],
+  "major_partnerships": [],
+  "strengths": [
+    "A 9-qubit QPU is advertised as immediately orderable and ready to ship, offering a direct hardware-access proposition",
+    "The homepage reports a deployed 107-qubit processor with disclosed median coherence and gate-fidelity metrics",
+    "Integrated hardware and software branding spans QPUs, QCS, programming tools, compiler technology, and simulation",
+    "R&D addresses practical fault-tolerance infrastructure, including FPGA-based low-latency decoding",
+    "R&D also targets component-level issues such as local chip thermometry, CZ-gate performance, and residual-ZZ cancellation"
+  ],
+  "weaknesses": [
+    "No demonstrated logical-qubit count or logical error-rate improvement is disclosed",
+    "The reported 98.79% median two-qubit fidelity is materially below the reported 99.85% single-qubit fidelity, leaving two-qubit errors as an important limitation",
+    "Median T2 of 11 µs is relatively short in absolute terms, while no gate-duration data is provided to assess the available operation budget",
+    "No connectivity topology, measurement fidelity, system uptime, throughput, calibration stability, or variability data is supplied",
+    "The source does not connect the error-correction demonstration to a protected logical qubit or fault-tolerant logical operation",
+    "Commercial deployment evidence is limited to a single unlabeled 'Deployed' entry without customer or workload details"
+  ],
+  "competitive_differentiators": [
+    "Direct shipment proposition for the 9-qubit Novera QPU",
+    "Combination of a small orderable QPU and a reported 107-qubit deployed processor",
+    "Vertically integrated portfolio covering superconducting hardware, control-system R&D, programming tools, compilation, simulation, and service/support links",
+    "Research emphasis on low-latency FPGA decoding integrated with the quantum control system"
+  ],
+  "technical_risks": [
+    "The supplied evidence does not demonstrate useful logical computation, logical error suppression, or a fault-tolerant logical gate",
+    "Scaling low-latency decoding from a feedback demonstration to sustained fault-tolerant computation may introduce control, synchronization, and decoder-throughput challenges",
+    "A 98.79% median CZ fidelity may require substantial further improvement and/or error-correction overhead for fault-tolerant operation",
+    "The combination of an 11 µs median T2 and undisclosed gate speeds makes circuit-depth and error-correction-cycle feasibility difficult to assess",
+    "The source does not disclose connectivity, fabrication yield, qubit uniformity, crosstalk, leakage, measurement performance, or stability at the 107-qubit scale",
+    "R&D results involving floating tunable couplers and Dayem-bridge thermometry may require additional engineering before broad product integration"
+  ],
+  "commercialization_risks": [
+    "The source provides no customer identities, deployment use cases, pricing, delivery lead times, warranties, or support terms",
+    "Shipping a QPU may still require substantial cryogenic, control, facilities, and integration infrastructure, none of which is clarified",
+    "QCS links are present, but cloud availability, service levels, capacity, and pricing are not established by the supplied material",
+    "The commercial value of the 107-qubit system cannot be evaluated from qubit count alone because logical performance, application benchmarks, and reliability data are absent",
+    "The chronology is difficult to validate from the supplied page because it contains deployment and publication dates in 2026, and the date format is not explained"
+  ],
+  "marketing_message": "“Quantum. Quick.” Rigetti presents Novera as a 9-qubit QPU ready to ship today, promising unusually direct access to quantum technology for advanced research.",
+  "messaging_gaps": [
+    "The claim of 'unprecedented access' is not supported with comparative access, pricing, queue-time, or delivery data",
+    "The ready-to-ship message does not explain whether a complete operating system, cryogenic infrastructure, installation, or only the QPU is included",
+    "The homepage does not clearly distinguish product capabilities from experimental R&D results",
+    "The significance of the discrepancy between the Cepheus-1-108Q name and its reported 107 qubits is not explained",
+    "No application-level performance or logical-computation result is provided to contextualize physical-qubit count and gate fidelity",
+    "The QCS access model and the identities of technology or distribution partners are not explained"
+  ],
+  "data_gaps": [
+    "Demonstrated logical-qubit count and logical fidelity",
+    "Logical error rates, code distance, error-correction code, break-even results, and repeated-cycle performance",
+    "Fault-tolerant logical-gate demonstrations",
+    "Qubit connectivity and coupling topology",
+    "Gate durations, measurement duration, reset time, and full error-correction cycle time",
+    "Readout fidelity, reset fidelity, leakage, crosstalk, and simultaneous-gate performance",
+    "Uptime, calibration frequency, reliability, throughput, and benchmark results",
+    "Metric distributions and uncertainty beyond reported medians",
+    "Exact Novera fidelities, coherence, connectivity, and control specifications",
+    "Confirmation of cloud access and on-premises installation options",
+    "Pricing, shipping scope, installation requirements, and delivery terms",
+    "Customer names, deployment locations, workloads, and commercial outcomes",
+    "Manufacturing process, fabrication partners, yield, packaging, and scale-up strategy",
+    "Named technology partners and distribution channels",
+    "Formal roadmap dates and quantitative milestones",
+    "Clarification of the 2026 dates and the 107-qubit count for the Cepheus-1-108Q system"
+  ],
+  "website": "https://www.rigetti.com/",
+  "sources": [
+    {
+      "url": "https://www.rigetti.com",
+      "category": "homepage",
+      "collected_at": "2026-08-21T19:58:56-07:00"
+    }
+  ],
+  "analysis_generated_at": "2026-08-21T19:59:51-07:00"
+}
