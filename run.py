@@ -7,6 +7,7 @@ from pathlib import Path
 from engine.analyzer import analyze_company
 from engine.comparer import compare_companies
 from engine.config import load_project_config
+from engine.publisher import publish_to_github
 from engine.reporter import generate_report
 from engine.scraper import discover_pages, scrape_pages
 
@@ -16,6 +17,7 @@ REPORTS_DIR = Path("reports")
 
 
 ANALYSIS_REGISTRY = {
+
     "quantum_hardware": {
         "schema_module": "schemas.quantum_hardware",
         "analysis_schema": "QuantumHardwareAnalysis",
@@ -23,11 +25,22 @@ ANALYSIS_REGISTRY = {
         "prompt_module": "prompts.quantum_hardware",
         "analysis_prompt": "COMPANY_ANALYSIS_PROMPT",
         "comparison_prompt": "MARKET_COMPARISON_PROMPT",
-    }
+    },
+
+    "generic_business": {
+        "schema_module": "schemas.generic_business",
+        "analysis_schema": "GenericBusinessAnalysis",
+        "comparison_schema": "GenericMarketComparison",
+        "prompt_module": "prompts.generic_business",
+        "analysis_prompt": "COMPANY_ANALYSIS_PROMPT",
+        "comparison_prompt": "MARKET_COMPARISON_PROMPT",
+    },
+
 }
 
 
 def safe_filename(name):
+
     name = name.lower().strip()
 
     name = re.sub(
@@ -40,15 +53,18 @@ def safe_filename(name):
 
 
 def load_json(path):
+
     with open(
         path,
         "r",
         encoding="utf-8"
     ) as file:
+
         return json.load(file)
 
 
 def save_json(path, data):
+
     path.parent.mkdir(
         parents=True,
         exist_ok=True
@@ -59,6 +75,7 @@ def save_json(path, data):
         "w",
         encoding="utf-8"
     ) as file:
+
         json.dump(
             data,
             file,
@@ -70,15 +87,24 @@ def save_json(path, data):
 def load_analysis_components(
     analysis_type
 ):
+
     if analysis_type not in ANALYSIS_REGISTRY:
+
+        available = ", ".join(
+            ANALYSIS_REGISTRY.keys()
+        )
+
         raise ValueError(
             f"Unknown analysis type: "
-            f"{analysis_type}"
+            f"{analysis_type}\n"
+            f"Available types: {available}"
         )
+
 
     settings = ANALYSIS_REGISTRY[
         analysis_type
     ]
+
 
     schema_module = importlib.import_module(
         settings["schema_module"]
@@ -87,6 +113,7 @@ def load_analysis_components(
     prompt_module = importlib.import_module(
         settings["prompt_module"]
     )
+
 
     analysis_schema = getattr(
         schema_module,
@@ -108,6 +135,7 @@ def load_analysis_components(
         settings["comparison_prompt"]
     )
 
+
     return (
         analysis_schema,
         comparison_schema,
@@ -118,15 +146,19 @@ def load_analysis_components(
 
 def analyze_project(
     config_path,
-    refresh=False
+    refresh=False,
+    publish=False
 ):
+
     config = load_project_config(
         config_path
     )
 
+
     project_name = config[
         "project_name"
     ]
+
 
     display_name = config.get(
         "display_name",
@@ -136,17 +168,21 @@ def analyze_project(
         ).title()
     )
 
+
     analysis_type = config[
         "analysis_type"
     ]
+
 
     companies = config[
         "companies"
     ]
 
+
     page_categories = config[
         "page_categories"
     ]
+
 
     (
         analysis_schema,
@@ -157,32 +193,53 @@ def analyze_project(
         analysis_type
     )
 
+
     project_results_dir = (
         RESULTS_DIR
         / project_name
     )
+
 
     project_results_dir.mkdir(
         parents=True,
         exist_ok=True
     )
 
+
     analyses = []
 
     new_analysis_created = False
 
+
     print(
-        f"\nProject: {display_name}"
+        "\n"
+        + "=" * 70
     )
 
     print(
-        f"Companies: {len(companies)}"
+        f"PROJECT: {display_name}"
     )
+
+    print(
+        f"ANALYSIS TYPE: "
+        f"{analysis_type}"
+    )
+
+    print(
+        f"COMPANIES: "
+        f"{len(companies)}"
+    )
+
+    print(
+        "=" * 70
+    )
+
 
     for index, company in enumerate(
         companies,
         start=1
     ):
+
         company_name = company[
             "name"
         ]
@@ -190,6 +247,7 @@ def analyze_project(
         website = company[
             "url"
         ]
+
 
         output_file = (
             project_results_dir
@@ -201,6 +259,7 @@ def analyze_project(
             )
         )
 
+
         print(
             "\n"
             + "=" * 70
@@ -211,46 +270,66 @@ def analyze_project(
             f"{company_name}"
         )
 
-        print(website)
+        print(
+            website
+        )
+
 
         if (
             output_file.exists()
             and not refresh
         ):
+
             print(
                 "Using cached analysis."
             )
 
             analyses.append(
-                load_json(output_file)
+                load_json(
+                    output_file
+                )
             )
 
             continue
+
 
         selected_pages = discover_pages(
             website,
             page_categories
         )
 
+
         print(
             "\nSelected pages:"
         )
 
-        for category, url in selected_pages:
+
+        for category, url in (
+            selected_pages
+        ):
+
             print(
                 f"- {category}: {url}"
             )
 
-        company_text, sources = scrape_pages(
-            selected_pages
+
+        company_text, sources = (
+            scrape_pages(
+                selected_pages
+            )
         )
 
+
         if not company_text.strip():
+
             print(
-                f"No usable text collected "
-                f"for {company_name}."
+                f"No usable text "
+                f"collected for "
+                f"{company_name}."
             )
+
             continue
+
 
         evidence = f"""
 COMPANY:
@@ -264,71 +343,95 @@ COLLECTED WEBSITE EVIDENCE:
 {company_text}
 """
 
+
         result = analyze_company(
             company_text=evidence,
             schema_class=analysis_schema,
             system_prompt=analysis_prompt
         )
 
-        result_data = result.model_dump()
+
+        result_data = (
+            result.model_dump()
+        )
+
 
         result_data[
             "website"
         ] = website
 
+
         result_data[
             "sources"
         ] = sources
+
 
         save_json(
             output_file,
             result_data
         )
 
+
         analyses.append(
             result_data
         )
 
+
         new_analysis_created = True
+
 
         print(
             f"\nSaved: "
             f"{output_file}"
         )
 
+
     if not analyses:
+
         raise RuntimeError(
             "No company analyses "
             "were available."
         )
+
 
     comparison_output = (
         RESULTS_DIR
         / f"{project_name}_comparison.json"
     )
 
+
     if (
         comparison_output.exists()
         and not new_analysis_created
         and not refresh
     ):
+
         print(
-            "\nUsing cached market comparison."
+            "\nUsing cached "
+            "market comparison."
         )
+
 
         comparison_data = load_json(
             comparison_output
         )
 
+
     else:
+
         print(
             "\n"
             + "=" * 70
         )
 
         print(
-            "\nCreating market comparison..."
+            "CREATING MARKET COMPARISON"
         )
+
+        print(
+            "=" * 70
+        )
+
 
         comparison = compare_companies(
             analyses=analyses,
@@ -338,24 +441,29 @@ COLLECTED WEBSITE EVIDENCE:
                 comparison_prompt
         )
 
+
         comparison_data = (
             comparison.model_dump()
         )
+
 
         save_json(
             comparison_output,
             comparison_data
         )
 
+
         print(
             f"\nSaved comparison: "
             f"{comparison_output}"
         )
 
+
     report_output = (
         REPORTS_DIR
         / f"{project_name}.html"
     )
+
 
     generate_report(
         display_name=display_name,
@@ -364,24 +472,32 @@ COLLECTED WEBSITE EVIDENCE:
         output_path=report_output
     )
 
+
     print(
         "\n"
         + "=" * 70
     )
 
     print(
-        "\nPROJECT COMPLETE"
+        "PROJECT COMPLETE"
     )
 
     print(
-        f"Company analyses: "
+        "=" * 70
+    )
+
+
+    print(
+        f"\nCompany analyses: "
         f"{project_results_dir}"
     )
+
 
     print(
         f"Market comparison: "
         f"{comparison_output}"
     )
+
 
     print(
         f"Report: "
@@ -389,13 +505,27 @@ COLLECTED WEBSITE EVIDENCE:
     )
 
 
+    if publish:
+
+        print(
+            "\nPublishing project "
+            "to GitHub..."
+        )
+
+        publish_to_github(
+            project_name=display_name
+        )
+
+
 def main():
+
     parser = argparse.ArgumentParser(
         description=(
             "Reusable competitive "
             "intelligence engine"
         )
     )
+
 
     parser.add_argument(
         "config",
@@ -405,22 +535,37 @@ def main():
         )
     )
 
+
     parser.add_argument(
         "--refresh",
         action="store_true",
         help=(
-            "Ignore cached results and "
-            "reanalyze every company."
+            "Ignore cached results "
+            "and reanalyze every company."
         )
     )
 
+
+    parser.add_argument(
+        "--publish",
+        action="store_true",
+        help=(
+            "Commit and push finished "
+            "results to GitHub."
+        )
+    )
+
+
     args = parser.parse_args()
+
 
     analyze_project(
         args.config,
-        refresh=args.refresh
+        refresh=args.refresh,
+        publish=args.publish
     )
 
 
 if __name__ == "__main__":
+
     main()

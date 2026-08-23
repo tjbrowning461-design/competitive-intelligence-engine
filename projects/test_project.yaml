@@ -1,0 +1,42 @@
+project_name: test_project
+display_name: Test Project
+analysis_type: generic_business
+page_categories:
+  products:
+  - products
+  - product
+  - platform
+  - solutions
+  - services
+  technology:
+  - technology
+  - how it works
+  - architecture
+  - features
+  pricing:
+  - pricing
+  - plans
+  - subscriptions
+  customers:
+  - customers
+  - case studies
+  - industries
+  - use cases
+  developers:
+  - developers
+  - api
+  - sdk
+  - documentation
+  - integrations
+  enterprise:
+  - enterprise
+  - business
+  - security
+  - deployment
+  partners:
+  - partners
+  - partnerships
+  - ecosystem
+companies:
+- name: OpenAI
+  url: https://openai.com
