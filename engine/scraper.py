@@ -20,7 +20,7 @@ DEFAULT_EXCLUDED_PATTERNS = [
     "terms",
     "cookie",
     "contact",
-    "accessibility"
+    "accessibility",
 ]
 
 
@@ -36,9 +36,7 @@ def root_domain(url):
     hostname = (
         urlparse(url).hostname
         or ""
-    )
-
-    hostname = hostname.lower()
+    ).lower()
 
     if hostname.startswith("www."):
         hostname = hostname[4:]
@@ -75,32 +73,20 @@ def is_allowed_domain(
     )
 
 
-def discover_pages(
+def collect_links(
+    browser,
     base_url,
-    page_categories,
-    excluded_patterns=None
+    ignore_https_errors=False
 ):
 
-    print(
-        "\nDiscovering useful pages..."
+    context = browser.new_context(
+        ignore_https_errors=
+            ignore_https_errors
     )
 
-    if excluded_patterns is None:
+    page = context.new_page()
 
-        excluded_patterns = (
-            DEFAULT_EXCLUDED_PATTERNS
-        )
-
-
-    with sync_playwright() as playwright:
-
-        browser = (
-            playwright.chromium.launch(
-                headless=True
-            )
-        )
-
-        page = browser.new_page()
+    try:
 
         page.goto(
             base_url,
@@ -111,7 +97,6 @@ def discover_pages(
         page.wait_for_timeout(
             2500
         )
-
 
         links = page.locator(
             "a"
@@ -128,11 +113,95 @@ def discover_pages(
             """
         )
 
-        browser.close()
+        return links
 
+    finally:
+
+        context.close()
+
+
+def discover_pages(
+    base_url,
+    page_categories,
+    excluded_patterns=None
+):
+
+    print(
+        "\nDiscovering useful pages..."
+    )
+
+    if excluded_patterns is None:
+
+        excluded_patterns = (
+            DEFAULT_EXCLUDED_PATTERNS
+        )
+
+    links = []
+
+    with sync_playwright() as playwright:
+
+        browser = (
+            playwright.chromium.launch(
+                headless=True
+            )
+        )
+
+        try:
+
+            try:
+
+                links = collect_links(
+                    browser,
+                    base_url,
+                    ignore_https_errors=False
+                )
+
+            except Exception as error:
+
+                error_text = str(error)
+
+                if "ERR_CERT" in error_text:
+
+                    print(
+                        "Certificate issue detected. "
+                        "Retrying this public site "
+                        "while ignoring the invalid "
+                        "certificate..."
+                    )
+
+                    try:
+
+                        links = collect_links(
+                            browser,
+                            base_url,
+                            ignore_https_errors=True
+                        )
+
+                    except Exception as retry_error:
+
+                        print(
+                            "Could not discover "
+                            f"additional pages: "
+                            f"{retry_error}"
+                        )
+
+                        links = []
+
+                else:
+
+                    print(
+                        "Could not discover "
+                        f"additional pages: "
+                        f"{error}"
+                    )
+
+                    links = []
+
+        finally:
+
+            browser.close()
 
     candidates = []
-
 
     for link in links:
 
@@ -149,7 +218,6 @@ def discover_pages(
         if not href:
             continue
 
-
         full_url = urljoin(
             base_url,
             href
@@ -159,12 +227,10 @@ def discover_pages(
             full_url
         )
 
-
         if not full_url.startswith(
             ("http://", "https://")
         ):
             continue
-
 
         if not is_allowed_domain(
             full_url,
@@ -172,13 +238,11 @@ def discover_pages(
         ):
             continue
 
-
         searchable_text = (
             full_url.lower()
             + " "
             + text.lower()
         )
-
 
         if any(
             pattern in searchable_text
@@ -187,14 +251,12 @@ def discover_pages(
         ):
             continue
 
-
         candidates.append(
             {
                 "url": full_url,
                 "text": text
             }
         )
-
 
     selected_pages = [
         (
@@ -203,11 +265,9 @@ def discover_pages(
         )
     ]
 
-
     used_urls = {
         clean_url(base_url)
     }
-
 
     for category, keywords in (
         page_categories.items()
@@ -215,7 +275,6 @@ def discover_pages(
 
         best_url = None
         best_score = 0
-
 
         for candidate in candidates:
 
@@ -226,16 +285,13 @@ def discover_pages(
             if url in used_urls:
                 continue
 
-
             anchor_text = candidate[
                 "text"
             ].lower()
 
             url_lower = url.lower()
 
-
             score = 0
-
 
             for keyword in keywords:
 
@@ -249,12 +305,10 @@ def discover_pages(
                 if keyword in url_lower:
                     score += 15
 
-
             if score > best_score:
 
                 best_score = score
                 best_url = url
-
 
         if best_url:
 
@@ -269,8 +323,58 @@ def discover_pages(
                 best_url
             )
 
-
     return selected_pages
+
+
+def scrape_single_page(
+    browser,
+    url,
+    ignore_https_errors=False
+):
+
+    context = browser.new_context(
+        ignore_https_errors=
+            ignore_https_errors
+    )
+
+    page = context.new_page()
+
+    try:
+
+        page.goto(
+            url,
+            wait_until="domcontentloaded",
+            timeout=30000
+        )
+
+        page.wait_for_timeout(
+            2500
+        )
+
+        text = (
+            page.locator("body")
+            .inner_text()
+        )
+
+        clean_lines = []
+
+        for line in text.splitlines():
+
+            line = line.strip()
+
+            if line:
+
+                clean_lines.append(
+                    line
+                )
+
+        return "\n".join(
+            clean_lines
+        )
+
+    finally:
+
+        context.close()
 
 
 def scrape_pages(
@@ -284,7 +388,6 @@ def scrape_pages(
     collected_text = []
     sources = []
 
-
     with sync_playwright() as playwright:
 
         browser = (
@@ -293,109 +396,101 @@ def scrape_pages(
             )
         )
 
-        page = browser.new_page()
+        try:
 
-
-        for category, url in (
-            selected_pages
-        ):
-
-            print(
-                f"\nScraping "
-                f"[{category.upper()}]: "
-                f"{url}"
-            )
-
-
-            try:
-
-                page.goto(
-                    url,
-                    wait_until="domcontentloaded",
-                    timeout=30000
-                )
-
-                page.wait_for_timeout(
-                    2500
-                )
-
-
-                text = (
-                    page.locator("body")
-                    .inner_text()
-                )
-
-
-                clean_lines = []
-
-                for line in (
-                    text.splitlines()
-                ):
-
-                    line = line.strip()
-
-                    if line:
-
-                        clean_lines.append(
-                            line
-                        )
-
-
-                clean_text = "\n".join(
-                    clean_lines
-                )
-
-
-                clean_text = (
-                    clean_text[
-                        :max_chars_per_page
-                    ]
-                )
-
+            for category, url in (
+                selected_pages
+            ):
 
                 print(
-                    f"Captured "
-                    f"{len(clean_text)} "
-                    f"characters."
+                    f"\nScraping "
+                    f"[{category.upper()}]: "
+                    f"{url}"
                 )
 
+                try:
 
-                sources.append(
-                    {
-                        "url": url,
-                        "category":
-                            category,
-                        "collected_at":
-                            current_timestamp()
-                    }
-                )
+                    try:
 
+                        clean_text = (
+                            scrape_single_page(
+                                browser,
+                                url,
+                                ignore_https_errors=False
+                            )
+                        )
 
-                collected_text.append(
-                    f"""
+                    except Exception as error:
+
+                        if "ERR_CERT" in str(error):
+
+                            print(
+                                "Certificate issue "
+                                "detected. Retrying..."
+                            )
+
+                            clean_text = (
+                                scrape_single_page(
+                                    browser,
+                                    url,
+                                    ignore_https_errors=True
+                                )
+                            )
+
+                        else:
+
+                            raise
+
+                    clean_text = (
+                        clean_text[
+                            :max_chars_per_page
+                        ]
+                    )
+
+                    print(
+                        f"Captured "
+                        f"{len(clean_text)} "
+                        f"characters."
+                    )
+
+                    sources.append(
+                        {
+                            "url": url,
+                            "category":
+                                category,
+                            "collected_at":
+                                current_timestamp()
+                        }
+                    )
+
+                    collected_text.append(
+                        f"""
 === {category.upper()} SOURCE ===
 URL: {url}
 
 {clean_text}
 """
-                )
+                    )
 
+                except Exception as error:
 
-            except Exception as error:
+                    print(
+                        f"Could not scrape "
+                        f"{url}: {error}"
+                    )
 
-                print(
-                    f"Could not scrape "
-                    f"{url}: {error}"
-                )
+                    print(
+                        "Skipping this page "
+                        "and continuing."
+                    )
 
+        finally:
 
-        browser.close()
-
+            browser.close()
 
     combined_text = "\n".join(
         collected_text
     )
-
 
     return (
         combined_text[

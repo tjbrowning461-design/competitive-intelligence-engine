@@ -1,0 +1,106 @@
+{
+  "company_name": "ClarityQR",
+  "value_proposition": "ClarityQR markets expert IT optimization and negotiation services intended to help organizations control IT spending, improve service delivery, and save up to 30% in IT contract negotiations. The website does not substantiate the savings claim with methodology or customer results.",
+  "target_customers": [
+    "Organizations negotiating, renewing, or optimizing IT contracts",
+    "Organizations procuring IT hardware",
+    "IT procurement, sourcing, or cost-management stakeholders; specific buyer roles are not identified on the website"
+  ],
+  "products_services": [
+    "Contract renewals",
+    "New-contract support",
+    "Contract optimization",
+    "Hardware procurement",
+    "Contract negotiation advisory"
+  ],
+  "core_technology": [],
+  "use_cases": [
+    "Reducing IT contract costs through negotiation",
+    "Managing IT contract renewals",
+    "Negotiating new IT contracts",
+    "Optimizing existing IT contracts",
+    "Procuring hardware",
+    "Improving service delivery through IT optimization"
+  ],
+  "industries_served": [],
+  "business_model": "Expert IT contract optimization, procurement, and negotiation services; the specific engagement and revenue model is not disclosed.",
+  "pricing_model": null,
+  "deployment_model": [],
+  "integrations": [],
+  "developer_tools": [],
+  "enterprise_features": [],
+  "major_customers": [],
+  "major_partnerships": [],
+  "geographic_presence": [
+    "Toronto, Ontario, Canada, based on the listed office and mailing addresses",
+    "A toll-free contact number is provided, but the geographic scope of service delivery is not stated"
+  ],
+  "strengths": [
+    "Clear focus on IT spending and contract negotiation",
+    "Services cover multiple procurement stages, including new contracts, renewals, optimization, hardware procurement, and negotiation advisory",
+    "Simple outcome-oriented positioning around cost control and service-delivery improvement",
+    "Public sales and general contact channels are provided"
+  ],
+  "weaknesses": [
+    "The website evidence provides little detail about service methodology, competencies, deliverables, or engagement process",
+    "The claimed savings of up to 30% is not supported by case studies, benchmarks, methodology, or independently verifiable evidence",
+    "No customers, testimonials, partnerships, certifications, or quantified project outcomes are disclosed",
+    "No industry specialization or target customer segment is identified",
+    "Pricing and commercial terms are not disclosed"
+  ],
+  "competitive_differentiators": [
+    "Claimed savings of up to 30% in IT contract negotiations; this is a marketing claim rather than a substantiated result in the supplied evidence",
+    "Coverage of contract renewals, new contracts, optimization, hardware procurement, and negotiation advisory under one IT optimization offering"
+  ],
+  "customer_problems_addressed": [
+    "Excessive or poorly controlled IT spending",
+    "Difficulty negotiating favorable IT contract terms",
+    "Complexity associated with contract renewals and new contracts",
+    "Need to optimize existing IT agreements",
+    "Hardware procurement needs",
+    "Need to improve service delivery alongside cost management"
+  ],
+  "technical_risks": [
+    "No technology platform, analytical methodology, data-handling process, security controls, or technical architecture is disclosed, preventing assessment of technical capability and risk",
+    "No integrations, automation capabilities, reporting tools, or implementation requirements are described"
+  ],
+  "business_risks": [
+    "The central savings claim lacks supporting evidence in the supplied website content",
+    "Limited disclosure of customers, track record, team expertise, or credentials may make vendor diligence difficult",
+    "The website does not explain how ClarityQR differentiates itself beyond its savings claim and service breadth",
+    "No pricing, engagement structure, service levels, or geographic delivery scope is disclosed"
+  ],
+  "marketing_message": "“We help you save up to 30% in IT contract negotiations,” supported by broader positioning around controlling IT spend and improving service delivery through expert IT optimization solutions.",
+  "messaging_gaps": [
+    "No explanation of how the claimed savings are calculated or under what conditions they are achievable",
+    "No concrete description of the company's competencies, proprietary methods, or workflow",
+    "No customer proof, case studies, testimonials, or outcome benchmarks",
+    "No definition of ideal customer size, industry, buyer role, or contract profile",
+    "No explanation of engagement stages, deliverables, timelines, or post-negotiation support",
+    "No clear evidence separating ClarityQR from other IT procurement and contract-negotiation advisers"
+  ],
+  "data_gaps": [
+    "Pricing and fee structure",
+    "Business and engagement model, including whether fees are fixed, subscription-based, retainer-based, or tied to savings",
+    "Customer names, references, testimonials, and retention metrics",
+    "Case studies validating the up-to-30% savings claim",
+    "Company history, ownership, leadership, team size, and employee credentials",
+    "Industries and customer segments served",
+    "Geographic service coverage beyond the listed Toronto addresses",
+    "Technology, tools, data sources, and analytical methodology used to optimize contracts",
+    "Security, privacy, compliance, and data-governance practices",
+    "Integrations and supported procurement, contract-management, or IT-management systems",
+    "Partnerships, certifications, and vendor relationships",
+    "Contract scope, service levels, delivery timelines, and client responsibilities",
+    "Revenue, growth, profitability, and other business-performance information",
+    "Current versus planned capabilities or roadmap information"
+  ],
+  "website": "https://clarityqr.com/",
+  "sources": [
+    {
+      "url": "https://clarityqr.com",
+      "category": "homepage",
+      "collected_at": "2026-08-24T10:20:44-07:00"
+    }
+  ]
+}

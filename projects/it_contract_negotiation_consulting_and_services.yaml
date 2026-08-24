@@ -1,0 +1,56 @@
+project_name: it_contract_negotiation_consulting_and_services
+display_name: IT Contract Negotiation Consulting and Services
+analysis_type: generic_business
+page_categories:
+  products:
+  - products
+  - product
+  - platform
+  - solutions
+  - services
+  technology:
+  - technology
+  - features
+  - architecture
+  - how it works
+  pricing:
+  - pricing
+  - plans
+  - subscriptions
+  customers:
+  - customers
+  - case studies
+  - industries
+  - use cases
+  developers:
+  - developers
+  - api
+  - sdk
+  - documentation
+  - integrations
+  enterprise:
+  - enterprise
+  - business
+  - security
+  - deployment
+  partners:
+  - partners
+  - partnerships
+  - ecosystem
+companies:
+- name: Mitigo Partners
+  url: https://mitigo.com/
+- name: UpperEdge
+  url: https://upperedge.com/
+- name: Dark Horse Intelligence
+  url: https://darkhorseintelligenceinc.com/
+- name: Miro Consulting
+  url: https://miroconsulting.com/
+- name: ClarityQR
+  url: https://clarityqr.com/
+- name: Invictus Partners
+  url: https://invictuspartners.io/
+- name: Engage Delta
+  url: https://engagedelta.com/
+- name: Dryden Group
+  url: https://drydengroup.com/

@@ -1,0 +1,203 @@
+{
+  "company_name": "Engage Delta",
+  "value_proposition": "Independent IT vendor negotiation consulting and advisory that helps organisations reduce costs, limit contractual and compliance risk, strengthen commercial terms, and retain leverage in software, SaaS, cloud, managed-services, and other strategic technology supplier deals. The approach combines human judgment, claimed vendor-side experience, AI-informed analysis, tailored negotiation frameworks, and playbooks.",
+  "target_customers": [
+    "Scaling companies without dedicated negotiation teams",
+    "Mid-sized enterprises",
+    "Lean enterprise procurement and sourcing teams",
+    "Procurement leads",
+    "IT leaders",
+    "Business-unit leaders and stakeholders",
+    "Legal counsel",
+    "Finance leaders",
+    "Executives and organisational leaders",
+    "Organisations facing high-value or higher-risk technology supplier negotiations"
+  ],
+  "products_services": [
+    "Technology vendor contract review and optimisation for software, SaaS, cloud, and other strategic IT agreements",
+    "Tailored technology negotiation frameworks and commercial playbooks",
+    "Contract negotiation support for proposals, renewals, cloud migrations, managed services, and strategic supplier deals",
+    "Software licence audit negotiation support",
+    "SaaS and cloud compliance dispute support",
+    "Vendor dispute mediation and backchannel assistance",
+    "Strategic vendor negotiation coaching and internal capability building",
+    "Strategic vendor deal management and end-to-end deal oversight",
+    "Fractional or embedded deal advisory across a portfolio of contracts",
+    "Discovery, contract assessment, leverage identification, framework design, scripts, tools, and execution support"
+  ],
+  "core_technology": [
+    "Human-led, AI-informed commercial analysis; the website does not describe the underlying AI technology",
+    "Situation-specific negotiation frameworks and modular playbooks",
+    "Commercial contract, pricing, supplier-performance, and risk analysis",
+    "Use of commercial benchmarks, although benchmark sources and methodology are not disclosed",
+    "Vendor-side sales-playbook knowledge translated into buyer-side negotiation strategies"
+  ],
+  "use_cases": [
+    "Reviewing new technology vendor proposals and supplier templates",
+    "Negotiating enterprise software agreements and Oracle ULAs",
+    "Preparing for and negotiating SaaS and software renewals",
+    "Optimising cloud service agreements and cloud migrations",
+    "Identifying unused or outdated features and pricing inefficiencies",
+    "Finding hidden costs, restrictive clauses, lock-in provisions, and ambiguous terms",
+    "Challenging software licence audit findings and vendor compliance assertions",
+    "Reducing true-up costs, penalties, and SaaS or cloud compliance exposure",
+    "Renegotiating underperforming or in-flight supplier contracts",
+    "Managing complex or stalled technology deals",
+    "Mediating vendor disputes and providing discreet backchannel support",
+    "Building repeatable negotiation capability within procurement, legal, IT, finance, and leadership teams"
+  ],
+  "industries_served": [
+    "Information technology procurement and vendor management across software, SaaS, cloud, infrastructure, and managed services",
+    "Sector-specific supplier contract review is offered, but no specific customer industries are identified"
+  ],
+  "business_model": "Specialist professional-services and advisory model delivered through one-off/on-demand work, fixed-scope engagements, fractional or retainer access, embedded advisory, and performance-related structures.",
+  "pricing_model": "Custom pricing by enquiry. Available structures include fixed fees, retainers or fractional advisory, and performance-related fees tied to measurable savings, avoided penalties, or recovered value. Contract-review pricing depends on the number of contracts, supplier complexity, and review depth. No public rates, minimum fees, or performance-fee percentages are disclosed.",
+  "deployment_model": [
+    "Consulting and advisory engagements rather than a disclosed standalone software deployment",
+    "On-demand support",
+    "Fixed-scope project delivery",
+    "Fractional or embedded deal advisor",
+    "Retainer access",
+    "End-to-end deal oversight",
+    "The overall offering is labelled Early Access (Beta), with an invitation to participate in a journey toward 'smarter negotiations in 2026'; the website does not clarify which components are beta versus currently generally available"
+  ],
+  "integrations": [
+    "Designed to work alongside and integrate with existing procurement, strategic sourcing, and legal workflows",
+    "No named software, procurement, contract-lifecycle-management, SAM, cloud-management, or other technical integrations are disclosed"
+  ],
+  "developer_tools": [],
+  "enterprise_features": [
+    "Independent advice with claimed absence of vendor commissions, reseller ties, incentives, or kickbacks",
+    "Contract and proposal assessment",
+    "Tailored frameworks, playbooks, scripts, and negotiation tools",
+    "Portfolio-level contract advisory",
+    "Complex-deal oversight",
+    "Audit and compliance support",
+    "Mediation and backchannel assistance",
+    "Internal-team coaching and capability building",
+    "Flexible engagement structures",
+    "Support intended to preserve supplier relationships through discreet engagement",
+    "No platform lock-in claimed"
+  ],
+  "major_customers": [],
+  "major_partnerships": [],
+  "geographic_presence": [],
+  "strengths": [
+    "Focused specialization in high-value software, SaaS, cloud, audit, compliance, and technology-vendor negotiations",
+    "Multiple engagement formats accommodate one-off reviews, complex projects, ongoing portfolios, and outcome-linked arrangements",
+    "Explicitly complements rather than replaces procurement and legal teams",
+    "Independence positioning may reduce channel conflict because the company claims no vendor ties, commissions, kickbacks, or reseller incentives",
+    "Combines direct negotiation assistance with reusable frameworks, playbooks, coaching, and internal capability building",
+    "Covers the deal lifecycle from discovery and contract assessment through strategy, negotiation support, mediation, and final signature",
+    "Human-led model may be useful for nuanced disputes and relationship-sensitive negotiations where automated tools are insufficient"
+  ],
+  "weaknesses": [
+    "The offering is labelled Early Access (Beta), creating uncertainty about maturity, capacity, and which capabilities are fully available today",
+    "No named customers, case studies, quantified customer outcomes, or independently validated results are supplied",
+    "The claimed 3–6× ROI is unsupported by disclosed methodology or customer evidence",
+    "No public fee amounts or detailed performance-fee terms are available",
+    "AI is mentioned only at a high level, with no explanation of models, data sources, controls, or customer-data handling",
+    "The service appears dependent on specialist human expertise, which may constrain scalability and create key-person risk",
+    "No disclosed software platform, technical integrations, self-service capabilities, or developer tooling",
+    "Geographic coverage, delivery locations, language support, and public-sector credentials are not established"
+  ],
+  "competitive_differentiators": [
+    "Claimed vendor-side Big Tech and enterprise-sales experience translated into buyer-side negotiation tactics",
+    "Claimed experience with Oracle ULAs, enterprise agreements, and software audits",
+    "Human judgment amplified by AI rather than a purely automated negotiation or SAM tool",
+    "Modular, organisation-specific frameworks and playbooks instead of a standardised platform-only approach",
+    "Independence from vendors, resellers, commissions, incentives, and partner ties",
+    "Capability-building focus intended to improve clients' future negotiations, not only the immediate transaction",
+    "Flexible support spanning on-demand, fixed-scope, fractional, retainer, and performance-related engagements",
+    "Discreet support and backchannel assistance intended to protect supplier relationships"
+  ],
+  "customer_problems_addressed": [
+    "Overspending and value leakage in technology contracts",
+    "Unused licences and payment for obsolete or unused features",
+    "Escalating renewal costs and unchallenged auto-renewals",
+    "Vendor lock-in and weak contractual flexibility",
+    "Hidden clauses, ambiguous terms, and unexpected costs",
+    "Software audit, SaaS entitlement, and cloud-consumption compliance exposure",
+    "Inflated vendor findings, true-up demands, and penalties",
+    "Limited insight into supplier tactics and leverage points",
+    "Insufficient negotiation capacity, depth, or objectivity within internal teams",
+    "Poor stakeholder alignment and weak negotiation planning",
+    "Underperforming suppliers and missed contractual obligations",
+    "Deals that stall or proceed without a standard framework",
+    "Weak audit readiness and risk of budget overruns"
+  ],
+  "technical_risks": [
+    "No detail is provided about the AI-informed analysis, including model providers, accuracy, explainability, hallucination controls, or human-review procedures",
+    "No information is disclosed about security architecture, confidentiality controls, encryption, data retention, data residency, access management, or treatment of sensitive contracts",
+    "Benchmark provenance, freshness, representativeness, and analytical methodology are not disclosed",
+    "No disclosed technical integrations could increase manual data exchange and workflow overhead",
+    "The Early Access/Beta designation suggests possible product or process immaturity, but the website does not define the beta scope",
+    "No service-level commitments, availability guarantees, disaster recovery, or business-continuity controls are disclosed"
+  ],
+  "business_risks": [
+    "Evidence of market traction is absent: no customers, testimonials, case studies, contract volumes, renewal rates, or revenue indicators are supplied",
+    "The website names one founding director and principal consultant but provides no broader team information, indicating possible concentration and delivery-capacity risk",
+    "Outcome and ROI claims are not substantiated with documented examples or independent validation",
+    "Performance-related pricing may create measurement or incentive disputes because baselines, attribution rules, and fee mechanics are not disclosed",
+    "The model competes with internal procurement and legal expertise, specialist consultancies, SAM providers, and AI-based procurement tools; the website does not provide comparative evidence",
+    "Reliance on bespoke consulting may limit scalability and consistency across clients",
+    "No geographic, regulatory, insurance, or public-sector contracting credentials are disclosed",
+    "The Early Access/Beta positioning and 2026 language may make buyers uncertain about present availability and long-term roadmap"
+  ],
+  "marketing_message": "Stop value leakage in IT vendor contracts through independent, human-led and AI-informed negotiation expertise. Engage Delta positions tailored frameworks, playbooks, contract review, audit support, coaching, and deal oversight as a way to reduce costs and risk, strengthen terms, and counter sophisticated technology-vendor tactics without vendor conflicts or platform lock-in.",
+  "messaging_gaps": [
+    "The site does not clearly explain what is in Early Access/Beta versus what is commercially available today",
+    "The reference to 'smarter negotiations in 2026' is not tied to a defined announced capability, release, or roadmap",
+    "No concrete explanation of how AI contributes to an engagement or outperforms conventional consulting",
+    "No evidence supports superiority claims relative to AI, SAM tools, other advisors, or internal teams",
+    "The homepage displays percentage benchmark placeholders as '0%' in the collected evidence, making the benchmark message unclear",
+    "No customer proof substantiates cost reduction, risk mitigation, negotiation success, or the claimed 3–6× ROI",
+    "The term 'deep vendor-side insight' is not supported with detailed biographies, tenure, deal counts, or verifiable outcomes",
+    "No clear boundaries are provided between commercial contract review, legal advice, mediation, and regulated legal services"
+  ],
+  "data_gaps": [
+    "Named customers, testimonials, references, and detailed case studies",
+    "Revenue, funding, ownership, headcount, delivery capacity, and company history",
+    "Founder and team credentials beyond the name and title of Richard B.",
+    "Exact scope and status of the Early Access/Beta offering",
+    "Specific capabilities announced or planned for 2026 and associated timelines",
+    "Actual prices, minimum engagement size, retainer terms, and performance-fee calculations",
+    "Quantified deal volumes, contract values, savings, penalties avoided, and success rates",
+    "Methodology and evidence for the claimed 3–6× ROI",
+    "AI architecture, model providers, training or retrieval data, benchmark datasets, and quality controls",
+    "Security, privacy, confidentiality, data-processing, retention, residency, and compliance certifications",
+    "Named technical integrations and supported procurement, CLM, SAM, finance, or cloud-management systems",
+    "Service-level agreements, turnaround times, support hours, and escalation procedures",
+    "Geographic headquarters, service regions, local presence, languages, and currencies",
+    "Industry-specific experience and regulated-sector credentials",
+    "Public-sector eligibility, frameworks, procurement vehicles, and government-contract experience",
+    "Named partnerships or alliances",
+    "Professional indemnity insurance, legal-regulatory status, and limits of advisory responsibility",
+    "Contract terms, confidentiality commitments, intellectual-property ownership, and client-data usage",
+    "Competitive comparisons supported by measurable evidence",
+    "Roadmap, productisation strategy, and whether a standalone platform is planned"
+  ],
+  "website": "https://engagedelta.com/",
+  "sources": [
+    {
+      "url": "https://engagedelta.com",
+      "category": "homepage",
+      "collected_at": "2026-08-24T10:22:59-07:00"
+    },
+    {
+      "url": "https://engagedelta.com/it-negotiation-services-faq",
+      "category": "products",
+      "collected_at": "2026-08-24T10:23:04-07:00"
+    },
+    {
+      "url": "https://engagedelta.com/service/technology-vendor-contract-optimisation",
+      "category": "technology",
+      "collected_at": "2026-08-24T10:23:09-07:00"
+    },
+    {
+      "url": "https://engagedelta.com/pricing",
+      "category": "pricing",
+      "collected_at": "2026-08-24T10:23:14-07:00"
+    }
+  ]
+}

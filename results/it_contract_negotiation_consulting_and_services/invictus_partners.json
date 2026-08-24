@@ -1,0 +1,240 @@
+{
+  "company_name": "Invictus Partners",
+  "value_proposition": "Independent, vendor-agnostic enterprise software advisory that helps organisations reduce licence and subscription costs, maintain compliance, mitigate audits and implementation risk, and negotiate more effectively with major software vendors. The company claims clients save 21% on average through licensing restructuring and contract renegotiation, although the supplied evidence does not explain the calculation methodology.",
+  "target_customers": [
+    "Organisations with significant enterprise software and cloud investments",
+    "Enterprise IT, procurement, commercial, finance, applications and vendor-management leaders",
+    "Organisations facing software licence audits or intellectual-property infringement claims",
+    "Organisations negotiating new software contracts or renewals",
+    "Organisations considering ERP upgrades, replacements, cloud migrations or hybrid ERP models",
+    "Organisations moving to third-party software maintenance",
+    "Public-sector agencies, utilities, universities and multinational organisations"
+  ],
+  "products_services": [
+    "Enterprise Software & Solutions Strategy",
+    "Enterprise Software Selection Advisory",
+    "Sourcing Strategy and software, service and support provider sourcing",
+    "New contract and renewal negotiation",
+    "Strategic contract alignment and renegotiation",
+    "Independent Quality Assurance",
+    "Client Advocacy",
+    "Vendor Management-as-a-Service",
+    "Licence Management-as-a-Service",
+    "Software Licence Health Checks and effective licence positions",
+    "Software Asset Management, including multi-vendor and vendor-specific SAM",
+    "SAM Resource Augmentation",
+    "SAM Maturity Assessment and Program Development",
+    "SAM Tool Selection and Optimisation",
+    "Software audit defence and pre-emptive audit simulation",
+    "IP infringement defence",
+    "Licence and subscription optimisation",
+    "Supplier rationalisation and optimisation",
+    "Cloud licence and migration advisory",
+    "Cloud vendor selection and negotiation advisory",
+    "SaaS Licence Management",
+    "AWS, Microsoft Azure, Google Cloud Platform and Oracle Cloud Infrastructure licence advisory",
+    "Third-party support licence and migration advisory",
+    "Third-party maintenance provider selection and negotiation support",
+    "Next-generation ERP advisory covering transformation strategy, requirements, roadmap, vendor evaluation, implementation governance and managed services",
+    "Vendor-specific advisory for Oracle, SAP, Microsoft, IBM, VMware and ServiceNow",
+    "IBM ILMT-as-a-Service"
+  ],
+  "core_technology": [
+    "Analysis of actual software usage against contractual licence entitlements",
+    "Effective licence position and licence-baseline analysis",
+    "Software Asset Management processes, systems and tools",
+    "Pre-emptive simulations of vendor software-audit processes",
+    "Structured ERP market evaluation and vendor-selection methodology",
+    "Requirements gathering and ERP roadmap development",
+    "Monitoring and optimisation of software licensing after deployment",
+    "Vendor-specific licensing expertise across SAP, Oracle, Microsoft, IBM and cloud platforms"
+  ],
+  "use_cases": [
+    "Reduce enterprise software licence, support and cloud subscription costs",
+    "Establish an effective licence position and identify compliance exposure",
+    "Prepare for and defend against software vendor audits",
+    "Challenge software-vendor infringement findings and negotiate settlements",
+    "Renegotiate contracts and renewals based on deployment, usage and entitlements",
+    "Develop enterprise software, sourcing and digital-transformation strategies",
+    "Select ERP platforms and build ERP transformation business cases",
+    "Evaluate SAP S/4HANA and RISE with SAP, Oracle Cloud ERP and Microsoft Dynamics",
+    "Govern ERP implementations and advocate for the client with vendors",
+    "Manage software vendors and licences as an outsourced ongoing service",
+    "Prepare for migration to cloud hyperscalers",
+    "Prepare for migration to third-party maintenance",
+    "Rationalise and consolidate enterprise software suppliers",
+    "Extend the life of existing ERP systems beyond vendor end-of-support",
+    "Optimise SaaS, IaaS and PaaS licensing and subscription expenditure"
+  ],
+  "industries_served": [
+    "Public sector and government",
+    "Higher education",
+    "Water utilities",
+    "Electricity and utility distribution",
+    "Oil and gas",
+    "Manufacturing",
+    "Chemicals",
+    "Natural resources",
+    "Racing and wagering",
+    "Wool and agricultural industry bodies"
+  ],
+  "business_model": "Professional advisory and consulting services delivered as end-to-end programs or separate engagements, supplemented by recurring managed offerings such as Software Asset Management-as-a-Service, Licence Management-as-a-Service and Vendor Management-as-a-Service. The website says the company does not resell or implement next-generation ERP products.",
+  "pricing_model": null,
+  "deployment_model": [
+    "Customised consulting engagements",
+    "End-to-end advisory programs",
+    "Separate project phases or point-in-time engagements",
+    "Outsourced managed services",
+    "Resource augmentation",
+    "Client-side ERP implementation governance and advocacy rather than ERP implementation by Invictus Partners",
+    "Services delivered across multiple international regions"
+  ],
+  "integrations": [],
+  "developer_tools": [],
+  "enterprise_features": [
+    "Multi-vendor and vendor-specific licence management",
+    "Ongoing licence compliance and spend monitoring",
+    "Contract and entitlement analysis",
+    "Audit readiness, simulation and defence",
+    "Executive, stakeholder and Board communication support",
+    "Independent quality assurance and program-risk mitigation",
+    "Vendor and supplier management",
+    "ERP requirements gathering, roadmap creation and market evaluation",
+    "ERP implementation governance",
+    "Cloud and SaaS licence optimisation",
+    "Customisable methodologies",
+    "Support spanning software strategy, selection, contracting, deployment governance and ongoing operation"
+  ],
+  "major_customers": [
+    "La Trobe University",
+    "NSW Land Registry Services",
+    "Hydro Tasmania",
+    "Racing and Wagering Western Australia",
+    "Australian Wool Innovation"
+  ],
+  "major_partnerships": [],
+  "geographic_presence": [
+    "Melbourne, Australia office",
+    "Sydney, Australia office",
+    "Singapore office",
+    "New York, United States office",
+    "London, United Kingdom office",
+    "Cape Town, South Africa office",
+    "The company claims client work across Australia, Europe, the United Kingdom, the Middle East and the United States"
+  ],
+  "strengths": [
+    "Broad coverage across software strategy, sourcing, licensing, audits, cloud, ERP and third-party support",
+    "Stated vendor-agnostic model: the company says it neither resells nor implements next-generation ERP products, reducing an apparent source of channel conflict",
+    "Services can be purchased end-to-end or as separate engagements and customised to client circumstances",
+    "Vendor-specific practices cover major enterprise vendors and cloud platforms, including SAP, Oracle, Microsoft, IBM, AWS, Google Cloud Platform, VMware and ServiceNow",
+    "Named customer case studies provide evidence of work in ERP planning, licence optimisation, audit defence and third-party maintenance preparation",
+    "International office footprint spanning Australia, Singapore, the United States, the United Kingdom and South Africa",
+    "Website claims a leadership team with more than 225 years of combined enterprise software vendor and systems-integrator experience",
+    "Customer evidence reports measurable outcomes, including a cited 24% reduction in Microsoft Azure subscription costs and other cited licence savings around or above 20%; these remain customer testimonials rather than independently validated results"
+  ],
+  "weaknesses": [
+    "No public pricing, standard service packages, contract terms or typical engagement duration are disclosed",
+    "The supplied evidence describes advisory methodologies but provides little detail about proprietary technology, automation or a client-facing software platform",
+    "No integrations, APIs or developer tooling are identified",
+    "Many customer examples are anonymised, limiting verification and assessment of customer scale",
+    "The claim of being truly objective is supported by the stated no-resale/no-implementation model, but the website does not disclose all referral, alliance or compensation arrangements",
+    "The claimed average savings and cumulative client savings are not accompanied by definitions, sample sizes, time periods or independent verification",
+    "Industry coverage is implied mainly through case studies and testimonials rather than an explicit industry strategy",
+    "The collected partnerships page is unavailable and provides no evidence of formal partnerships"
+  ],
+  "competitive_differentiators": [
+    "Claims independence from software-vendor resale and ERP implementation revenue",
+    "Advises on options including doing nothing, upgrading, migrating, replacing or extending existing systems beyond end-of-support",
+    "Combines commercial negotiation, licensing compliance, Software Asset Management and ERP transformation advice",
+    "Personnel are presented as having worked across software vendors, systems integrators, support providers and client organisations",
+    "Can negotiate directly with vendors or advise clients behind the scenes",
+    "Offers both point-in-time licence health checks and ongoing managed licence or vendor-management services",
+    "Positions itself explicitly as a client advocate seeking to shift negotiating power away from large software vendors"
+  ],
+  "customer_problems_addressed": [
+    "Excessive or unnecessary software licence, support and subscription spending",
+    "Opaque and complex software contracts",
+    "Uncertainty about actual usage compared with contractual entitlements",
+    "Software compliance exposure and punitive audit outcomes",
+    "Weak negotiating leverage with major software vendors",
+    "Vendor lock-in and pressure to follow vendor ERP roadmaps",
+    "Bias created by advisors that also resell or implement software",
+    "ERP selection and transformation risk",
+    "Rising cloud IaaS, PaaS and SaaS costs",
+    "Difficulty managing numerous software vendors and suppliers",
+    "Uncertainty around end-of-support, cloud migration and third-party maintenance decisions",
+    "Misalignment between software contracts and changing business or IT strategy"
+  ],
+  "technical_risks": [
+    "Licence-position accuracy depends on complete and accurate usage, deployment, entitlement and contract data from the client and its vendors",
+    "Major vendors' changing product metrics, cloud models, audit practices and contract terms may make analysis difficult to maintain",
+    "The website does not disclose the architecture, security controls, data-handling practices or automation supporting managed licence services",
+    "Customised and expert-led delivery may create dependence on specialist personnel and consistent execution",
+    "ERP recommendations and implementation governance cannot by themselves ensure implementation success because Invictus Partners states it does not implement the ERP platform",
+    "No technical details are provided for ILMT-as-a-Service, SAM tooling, monitoring frequency, data collection or supported integration methods"
+  ],
+  "business_risks": [
+    "The model appears substantially dependent on specialist consulting labour and vendor-specific expertise",
+    "Demand may be influenced by enterprise vendor audit activity, contract cycles, ERP end-of-support events and migration programs",
+    "The company advises on products from large vendors whose licensing or contracting changes could require continual capability investment",
+    "Its confrontational marketing may appeal to dissatisfied buyers but could be unsuitable for organisations seeking a more neutral tone or collaborative vendor messaging",
+    "The evidence does not disclose revenue, profitability, ownership, funding, employee count or customer concentration",
+    "The absence of disclosed formal partnerships may limit ecosystem reach, although it may also support the independence positioning",
+    "Performance and savings claims could create elevated customer expectations without disclosed measurement standards"
+  ],
+  "marketing_message": "Invictus Partners uses direct, provocative language—such as “Are you getting screwed by your software vendor?” and “We swear so you don’t have to”—to position itself as an independent client advocate that helps enterprises reclaim control from major software vendors, reduce cost, realise value and remain compliant. Its mission is to create $2 billion in global enterprise software savings; the website says it is just shy of $1.2 billion, making the $2 billion figure a future goal rather than a current achievement.",
+  "messaging_gaps": [
+    "No clear explanation of how the claimed 21% average client savings or nearly $1.2 billion cumulative savings are calculated or verified",
+    "No quantified audit-defence success rate, ERP project success rate or managed-service performance indicators",
+    "No clear comparison against named competitor categories beyond the general claim that some competitors sell endorsed software",
+    "No explanation of the proprietary assets, data, benchmarks or technology underpinning its methodologies",
+    "No defined service-level commitments, delivery timelines or typical project scope",
+    "No security, privacy, data-residency or compliance positioning for services that may access sensitive contracts and deployment data",
+    "No formal customer segmentation by company size, software expenditure or geographic market"
+  ],
+  "data_gaps": [
+    "Pricing, fee structure, minimum engagement size and commercial contract terms",
+    "Revenue, profitability, funding, ownership structure and employee count",
+    "Number of active customers, retention rate and customer concentration",
+    "Methodology and independent substantiation for the 21% average savings and nearly $1.2 billion cumulative savings claims",
+    "Names and details for most anonymised customer testimonials",
+    "Formal partnerships, alliances, referrals or other commercial relationships with software, cloud, SAM-tool and third-party support providers",
+    "Specific SAM tools used, proprietary software assets and whether clients receive access to a technology platform",
+    "APIs, integrations, supported data sources and automated discovery or usage-collection capabilities",
+    "Information-security certifications, security controls, privacy practices beyond the linked policy, and data-residency options",
+    "Managed-service SLAs, monitoring cadence, reporting capabilities and support hours",
+    "Engagement duration, staffing model, consultant certifications and delivery capacity by geography",
+    "Measured audit outcomes, ERP outcomes and long-term savings realised by clients",
+    "Current revenue contribution by service line, vendor practice, industry and region",
+    "Any announced product capabilities or formal roadmap; none are identified in the supplied evidence",
+    "Clarification of the current date and consistency of website copyright notices, which differ between 2023 and 2026 across the supplied pages"
+  ],
+  "website": "https://invictuspartners.io/",
+  "sources": [
+    {
+      "url": "https://invictuspartners.io",
+      "category": "homepage",
+      "collected_at": "2026-08-24T10:21:28-07:00"
+    },
+    {
+      "url": "https://invictuspartners.io/erp-consulting-services",
+      "category": "products",
+      "collected_at": "2026-08-24T10:21:38-07:00"
+    },
+    {
+      "url": "http://cloud.invictuspartners.io/case-study",
+      "category": "customers",
+      "collected_at": "2026-08-24T10:21:42-07:00"
+    },
+    {
+      "url": "https://invictuspartners.io/enterprise-software-licensing",
+      "category": "enterprise",
+      "collected_at": "2026-08-24T10:21:52-07:00"
+    },
+    {
+      "url": "https://invictuspartners.io/?page_id=2",
+      "category": "partners",
+      "collected_at": "2026-08-24T10:22:00-07:00"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "company_name": "Mitigo Partners Inc.",
+  "value_proposition": "Buyer-side professional negotiation services for technology, software, and SaaS purchases, using supplier experience and benchmark data to help organizations obtain savings and improved business terms.",
+  "target_customers": [
+    "Organizations purchasing or renewing technology, software, and SaaS",
+    "Enterprise and Fortune 500 technology buyers",
+    "Dedicated sourcing and procurement departments seeking outside expertise",
+    "IT departments and internal negotiators seeking benchmark data or negotiation support"
+  ],
+  "products_services": [
+    "Direct Negotiations: Mitigo leads IT-related negotiations directly with suppliers; described as having a contingency focus, although commercial terms are not disclosed",
+    "Background Advice: behind-the-scenes benchmark data, deal assessment, and negotiation support",
+    "Hybrid engagement combining direct supplier negotiation with background consulting",
+    "Free deal assessment to identify potential savings",
+    "Supplier Experience: negotiation experience and benchmark data covering suppliers that Mitigo describes as all major suppliers",
+    "Legacy offerings—not presented as current products: VendorVision® and VendorVault®, previously developed to provide supplier-specific financial and strategic information for negotiations"
+  ],
+  "core_technology": [
+    "Benchmark data collected from technology-supplier negotiations",
+    "Supplier-specific financial and strategic data associated with the legacy VendorVision® and VendorVault® offerings",
+    "Human domain expertise in technology and software negotiation",
+    "No current software platform, proprietary technical architecture, automation, or AI capability is disclosed"
+  ],
+  "use_cases": [
+    "Negotiating new technology, software, and SaaS purchases",
+    "Negotiating renewals or other supplier deals",
+    "Outsourcing leadership of an IT-related negotiation",
+    "Supporting internal sourcing or IT negotiators with benchmarks and advice",
+    "Assessing a deal's potential savings before engagement",
+    "Improving savings and non-price business terms"
+  ],
+  "industries_served": [
+    "Cross-industry enterprise customers, including claimed Fortune 500 companies",
+    "No specific vertical industries are identified in the supplied evidence"
+  ],
+  "business_model": "Professional services model based on leading or advising technology and SaaS negotiations. The direct-negotiation service is labeled \"Contingency Focus,\" but fee mechanics, minimum deal sizes, and other commercial terms are not disclosed.",
+  "pricing_model": null,
+  "deployment_model": [
+    "Direct, supplier-facing negotiation service",
+    "Behind-the-scenes advisory support",
+    "Combination of direct negotiation and background consulting",
+    "No software deployment model is disclosed"
+  ],
+  "integrations": [],
+  "developer_tools": [],
+  "enterprise_features": [
+    "Buyer-only representation",
+    "Benchmark-informed negotiation support",
+    "Direct and advisory engagement options",
+    "Experience supporting well-known brands and claimed Fortune 500 companies",
+    "Supplier-specific financial and strategic information was offered through legacy products"
+  ],
+  "major_customers": [],
+  "major_partnerships": [],
+  "geographic_presence": [
+    "Office/contact address in Carlsbad, California, United States",
+    "No additional offices, service regions, or international presence are disclosed"
+  ],
+  "strengths": [
+    "Focused positioning around buyer-side technology and SaaS negotiations",
+    "Flexible service delivery: direct negotiation, background advice, or a combination",
+    "Benchmark data can augment experienced internal sourcing and IT teams",
+    "Claims experience negotiating for well-known brands and Fortune 500 companies",
+    "Explicitly states that it represents buyers rather than suppliers",
+    "Free initial deal assessment may lower the barrier to prospective-client engagement"
+  ],
+  "weaknesses": [
+    "No quantified savings, case studies, testimonial content, or named customers appear in the supplied evidence",
+    "No supplier names are visible in the collected technology-page text despite the claim of experience with all major suppliers",
+    "Pricing and contingency-fee mechanics are not explained",
+    "Benchmark methodology, dataset size, recency, and validation are not disclosed",
+    "VendorVision® and VendorVault® are labeled legacy offerings, while no current productized platform is identified",
+    "Limited evidence of geographic scale, team depth, or delivery capacity",
+    "No disclosed integrations, APIs, automation, security controls, or developer tooling"
+  ],
+  "competitive_differentiators": [
+    "Exclusive focus on representing technology buyers",
+    "Combination of direct negotiation leadership and behind-the-scenes support",
+    "Use of supplier benchmark data and negotiation experience",
+    "Ability to augment existing sourcing departments and strong internal IT negotiators",
+    "Marketing claim of experience and benchmark data across all major suppliers; the supplied evidence does not independently substantiate the breadth of this coverage"
+  ],
+  "customer_problems_addressed": [
+    "Lack of pricing and commercial benchmarks when negotiating with technology suppliers",
+    "Information asymmetry between buyers and major software or SaaS vendors",
+    "Insufficient internal time or specialist expertise to lead negotiations",
+    "Need for independent validation of supplier proposals and potential savings",
+    "Need to improve both financial savings and contractual business terms"
+  ],
+  "technical_risks": [
+    "The quality, coverage, freshness, and statistical reliability of benchmark data are not disclosed",
+    "No methodology is provided for normalizing benchmarks across customer size, product configuration, geography, or contract terms",
+    "No evidence is supplied regarding data security, confidentiality controls, privacy practices, or handling of sensitive customer contracts",
+    "The legacy status of VendorVision® and VendorVault® creates uncertainty about current data-delivery systems and ongoing maintenance",
+    "The service appears expertise-driven, which may create variability across negotiators unless processes and quality controls are standardized; no such controls are disclosed"
+  ],
+  "business_risks": [
+    "Claims regarding major-supplier coverage and Fortune 500 experience lack visible supporting names or case studies in the collected text",
+    "Undisclosed pricing and contingency terms may make it difficult for buyers to evaluate total engagement economics",
+    "A professional-services model may be constrained by expert staffing and engagement capacity",
+    "The website does not establish recurring revenue, customer retention, engagement volume, or measurable outcomes",
+    "The transition of VendorVision® and VendorVault® to legacy status leaves the current product strategy unclear",
+    "Only one physical location is disclosed, and global delivery capabilities are not established"
+  ],
+  "marketing_message": "Mitigo positions itself as an independent buyer-side negotiation specialist that helps organizations save money and improve terms on technology and SaaS deals through direct negotiation, background advice, supplier experience, and benchmark data.",
+  "messaging_gaps": [
+    "No quantified average or median customer savings",
+    "No explanation of how Mitigo's approach compares with procurement consultants, sourcing advisors, negotiation platforms, or internal teams",
+    "No detailed engagement process, timeline, or qualification criteria",
+    "No clear explanation of the current role of technology following the designation of VendorVision® and VendorVault® as legacy offerings",
+    "No visible customer stories or testimonial details in the supplied evidence",
+    "No explanation of how conflicts of interest, confidentiality, or benchmark-data anonymization are managed",
+    "No stated roadmap, announced capabilities, or future plans"
+  ],
+  "data_gaps": [
+    "Names of major customers and permission to reference them",
+    "Named technology suppliers covered by Mitigo's experience and benchmarks",
+    "Pricing, contingency percentage, retainers, minimum deal size, and payment triggers",
+    "Quantified negotiation outcomes, savings methodology, and case-study evidence",
+    "Number, value, and type of negotiations completed",
+    "Benchmark dataset size, sources, update frequency, segmentation, and quality controls",
+    "Current operating status and availability of VendorVision® and VendorVault®",
+    "Current software products, client portal capabilities, analytics, automation, or AI features",
+    "Security, privacy, confidentiality, compliance, and data-retention policies",
+    "Team size, negotiator credentials, capacity, and key-person dependence",
+    "Contract structure, service-level commitments, and typical engagement duration",
+    "Revenue model, recurring versus project revenue, customer retention, and financial performance",
+    "Specific industries served and customer-size requirements",
+    "International service coverage and additional office locations",
+    "Technology integrations, APIs, exports, and developer tools",
+    "Named partnerships or channel relationships",
+    "Competitive comparisons and independently validated customer outcomes"
+  ],
+  "website": "https://mitigo.com/",
+  "sources": [
+    {
+      "url": "https://mitigo.com",
+      "category": "homepage",
+      "collected_at": "2026-08-24T10:10:53-07:00"
+    },
+    {
+      "url": "https://mitigo.com/mitigo-saas-negotiation-services.html",
+      "category": "products",
+      "collected_at": "2026-08-24T10:10:57-07:00"
+    },
+    {
+      "url": "https://mitigo.com/mitigo-technology-experience.html",
+      "category": "technology",
+      "collected_at": "2026-08-24T10:11:00-07:00"
+    },
+    {
+      "url": "https://mitigo.com/mitigo-customers.html",
+      "category": "customers",
+      "collected_at": "2026-08-24T10:11:03-07:00"
+    }
+  ]
+}

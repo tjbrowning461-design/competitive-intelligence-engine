@@ -1,0 +1,193 @@
+{
+  "company_name": "Dark Horse Intelligence",
+  "value_proposition": "A specialized IT contract negotiation consultancy that helps mid-sized organizations improve pricing and terms on enterprise software renewals and new purchases. It uses current vendor-sales intelligence, pricing benchmarks, and a network of more than 80 former software sales leaders, with a primarily success-based fee model.",
+  "target_customers": [
+    "Mid-sized organizations purchasing or renewing enterprise software",
+    "CIOs and IT leaders",
+    "Chief procurement officers and procurement teams",
+    "Organizations at the final or “best and final” stage of software negotiations",
+    "Organizations facing software licensing audits",
+    "Organizations seeking to reduce unused software licensing costs"
+  ],
+  "products_services": [
+    "IT contract negotiation: review, approval, or improvement of renewal and new-buy offers",
+    "Licensing optimization to identify and reduce spending on unused software",
+    "Software audit defense to limit non-compliance charges and unwanted purchases",
+    "Software pricing and agreement benchmarking",
+    "Negotiation strategy and vendor-sales intelligence delivered behind the scenes or through direct vendor representation",
+    "Free initial contract and offer review",
+    "Demonstrated capability: ERP selection and cloud migration negotiation support beginning at the RFP stage"
+  ],
+  "core_technology": [
+    "No proprietary software platform or technical architecture is disclosed",
+    "Global Advisory Network of more than 80 former sales leaders from major software vendors",
+    "People, pricing, organizational hierarchy, compensation, approval-path, and sales-strategy intelligence",
+    "Software pricing and contract benchmarks"
+  ],
+  "use_cases": [
+    "Improving enterprise software renewal pricing after a vendor's purported final offer",
+    "Negotiating new ERP, CRM, HR, marketing automation, and Oracle software purchases",
+    "Obtaining stronger pricing protections and limits on future renewal increases",
+    "Optimizing licensing to avoid paying for unused software",
+    "Defending against software audits and non-compliance charges",
+    "Validating whether a negotiated offer is already competitive",
+    "Supporting internal procurement teams with vendor-specific intelligence",
+    "Representing clients directly in vendor or reseller negotiations when requested",
+    "Supporting ERP selection and cloud migration negotiations from the RFP stage"
+  ],
+  "industries_served": [
+    "Manufacturing",
+    "Forensic engineering and professional services",
+    "Multimedia and media",
+    "Banking and financial services",
+    "Government",
+    "Retail",
+    "Healthcare services",
+    "Digital marketing",
+    "The website also claims service across multiple industries without defining a complete industry list"
+  ],
+  "business_model": "Project-based IT consulting and negotiation advisory. The primary model is a contingent fee based on a percentage of incremental savings achieved beyond the client's existing “best and final” offer; alternative fee models may be discussed.",
+  "pricing_model": "The initial review is free. The standard fee is an undisclosed percentage of savings achieved above the initial best-and-final offer, with no payment if no savings are achieved. The company says alternative fee arrangements are available, but it does not publish fee percentages, minimum fees, or other terms.",
+  "deployment_model": [
+    "Human-delivered consulting engagement",
+    "Behind-the-scenes advisory supporting the client's own negotiation team",
+    "Direct negotiation with a vendor or reseller on the client's behalf when requested",
+    "Short-duration engagements: contract review typically begins within four hours, while engagements are stated to last approximately 2–10 days; the homepage separately advertises 3–7-day turnaround"
+  ],
+  "integrations": [],
+  "developer_tools": [],
+  "enterprise_features": [
+    "Independent advisory model with no claimed economic relationships with technology vendors or resellers",
+    "Client retains control and consent over negotiation actions",
+    "Option for direct vendor representation or background advisory support",
+    "Vendor-specific pricing and organizational intelligence",
+    "Pricing benchmarking",
+    "Licensing optimization",
+    "Software audit defense",
+    "Support for renewals and new purchases across major enterprise software categories",
+    "Rapid offer review and short engagement timelines"
+  ],
+  "major_customers": [
+    "Customer names are not disclosed",
+    "Anonymized examples include a major US equipment manufacturer, a large American manufacturer, a forensic engineering firm, a multimedia company, a US bank, a government agency, a global organization, a large retail department store chain, a global digital marketing agency, a large healthcare service provider, and an international banking service"
+  ],
+  "major_partnerships": [],
+  "geographic_presence": [
+    "The company describes its advisory network as global",
+    "Case studies reference customers in the United States and global or international organizations",
+    "No office locations, headquarters, legal operating regions, or country-specific service coverage are disclosed"
+  ],
+  "strengths": [
+    "Low-risk commercial proposition: free initial review and payment primarily tied to incremental savings",
+    "Focused specialization in late-stage enterprise software contract negotiation",
+    "Ability to work behind the scenes or negotiate directly, allowing clients to retain control",
+    "Claims fast review and engagement timelines suited to imminent renewals",
+    "Broad stated vendor expertise, including Microsoft, SAP, Oracle, Salesforce, IBM, Cisco, Workday, and enterprise HR vendors",
+    "Concrete, though anonymized, case-study outcomes include reported savings of $140,000, $180,000, $300,000, and $450,000, as well as percentage reductions of 17%, 75%, and 90%",
+    "Independence from vendors and resellers reduces an apparent channel-conflict risk"
+  ],
+  "weaknesses": [
+    "No named customers are provided, limiting independent validation of testimonials and case studies",
+    "No published fee percentage, minimum engagement size, standard contract terms, or detailed alternative pricing",
+    "The claimed proprietary advantage is primarily a human advisory network rather than a disclosed scalable technology platform",
+    "No methodology is disclosed for validating benchmark quality, sample size, recency, or representativeness",
+    "The service is positioned mainly for the final stage of negotiation, which may limit its role in broader sourcing and procurement transformation",
+    "Savings messaging varies by page: the homepage advertises up to 15% on renewal contracts, while the FAQ claims typical incremental savings of 10%–40% and results as high as 75%; scope differences may explain this, but they are not clarified",
+    "No independently verified performance metrics, customer retention data, or engagement volume are presented"
+  ],
+  "competitive_differentiators": [
+    "A network of more than 80 former software sales leaders used to obtain current intelligence about vendor personnel, incentives, reporting lines, approvals, and discount possibilities",
+    "“Last mile” specialization after the customer has negotiated a best-and-final offer",
+    "Contingent pricing tied to savings beyond the client's existing offer",
+    "Claimed ability to assess meaningful improvement potential within four hours",
+    "No claimed economic relationships with vendors or resellers",
+    "Flexible role as either a background advisor or direct negotiator",
+    "Positioning around people intelligence as well as pricing benchmarks"
+  ],
+  "customer_problems_addressed": [
+    "Insufficient internal capacity to negotiate numerous software renewals",
+    "Limited leverage against large or entrenched enterprise software vendors",
+    "Lack of transparent market pricing and uncertainty about whether a final offer is competitive",
+    "Late attention to renewals and compressed negotiation timelines",
+    "Limited visibility into vendor sales incentives, reporting structures, and approval authority",
+    "Overspending on unused software licenses",
+    "Exposure to software audit penalties and pressure to buy unnecessary products",
+    "Concern that external negotiators could damage vendor relationships",
+    "Need for better pricing protections and renewal-increase limits"
+  ],
+  "technical_risks": [
+    "The website does not disclose how pricing and people intelligence is collected, normalized, secured, or quality-controlled",
+    "Results may depend on the accuracy and freshness of human-sourced intelligence",
+    "No information is provided about data security, privacy controls, handling of confidential contracts, certifications, or regulatory compliance",
+    "No proprietary technology, automation, benchmarking database architecture, or resilience controls are documented",
+    "Benchmark applicability may vary by customer size, geography, timing, product mix, and contract structure, but the website does not explain adjustment methods"
+  ],
+  "business_risks": [
+    "Revenue under a contingent-fee model may be variable and dependent on measurable incremental savings",
+    "The business appears dependent on retaining access to its advisory network and vendor-specific expertise",
+    "Reliance on major enterprise software negotiations could create exposure to changes in vendor pricing practices, procurement models, or willingness to negotiate",
+    "Anonymous case studies and self-reported savings claims may make proof of performance difficult for prospective clients to verify",
+    "Customers may dispute attribution or calculation of savings because the website does not disclose the contingent-fee measurement methodology",
+    "Vendor or reseller resistance could reduce the effectiveness of negotiation tactics based on internal sales intelligence",
+    "The addressable engagement may be constrained when the company concludes that no additional savings are available or when customers engage too late"
+  ],
+  "marketing_message": "“Level up your next negotiation” by bringing Dark Horse into the last mile of an enterprise software renewal or new purchase. The company promises exclusive vendor and pricing intelligence, rapid turnaround, significant savings, client control, and no fee unless it improves the deal.",
+  "messaging_gaps": [
+    "The website does not reconcile its “save up to 15% on renewal contracts” message with its FAQ claim of typical 10%–40% incremental savings and results as high as 75%",
+    "It does not clearly separate results by service, vendor, contract size, customer segment, or measurement period",
+    "“Exclusive intel” and “actual best offer” are strong marketing claims, but the evidence and validation methodology are not disclosed",
+    "The relationship between Dark Horse Intelligence Inc. and the displayed email domain darkhorseinc.com is not explained in the supplied evidence",
+    "The site does not explain when customers should engage earlier than the last mile, despite showing a case that began at the RFP stage",
+    "There is no explicit positioning against named competing negotiation consultancies, software asset management firms, procurement platforms, or benchmark providers"
+  ],
+  "data_gaps": [
+    "Headquarters, office locations, founding date, ownership, leadership team, and employee count",
+    "Named customers and independently verifiable references",
+    "Revenue, profitability, funding, engagement volume, retention, and average contract value",
+    "Exact contingent-fee percentage, minimum fees, caps, exclusions, payment timing, and savings-calculation rules",
+    "Detailed service scope, deliverables, contractual commitments, and service-level agreements",
+    "Complete list of supported vendors, software categories, industries, customer sizes, and geographic markets",
+    "Security and privacy practices for handling contracts and commercial data",
+    "Compliance certifications, insurance coverage, confidentiality controls, and data retention policies",
+    "Benchmark dataset size, sources, age, geographic coverage, normalization methods, and update frequency",
+    "Advisory-network member identities, vetting procedures, availability, conflict-of-interest controls, and confidentiality obligations",
+    "Proprietary technology, software tools, customer portal, APIs, integrations, or developer capabilities",
+    "Named strategic partnerships or alliances",
+    "Customer satisfaction, repeat engagement, win rate, average realized savings, and independently audited results",
+    "Current versus planned capabilities, product roadmap, and announced future services; none are disclosed",
+    "Legal terms governing direct negotiation authority and responsibility for negotiation outcomes"
+  ],
+  "website": "https://darkhorseintelligenceinc.com/",
+  "sources": [
+    {
+      "url": "https://darkhorseintelligenceinc.com",
+      "category": "homepage",
+      "collected_at": "2026-08-24T10:12:56-07:00"
+    },
+    {
+      "url": "https://darkhorseintelligenceinc.com/it-consulting-services",
+      "category": "products",
+      "collected_at": "2026-08-24T10:12:58-07:00"
+    },
+    {
+      "url": "https://darkhorseintelligenceinc.com/how-do-you-negotiate-a-technology-contract",
+      "category": "technology",
+      "collected_at": "2026-08-24T10:13:01-07:00"
+    },
+    {
+      "url": "https://darkhorseintelligenceinc.com/technology-agreements/salesforce-crm-pricing",
+      "category": "pricing",
+      "collected_at": "2026-08-24T10:13:06-07:00"
+    },
+    {
+      "url": "https://darkhorseintelligenceinc.com/technology-agreements",
+      "category": "customers",
+      "collected_at": "2026-08-24T10:13:09-07:00"
+    },
+    {
+      "url": "https://darkhorseintelligenceinc.com/vendor-expertise/enterprise-hr-software",
+      "category": "enterprise",
+      "collected_at": "2026-08-24T10:13:12-07:00"
+    }
+  ]
+}

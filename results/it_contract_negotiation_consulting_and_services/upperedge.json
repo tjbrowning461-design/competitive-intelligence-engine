@@ -1,0 +1,216 @@
+{
+  "company_name": "UpperEdge",
+  "value_proposition": "UpperEdge provides fact-based IT sourcing, negotiation, cost optimization, contracting, and project-execution advisory services intended to help enterprises reduce costs, improve commercial terms, mitigate risk, and increase accountability across strategic IT supplier relationships.",
+  "target_customers": [
+    "Fortune 500 and other large enterprises",
+    "IT leadership, including CIOs and PMOs",
+    "Procurement and strategic sourcing teams",
+    "Legal and contracting teams involved in IT supplier agreements",
+    "Organizations undertaking ERP, CRM, cloud, managed-services, data-center, or application-modernization initiatives"
+  ],
+  "products_services": [
+    "Currently offered: IT sourcing and negotiation advisory covering evaluation, selection, negotiation, and contracting",
+    "Currently offered: IT cost optimization using proprietary benchmarks and data-driven methodologies",
+    "Currently offered: Project readiness and project execution advisory, including diagnostics, risk mitigation, and supplier engagement tactics",
+    "Currently offered: Transformational sourcing and transactional sourcing",
+    "Currently offered: Cloud commercial advisory for AWS, Microsoft Azure, Google Cloud Platform, cloud service providers, migrations, and managed services",
+    "Currently offered: Hyperscaler strategy, including incentive maximization, infrastructure normalization, and consumption-fee optimization",
+    "Currently offered: Setup and migration commercial advisory for single- and multi-vendor migrations",
+    "Currently offered: Managed-services commercial advisory focused on transparency, flexibility, and supplier accountability",
+    "Currently delivered engagement outputs: customized sourcing strategies, negotiation roadmaps, proposal solicitation documents and templates, proposal analysis, mark-to-market assessments, term sheets, counterproposals, executive talking points, and contract reviews",
+    "Currently offered knowledge resources: blogs, webinars, white papers, guides, podcasts, and case studies",
+    "Currently described AI-related advisory playbook: usage audits, six-month contract checkpoints, and mandatory proof-of-concepts before AI commitments; presented in a white paper rather than as a separately defined product"
+  ],
+  "core_technology": [
+    "Proprietary commercial benchmarks",
+    "Market intelligence derived from enterprise technology transactions",
+    "Data-driven sourcing and cost-optimization methodologies",
+    "Vendor-specific domain knowledge across SAP, Oracle, Microsoft, ServiceNow, Salesforce, Workday, AWS, Azure, and GCP",
+    "Customized proposal, contract, and mark-to-market analysis processes",
+    "No customer-facing software platform or proprietary technical architecture is identified in the supplied evidence"
+  ],
+  "use_cases": [
+    "Evaluate and select strategic IT suppliers",
+    "Develop sourcing and negotiation strategies",
+    "Benchmark existing software, cloud, IT services, and managed-services relationships",
+    "Negotiate or renew enterprise software and hyperscaler contracts",
+    "Optimize cloud incentives, consumption fees, discounts, credits, and vendor investments",
+    "Control the scope, cost, and risk of cloud setup and migration programs",
+    "Improve managed-services transparency, flexibility, governance, and vendor accountability",
+    "Review vendor proposals and compare commercial and scoping elements",
+    "Draft term sheets and counterproposals",
+    "Review contracts to capture negotiated commercial terms",
+    "Diagnose troubled or risky IT projects and develop mitigation strategies",
+    "Govern AI-enabled enterprise software usage and related commercial exposure"
+  ],
+  "industries_served": [
+    "Consumer packaged goods",
+    "Oil and energy",
+    "Freight transportation",
+    "Dairy and food production",
+    "Manufacturing",
+    "Food and beverage",
+    "Automotive",
+    "Retail",
+    "Insurance and financial services"
+  ],
+  "business_model": "Professional advisory and consulting engagements focused on IT sourcing, negotiations, commercial optimization, contracting, and project execution. The website indicates customized client engagements but does not disclose fee structures or contract duration.",
+  "pricing_model": null,
+  "deployment_model": [
+    "Customized advisory engagements integrated with client IT, procurement, legal, PMO, and other subject-matter teams",
+    "Engagement-based delivery rather than a disclosed self-service software deployment",
+    "On-site, remote, hybrid, geographic delivery, and engagement-duration details are not disclosed"
+  ],
+  "integrations": [],
+  "developer_tools": [],
+  "enterprise_features": [
+    "Vendor-specific commercial expertise across major ERP, CRM, SaaS, cloud, and IT-services suppliers",
+    "Customized sourcing and negotiation strategies",
+    "Proposal solicitation templates",
+    "Comparative proposal and mark-to-market analysis",
+    "Term sheets and counterproposals",
+    "Executive meeting agendas and negotiation talking points",
+    "Comprehensive contract reviews",
+    "Project diagnostics and risk-mitigation strategies",
+    "Supplier accountability and engagement tactics",
+    "Cloud migration scope, cost, and risk advisory",
+    "AI usage audits, contract checkpoints, and proof-of-concept recommendations described in the 2026 white paper"
+  ],
+  "major_customers": [
+    "Mastronardi Produce Limited",
+    "Trinseo LLC",
+    "Beall's, Inc.",
+    "National Life Group",
+    "First Quality",
+    "Rainbow Shops",
+    "Anonymous $12B oil and energy company",
+    "Anonymous $15B freight transportation company",
+    "Anonymous $18B consumer packaged goods company",
+    "Anonymous global dairy cooperative",
+    "Anonymous global manufacturer",
+    "Anonymous global food and beverage company",
+    "Anonymous global CPG enterprise",
+    "Anonymous global automotive enterprise"
+  ],
+  "major_partnerships": [
+    "Emerj Artificial Intelligence / Emerj AI Research — co-creator of an enterprise AI adoption white paper",
+    "No commercial, technology, channel, or implementation partnerships are explicitly disclosed"
+  ],
+  "geographic_presence": [
+    "The website describes work with global enterprises and global client programs",
+    "A contact phone number and email are provided, but office locations and countries of operation are not disclosed in the supplied evidence"
+  ],
+  "strengths": [
+    "Broad advisory coverage spanning sourcing, negotiation, cost optimization, contracting, migrations, managed services, and project execution",
+    "Demonstrated vendor specialization across major enterprise software and hyperscaler ecosystems",
+    "Concrete, customized deliverables rather than only high-level strategic advice",
+    "Named customer testimonials from senior IT and finance executives",
+    "Published case-study outcomes include multimillion-dollar savings, credits, discounts, and long-term cost controls",
+    "Website-reported scale of more than 1,000 transactions and $2.5B in total savings suggests a substantial benchmark base, although these figures are self-reported",
+    "Ability to work across IT, procurement, legal, PMO, and external-advisor teams is supported by a named customer testimonial",
+    "Attention to emerging AI contracting and governance risks"
+  ],
+  "weaknesses": [
+    "No transparent pricing, fee structure, typical engagement length, or minimum project size",
+    "No detailed explanation of the proprietary benchmarks, their sample composition, update frequency, or independent validation",
+    "No disclosed software platform, automation layer, client portal, API, or developer tooling",
+    "Most case-study customers are anonymous, limiting independent verification and sector-specific referenceability",
+    "The website's leadership claims, savings totals, ROI, recommendation rate, and NPS are self-reported",
+    "Reported ROI varies between pages: greater than 34X on the homepage, greater than 32X on the case-study page, and greater than 38X for cloud advisory, without methodological explanation",
+    "The displayed NPS value is 0% despite claims that 100% of clients would recommend UpperEdge, creating a material presentation or data-quality inconsistency",
+    "Geographic coverage, delivery capacity, consultant headcount, and language support are not disclosed"
+  ],
+  "competitive_differentiators": [
+    "Fact-based negotiation strategies informed by proprietary benchmarks and more than 1,000 reported enterprise technology transactions",
+    "Specialized commercial knowledge of individual vendors rather than generic procurement advice",
+    "Integrated support across supplier evaluation, selection, negotiation, contracting, migration, and project execution",
+    "Holistic treatment of hyperscaler services, support ecosystems, migration vendors, and managed-services relationships",
+    "Highly customized negotiation artifacts, including counterproposals and executive talking points",
+    "Focus on commercial leverage, flexibility, predictability, and ongoing supplier accountability",
+    "Claims of high client ROI and repeat business, although these metrics are not independently substantiated in the supplied evidence"
+  ],
+  "customer_problems_addressed": [
+    "Information and negotiating-power asymmetry with major IT suppliers",
+    "High or unpredictable enterprise software, cloud, and managed-services costs",
+    "Weak discounts, credits, incentives, investments, or contractual protections",
+    "Uncontrolled cloud consumption and migration expense",
+    "Opaque vendor proposals and difficult cross-vendor comparisons",
+    "Contract inflexibility and long-term cost escalation",
+    "Insufficient supplier accountability during project delivery",
+    "Project scope, cost, governance, and execution risk",
+    "Unused software or shelfware affecting commercial leverage",
+    "AI feature adoption and usage expanding before governance or budget approval",
+    "Vendor pricing and product roadmaps moving faster than enterprise planning and contracting cycles"
+  ],
+  "technical_risks": [
+    "Advisory quality appears dependent on the accuracy, relevance, breadth, and freshness of proprietary benchmark and transaction data; the website does not disclose methodology",
+    "No information is provided about data security, confidentiality controls, access governance, retention, regulatory compliance, or handling of sensitive contracts and pricing data",
+    "No technical architecture, automation capabilities, resilience controls, or quality-assurance processes are disclosed",
+    "Vendor and AI pricing models may change rapidly, potentially reducing the useful life of benchmarks and negotiation assumptions",
+    "The website does not quantify the accuracy of projected savings or explain how realized savings are measured"
+  ],
+  "business_risks": [
+    "The model appears dependent on project-based professional services and specialist advisor capacity",
+    "Revenue model, customer concentration, engagement pipeline, and recurring-revenue profile are undisclosed",
+    "Expertise is concentrated around major enterprise technology vendors, creating exposure to changes in those vendors' contracting models and go-to-market strategies",
+    "Supplier negotiation outcomes may depend on client leverage, timing, scope, incumbent relationships, and market conditions beyond UpperEdge's control",
+    "Prominent self-reported performance claims could create credibility risk when calculation methods are not disclosed",
+    "The 0% displayed NPS conflicts with recommendation claims and may undermine trust if not explained",
+    "Anonymous case studies limit external verification of claimed results",
+    "No evidence is provided about international operating capacity despite references to global enterprises"
+  ],
+  "marketing_message": "“Maximize the value of your IT supplier relationships” through fact-based sourcing, negotiation, cost-optimization, and project-execution strategies, supported by vendor-specific expertise, proprietary benchmarks, and customized deliverables.",
+  "messaging_gaps": [
+    "The website calls UpperEdge the “#1 trusted advisor” but provides no independent ranking or substantiation",
+    "No clear explanation reconciles the displayed 0% NPS with the claim that 100% of clients would recommend the company",
+    "ROI claims of greater than 32X, 34X, and 38X are not accompanied by calculation methods, time periods, sample sizes, or independent validation",
+    "The distinction between advisory services, proprietary methodologies, and any technology-enabled tooling is unclear",
+    "The AI material describes a current advisory playbook but does not establish a separately packaged AI governance product",
+    "No comparison is provided against procurement consultancies, sourcing advisors, contract-analytics vendors, or general management consultancies",
+    "The website does not explain when UpperEdge is paid, whether compensation is fixed, hourly, retainer-based, success-based, or linked to savings",
+    "Claims of “best-in-class” deals and “proven” approaches lack disclosed benchmarks or validation criteria"
+  ],
+  "data_gaps": [
+    "Pricing, fee structure, minimum engagement size, and typical contract value",
+    "Typical engagement duration and staffing model",
+    "Annual revenue, ownership, funding, profitability, and employee count",
+    "Office locations, countries served, language support, and delivery footprint",
+    "Customer concentration and total active customer count",
+    "Breakdown of repeat business and methodology behind the reported 80% figure",
+    "Methodology and auditability of the $2.5B savings total and ROI claims",
+    "Explanation of the NPS presentation and the underlying score, survey period, response count, and methodology",
+    "Benchmark database size, data sources, anonymization, update cadence, sector coverage, and geographic relevance",
+    "Information-security, privacy, confidentiality, compliance, and data-retention practices",
+    "Specific software, analytics systems, AI tools, client portals, APIs, or automation used in service delivery",
+    "Service-level commitments, warranties, professional liability terms, and outcome guarantees",
+    "Named references for most case studies and independent validation of savings outcomes",
+    "Commercial partnership details beyond the Emerj white-paper collaboration",
+    "Advisor qualifications, headcount, utilization, retention, and vendor-practice staffing",
+    "Current versus planned product roadmap; no announced or future service roadmap is disclosed",
+    "Competitive win rates and direct competitor comparisons",
+    "Revenue mix across sourcing, cloud, software-vendor, managed-services, and project-execution advisory"
+  ],
+  "website": "https://upperedge.com/",
+  "sources": [
+    {
+      "url": "https://upperedge.com",
+      "category": "homepage",
+      "collected_at": "2026-08-24T10:11:45-07:00"
+    },
+    {
+      "url": "https://upperedge.com/what-we-do/cloud-commercial-advisory-services",
+      "category": "products",
+      "collected_at": "2026-08-24T10:11:48-07:00"
+    },
+    {
+      "url": "https://upperedge.com/knowledge-center/case-studies",
+      "category": "customers",
+      "collected_at": "2026-08-24T10:11:51-07:00"
+    },
+    {
+      "url": "https://upperedge.com/documents/white-paper-enterprise-ai-adoption-commercial-contracting-and-governance-realities",
+      "category": "enterprise",
+      "collected_at": "2026-08-24T10:11:54-07:00"
+    }
+  ]
+}

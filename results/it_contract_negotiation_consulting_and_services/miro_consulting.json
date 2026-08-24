@@ -1,0 +1,234 @@
+{
+  "company_name": "Miro Consulting (website currently presents the business primarily as ECCO Select; the relationship or rebranding status is not explained in the supplied evidence)",
+  "value_proposition": "Provides software asset and license management services intended to reduce software and cloud costs, maintain license compliance, improve contract and support decisions, and reduce audit exposure. The company markets a performance guarantee under which identified cost savings will exceed its fees.",
+  "target_customers": [
+    "Large enterprises with complex Oracle, Microsoft, IBM, Adobe, Salesforce, AWS, or other cloud/software estates",
+    "Organizations facing or preparing for software-license audits",
+    "Organizations seeking ongoing outsourced software asset management",
+    "IT, procurement, finance, and software-asset-management stakeholders responsible for licensing, subscriptions, support renewals, and cloud costs",
+    "Government and federal agencies",
+    "Multinational organizations with on-premises and cloud deployments"
+  ],
+  "products_services": [
+    "Managed software asset management services",
+    "Oracle Managed Services",
+    "Oracle Audit Advisory",
+    "Oracle License Reviews",
+    "Oracle Support Renewal Management",
+    "Oracle Cloud and Subscription Management",
+    "Microsoft Audit Defense",
+    "Microsoft License Reviews",
+    "Microsoft Cloud and Subscription Management",
+    "IBM Audit Defense",
+    "IBM License Reviews",
+    "IBM Cloud and Subscription Management",
+    "Salesforce License and Subscription Management",
+    "License-management and compliance advisory",
+    "Software-vendor negotiation tactics and purchasing guidance",
+    "Support-management services",
+    "Cloud-cost and environment optimization, demonstrated through AWS customer case studies",
+    "Oracle license resale or purchase facilitation, demonstrated in a customer case study",
+    "Adobe services are referenced in the service description and navigation, but no specific Adobe offerings are detailed in the supplied evidence"
+  ],
+  "core_technology": [
+    "Proprietary tools claimed by the company, with no architecture or functionality disclosed",
+    "Analyst-led review of software deployments, entitlements, usage, contracts, and purchasing documents",
+    "Continuous license-position tracking within managed services",
+    "Cost comparison analysis between perpetual licenses and cloud subscriptions",
+    "Quarterly Business Reviews for planned infrastructure and licensing changes",
+    "Licensing Help Desk for policy, version, and compliance questions"
+  ],
+  "use_cases": [
+    "Establishing and continuously maintaining an effective license position",
+    "Preparing for and responding to Oracle, Microsoft, or IBM audits",
+    "Finding errors, omissions, and incorrect calculations in vendor or auditor findings",
+    "Reducing audit settlements and financial exposure",
+    "Optimizing software-license purchases and deployment configurations",
+    "Identifying unused licenses and reducing shelfware",
+    "Managing software support renewals",
+    "Evaluating perpetual-license costs against cloud-subscription costs",
+    "Planning hardware, cloud, and software changes without creating licensing shortfalls",
+    "Negotiating enterprise agreements, ULA terms, discounts, and cloud-use rights",
+    "Optimizing AWS spending and cloud environments",
+    "Outsourcing ongoing software asset management"
+  ],
+  "industries_served": [
+    "Government and defense",
+    "Utilities and energy",
+    "Healthcare",
+    "Pharmaceuticals",
+    "Manufacturing",
+    "Financial services",
+    "Publishing",
+    "Online consumer businesses",
+    "Other large enterprises; the website describes several customers only by size or organization type"
+  ],
+  "business_model": "Professional consulting and advisory fees, long-term managed-services engagements described as subscriptions, and Oracle reseller activity demonstrated in one case study. Exact revenue mix and commercial terms are not disclosed.",
+  "pricing_model": null,
+  "deployment_model": [
+    "Project-based advisory and license-review engagements",
+    "Long-term outsourced managed services",
+    "Remote assistance through phone, email, webchat, and scheduled meetings",
+    "Assessment of customer on-premises, cloud, and hybrid software environments; no deployable software product or hosting model is described"
+  ],
+  "integrations": [],
+  "developer_tools": [],
+  "enterprise_features": [
+    "Continuous monitoring of licensing, deployments, entitlements, usage, contracts, and purchasing records",
+    "Quarterly Business Reviews",
+    "Licensing Help Desk",
+    "Audit advisory and auditor intervention",
+    "Support-renewal tracking",
+    "Compliance and financial-exposure analysis",
+    "License and subscription optimization",
+    "Contract and purchasing-document management",
+    "Planning support for infrastructure and cloud changes",
+    "Performance guarantee stating that uncovered savings will exceed fees"
+  ],
+  "major_customers": [
+    "Southern Maryland Electric Cooperative (SMECO), identified by name in an AWS optimization case study",
+    "United States Army, identified by name in a case study claiming savings above $60 million",
+    "Large federal agency, unnamed; case study claims audit findings were reduced by 97% and $243 million",
+    "Multinational health organization, unnamed; case study claims $20 million in savings",
+    "Global pharmaceutical company, unnamed; case study claims more than $18 million in savings",
+    "Multinational manufacturing organization, unnamed; case study claims more than $5 million in licensing savings",
+    "National healthcare organization, unnamed",
+    "Large public utility, identified elsewhere in the evidence as SMECO",
+    "Large publisher, unnamed; case study claims $800,000 in savings"
+  ],
+  "major_partnerships": [
+    "Arrow ECS",
+    "Amazon Web Services (AWS)",
+    "RDX",
+    "Microsoft",
+    "Oracle",
+    "OneNeck IT Solutions",
+    "Rackspace",
+    "Pythian"
+  ],
+  "geographic_presence": [
+    "Global provider status is claimed by the company, but no office footprint or country-by-country coverage is disclosed",
+    "United States customer activity is demonstrated through SMECO, the United States Army, and a federal-agency case study",
+    "Multinational customer engagements are described, but specific service-delivery locations are not provided"
+  ],
+  "strengths": [
+    "Broad coverage of major enterprise software vendors, including Oracle, Microsoft, IBM, Salesforce, and references to Adobe",
+    "Combination of one-time reviews, audit defense, negotiation support, and continuous managed services",
+    "Multiple case studies report substantial cost savings and audit-exposure reductions",
+    "Proactive positioning emphasizes compliance assessment before an audit rather than only reacting afterward",
+    "Performance guarantee lowers perceived financial risk by promising that identified savings will exceed fees",
+    "Case-study evidence demonstrates ongoing operational practices such as continuous license tracking, Quarterly Business Reviews, renewal tracking, and a help desk",
+    "Partnerships span major software vendors, AWS, distributors, and managed infrastructure providers",
+    "Demonstrated ability to address both on-premises and cloud licensing questions"
+  ],
+  "weaknesses": [
+    "The supplied website alternates between Miro Consulting and ECCO Select without explaining the corporate, acquisition, or rebranding relationship, creating identity confusion",
+    "Most showcased customers are anonymized, limiting independent validation and referenceability",
+    "The company calls its tools proprietary but supplies no technical detail, product demonstrations, interfaces, or implementation information",
+    "Detailed service coverage is uneven: Oracle offerings are extensive, while Adobe and Salesforce coverage is less fully described",
+    "No public pricing, service tiers, engagement duration, or standard scope is disclosed",
+    "Many competitive and leadership statements, including 'only' and 'leading,' are marketing claims without comparative evidence",
+    "The site presents savings outcomes but does not disclose baseline methodology, sample size, time frame, or whether results are typical",
+    "No customer portal, automation, security, integration, or data-governance capabilities are documented"
+  ],
+  "competitive_differentiators": [
+    "A performance guarantee stating that uncovered cost savings will exceed the company's fees",
+    "Proactive compliance reviews before audits rather than exclusively reactive audit defense",
+    "Claimed access through the Oracle Partner Program to special pricing, terms, conditions, and support options",
+    "Claimed independence combined with demonstrated Oracle reseller activity",
+    "Claim of having founded the software-licensing consulting industry more than 20 years ago; not independently substantiated by the supplied evidence",
+    "Claimed proprietary tools and a long-tenured team of expert analysts",
+    "Continuous managed-service model covering licensing, deployments, entitlements, usage, contracts, and purchasing records",
+    "Case-study evidence of challenging audit calculations and negotiating cloud and ULA usage rights"
+  ],
+  "customer_problems_addressed": [
+    "Unexpected financial exposure from software-license noncompliance",
+    "Complex and changing software-vendor licensing rules and policies",
+    "Costly or inaccurate software-audit findings",
+    "Overbuying licenses and accumulating shelfware",
+    "Poor visibility into deployments, entitlements, usage, and available licenses",
+    "High software-support renewal costs",
+    "Difficulty negotiating vendor contracts, enterprise agreements, subscriptions, and audit settlements",
+    "Licensing risks created by hardware upgrades, software upgrades, virtualization, and cloud migration",
+    "Excessive cloud spending",
+    "Time consumed by internal teams gathering audit data",
+    "Fragmented license purchasing and enterprise agreements",
+    "Uncertainty when comparing perpetual licensing with cloud subscriptions"
+  ],
+  "technical_risks": [
+    "The website does not explain how proprietary tools collect, normalize, reconcile, or secure customer deployment and entitlement data",
+    "Service outcomes may depend on the completeness and accuracy of customer inventories, contracts, purchasing records, and usage data",
+    "Changing vendor policies, product-use rights, and cloud rules can make compliance conclusions time-sensitive",
+    "No disclosed integrations with discovery, configuration-management, procurement, cloud-billing, or IT asset-management systems",
+    "No information is provided about security certifications, access controls, encryption, data retention, disaster recovery, or handling of sensitive audit data",
+    "The analyst-led model may create dependence on specialist judgment and continuity, although staffing and quality-control processes are not disclosed"
+  ],
+  "business_risks": [
+    "Potential concentration in services related to a small set of major software vendors, particularly Oracle",
+    "Vendor policy, audit-practice, licensing-model, or channel-program changes could affect demand and service economics",
+    "Oracle partnership and reseller activity may create perceived independence concerns despite the company's claim that it is wholly independent",
+    "Reliance on expert analysts may make growth dependent on recruiting and retaining scarce licensing expertise",
+    "Anonymized case studies and self-reported savings make outcome claims difficult to validate externally",
+    "The Miro Consulting/ECCO Select naming inconsistency may weaken brand clarity and customer confidence",
+    "The performance guarantee could create margin or dispute risk because detailed eligibility, measurement, and exclusion terms are not disclosed"
+  ],
+  "marketing_message": "The company positions itself as a proactive, expert-led software asset management provider that helps enterprises maximize software ROI, maintain compliance, reduce audit exposure, negotiate better terms, and control cloud and support costs—with a guarantee that identified savings will exceed its fees.",
+  "messaging_gaps": [
+    "The relationship between Miro Consulting and ECCO Select is not explained",
+    "Claims such as 'leading,' 'only guaranteed,' 'original,' and 'most experienced' are not supported with comparative market evidence",
+    "The homepage vendor list differs from the services page: Adobe appears on the services page but not in the homepage hero, while detailed Adobe offerings are absent",
+    "AWS optimization is demonstrated in case studies but is not clearly defined in the main service catalog",
+    "The extent of current Salesforce and Adobe capabilities is not documented beyond high-level service references",
+    "The website does not clearly distinguish proprietary software capabilities from analyst processes and consulting methods",
+    "No roadmap, announced capabilities, or future product plans are provided",
+    "The performance guarantee lacks detailed terms, qualification rules, calculation methodology, and exclusions"
+  ],
+  "data_gaps": [
+    "Legal and organizational relationship between Miro Consulting and ECCO Select",
+    "Ownership, headquarters, office locations, employee count, and geographic delivery footprint",
+    "Revenue, profitability, growth, funding, and customer concentration",
+    "Public pricing, minimum engagement size, fee structure, managed-service subscription terms, and contract length",
+    "Detailed terms and exclusions for the performance guarantee",
+    "Number of customers, renewal rate, retention, win rate, and customer-satisfaction metrics",
+    "Technical architecture and functionality of the proprietary tools",
+    "Whether customers receive a software platform, dashboard, reports, APIs, or portal access",
+    "Supported data sources, integrations, discovery tools, and export formats",
+    "Security, privacy, regulatory compliance, data residency, and certification details",
+    "Service-level agreements, support hours, response times, and escalation procedures",
+    "Specific Adobe service offerings and deeper details about Salesforce services",
+    "Current capabilities versus any announced or planned roadmap; no roadmap information is supplied",
+    "Partner-program levels, certifications, commercial relationships, and referral or reseller economics",
+    "Methodology used to calculate case-study savings and whether reported results are typical",
+    "Named reference customers beyond SMECO and the United States Army",
+    "Competitive comparisons, market share, and independently substantiated evidence for leadership claims",
+    "Staffing capacity, analyst credentials, quality assurance, and succession or continuity controls"
+  ],
+  "website": "https://miroconsulting.com/",
+  "sources": [
+    {
+      "url": "https://miroconsulting.com",
+      "category": "homepage",
+      "collected_at": "2026-08-24T10:14:04-07:00"
+    },
+    {
+      "url": "https://miroconsulting.com/services",
+      "category": "products",
+      "collected_at": "2026-08-24T10:14:07-07:00"
+    },
+    {
+      "url": "https://miroconsulting.com/case-studies/multinational-manufacturing-organization-chooses-eccos-managed-services-for-oracle-licensing-subscriptions",
+      "category": "pricing",
+      "collected_at": "2026-08-24T10:14:10-07:00"
+    },
+    {
+      "url": "https://miroconsulting.com/case-studies",
+      "category": "customers",
+      "collected_at": "2026-08-24T10:14:13-07:00"
+    },
+    {
+      "url": "https://miroconsulting.com/alliances",
+      "category": "partners",
+      "collected_at": "2026-08-24T10:14:16-07:00"
+    }
+  ]
+}
