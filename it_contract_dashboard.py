@@ -1,3 +1,4 @@
+import hmac
 import json
 from pathlib import Path
 
@@ -21,22 +22,104 @@ REPORT_FILE = (
 
 
 st.set_page_config(
-    page_title="IT Contract Negotiation Competitive Intelligence",
+    page_title=(
+        "IT Contract Negotiation "
+        "Competitive Intelligence"
+    ),
     page_icon="📊",
     layout="wide"
 )
 
 
+# =========================================================
+# PASSWORD PROTECTION
+# =========================================================
+
+def check_password():
+
+    if st.session_state.get(
+        "authenticated",
+        False
+    ):
+        return True
+
+    st.title(
+        "🔒 IT Contract Negotiation "
+        "Competitive Intelligence"
+    )
+
+    st.write(
+        "This competitive intelligence report "
+        "is private. Enter the access password "
+        "to continue."
+    )
+
+    password = st.text_input(
+        "Password",
+        type="password"
+    )
+
+    if st.button(
+        "Access Report",
+        type="primary"
+    ):
+
+        if "APP_PASSWORD" not in st.secrets:
+
+            st.error(
+                "The app password has not "
+                "been configured."
+            )
+
+            return False
+
+        correct_password = str(
+            st.secrets[
+                "APP_PASSWORD"
+            ]
+        )
+
+        if hmac.compare_digest(
+            password,
+            correct_password
+        ):
+
+            st.session_state[
+                "authenticated"
+            ] = True
+
+            st.rerun()
+
+        else:
+
+            st.error(
+                "Incorrect password."
+            )
+
+    return False
+
+
+if not check_password():
+    st.stop()
+
+
+# =========================================================
+# DATA HELPERS
+# =========================================================
+
 def load_json(path):
+
     with open(
         path,
         "r",
         encoding="utf-8"
     ) as file:
+
         return json.load(file)
 
 
 def load_company_results():
+
     companies = []
 
     if not COMPANY_DIR.exists():
@@ -45,17 +128,22 @@ def load_company_results():
     for path in sorted(
         COMPANY_DIR.glob("*.json")
     ):
+
         try:
+
             companies.append(
                 load_json(path)
             )
+
         except Exception:
+
             continue
 
     return companies
 
 
 def prettify_key(key):
+
     return (
         str(key)
         .replace("_", " ")
@@ -65,47 +153,116 @@ def prettify_key(key):
 
 
 def render_list(items):
+
     if not items:
-        st.caption("None disclosed")
+
+        st.caption(
+            "None disclosed"
+        )
+
         return
 
     for item in items:
-        st.markdown(f"- {item}")
+
+        if isinstance(
+            item,
+            dict
+        ):
+
+            with st.container(
+                border=True
+            ):
+
+                for key, value in (
+                    item.items()
+                ):
+
+                    st.markdown(
+                        f"**{prettify_key(key)}**"
+                    )
+
+                    render_value(
+                        value
+                    )
+
+        else:
+
+            st.markdown(
+                f"- {item}"
+            )
 
 
 def render_value(value):
+
     if value is None:
-        st.caption("Not disclosed")
+
+        st.caption(
+            "Not disclosed"
+        )
+
         return
 
-    if isinstance(value, bool):
+    if isinstance(
+        value,
+        bool
+    ):
+
         st.write(
             "Yes"
             if value
             else "No"
         )
+
         return
 
-    if isinstance(value, str):
-        st.write(value)
+    if isinstance(
+        value,
+        str
+    ):
+
+        st.write(
+            value
+        )
+
         return
 
-    if isinstance(value, list):
-        render_list(value)
+    if isinstance(
+        value,
+        list
+    ):
+
+        render_list(
+            value
+        )
+
         return
 
-    if isinstance(value, dict):
-        for key, item in value.items():
+    if isinstance(
+        value,
+        dict
+    ):
+
+        for key, item in (
+            value.items()
+        ):
+
             st.markdown(
                 f"**{prettify_key(key)}**"
             )
-            render_value(item)
+
+            render_value(
+                item
+            )
+
         return
 
-    st.write(value)
+    st.write(
+        value
+    )
 
 
 def source_section(company):
+
     website = company.get(
         "website"
     )
@@ -116,18 +273,22 @@ def source_section(company):
     )
 
     if website:
+
         st.markdown(
             f"**Official Website:** "
             f"[{website}]({website})"
         )
 
     if not sources:
+
         st.caption(
             "No source provenance stored."
         )
+
         return
 
     for source in sources:
+
         url = source.get(
             "url"
         )
@@ -150,26 +311,67 @@ def source_section(company):
         )
 
         if collected_at:
+
             st.caption(
                 f"Collected: {collected_at}"
             )
 
 
-companies = load_company_results()
+# =========================================================
+# LOAD PROJECT DATA
+# =========================================================
+
+companies = (
+    load_company_results()
+)
+
 
 comparison = None
 
+
 if COMPARISON_FILE.exists():
+
     try:
-        comparison = load_json(
-            COMPARISON_FILE
+
+        comparison = (
+            load_json(
+                COMPARISON_FILE
+            )
         )
+
     except Exception:
+
         comparison = None
 
 
+if not companies:
+
+    st.error(
+        "No company analysis files "
+        "were found."
+    )
+
+    st.stop()
+
+
+company_lookup = {
+
+    company.get(
+        "company_name",
+        "Unknown"
+    ): company
+
+    for company in companies
+}
+
+
+# =========================================================
+# APP HEADER
+# =========================================================
+
 st.title(
-    "IT Contract Negotiation Consulting & Services"
+    "IT Contract Negotiation "
+    "Consulting & Services"
 )
 
 st.caption(
@@ -177,21 +379,9 @@ st.caption(
 )
 
 
-if not companies:
-    st.error(
-        "No company analysis files were found."
-    )
-    st.stop()
-
-
-company_lookup = {
-    company.get(
-        "company_name",
-        "Unknown"
-    ): company
-    for company in companies
-}
-
+# =========================================================
+# SIDEBAR
+# =========================================================
 
 page = st.sidebar.radio(
     "Navigation",
@@ -209,10 +399,12 @@ page = st.sidebar.radio(
 
 st.sidebar.divider()
 
+
 st.sidebar.metric(
     "Competitors Analyzed",
     len(companies)
 )
+
 
 st.sidebar.caption(
     "IT Contract Negotiation "
@@ -220,61 +412,93 @@ st.sidebar.caption(
 )
 
 
+if st.sidebar.button(
+    "Log Out"
+):
+
+    st.session_state[
+        "authenticated"
+    ] = False
+
+    st.rerun()
+
+
+# =========================================================
+# EXECUTIVE OVERVIEW
+# =========================================================
+
 if page == "Executive Overview":
 
     st.header(
         "Executive Overview"
     )
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = (
+        st.columns(3)
+    )
 
     col1.metric(
         "Companies Analyzed",
         len(companies)
     )
 
+    market_gaps = []
+    opportunities = []
+
     if comparison:
-        market_gaps = comparison.get(
-            "market_gaps",
-            []
+
+        market_gaps = (
+            comparison.get(
+                "market_gaps",
+                []
+            )
         )
 
-        opportunities = comparison.get(
-            "strategic_opportunities",
-            []
+        opportunities = (
+            comparison.get(
+                "strategic_opportunities",
+                []
+            )
         )
 
-        col2.metric(
-            "Market Gaps",
-            len(market_gaps)
-        )
+    col2.metric(
+        "Market Gaps",
+        len(market_gaps)
+    )
 
-        col3.metric(
-            "Strategic Opportunities",
-            len(opportunities)
-        )
+    col3.metric(
+        "Strategic Opportunities",
+        len(opportunities)
+    )
 
     st.divider()
 
     if comparison:
 
-        market_overview = comparison.get(
-            "market_overview"
+        market_overview = (
+            comparison.get(
+                "market_overview"
+            )
         )
 
         if market_overview:
+
             st.subheader(
                 "Market Overview"
             )
+
             st.write(
                 market_overview
             )
 
-        bottom_line = comparison.get(
-            "bottom_line"
+        bottom_line = (
+            comparison.get(
+                "bottom_line"
+            )
         )
 
         if bottom_line:
+
             st.subheader(
                 "Bottom Line"
             )
@@ -283,12 +507,15 @@ if page == "Executive Overview":
                 bottom_line
             )
 
-        battlegrounds = comparison.get(
-            "competitive_battlegrounds",
-            []
+        battlegrounds = (
+            comparison.get(
+                "competitive_battlegrounds",
+                []
+            )
         )
 
         if battlegrounds:
+
             st.subheader(
                 "Competitive Battlegrounds"
             )
@@ -318,18 +545,26 @@ if page == "Executive Overview":
             )
 
             if value:
-                st.write(value)
+
+                st.write(
+                    value
+                )
 
             website = company.get(
                 "website"
             )
 
             if website:
+
                 st.markdown(
                     f"[Official Website]"
                     f"({website})"
                 )
 
+
+# =========================================================
+# COMPETITOR COMPARISON
+# =========================================================
 
 elif page == "Competitor Comparison":
 
@@ -338,21 +573,27 @@ elif page == "Competitor Comparison":
     )
 
     if not comparison:
+
         st.warning(
             "No comparison file found."
         )
+
         st.stop()
 
-    company_positions = comparison.get(
-        "companies",
-        []
+    company_positions = (
+        comparison.get(
+            "companies",
+            []
+        )
     )
 
     if company_positions:
 
         rows = []
 
-        for company in company_positions:
+        for company in (
+            company_positions
+        ):
 
             rows.append(
                 {
@@ -369,6 +610,11 @@ elif page == "Competitor Comparison":
                     "Product Position":
                         company.get(
                             "product_position"
+                        ),
+
+                    "Technology Position":
+                        company.get(
+                            "technology_position"
                         ),
 
                     "Commercial Position":
@@ -405,49 +651,68 @@ elif page == "Competitor Comparison":
         )
 
     comparison_sections = [
+
         (
             "Market Leaders",
             "market_leaders"
         ),
+
         (
             "Strongest Product Positions",
             "strongest_product_positions"
         ),
+
         (
             "Strongest Technology Positions",
             "strongest_technology_positions"
         ),
+
         (
             "Strongest Commercial Positions",
             "strongest_commercial_positions"
         ),
+
         (
             "Strongest Enterprise Positions",
             "strongest_enterprise_positions"
         ),
+
         (
             "Highest Execution Risks",
             "highest_execution_risks"
         ),
+
         (
             "Important Metrics to Watch",
             "important_metrics_to_watch"
         ),
     ]
 
-    for title, key in comparison_sections:
+    for title, key in (
+        comparison_sections
+    ):
 
-        values = comparison.get(
-            key,
-            []
+        values = (
+            comparison.get(
+                key,
+                []
+            )
         )
 
         if values:
 
-            st.subheader(title)
+            st.subheader(
+                title
+            )
 
-            render_list(values)
+            render_list(
+                values
+            )
 
+
+# =========================================================
+# COMPANY EXPLORER
+# =========================================================
 
 elif page == "Company Explorer":
 
@@ -455,10 +720,12 @@ elif page == "Company Explorer":
         "Company Explorer"
     )
 
-    selected_company = st.selectbox(
-        "Choose a competitor",
-        sorted(
-            company_lookup.keys()
+    selected_company = (
+        st.selectbox(
+            "Choose a competitor",
+            sorted(
+                company_lookup.keys()
+            )
         )
     )
 
@@ -475,75 +742,104 @@ elif page == "Company Explorer":
     )
 
     if website:
+
         st.markdown(
             f"[Visit Official Website]"
             f"({website})"
         )
 
-    value_proposition = company.get(
-        "value_proposition"
+    value_proposition = (
+        company.get(
+            "value_proposition"
+        )
     )
 
     if value_proposition:
+
         st.subheader(
             "Value Proposition"
         )
+
         st.write(
             value_proposition
         )
 
     key_sections = [
+
         (
             "Target Customers",
             "target_customers"
         ),
+
         (
             "Products & Services",
             "products_services"
         ),
+
         (
             "Core Technology",
             "core_technology"
         ),
+
         (
             "Use Cases",
             "use_cases"
         ),
+
         (
             "Industries Served",
             "industries_served"
         ),
+
         (
             "Customer Problems Addressed",
             "customer_problems_addressed"
         ),
+
         (
             "Deployment Model",
             "deployment_model"
         ),
+
         (
             "Integrations",
             "integrations"
         ),
+
+        (
+            "Developer Tools",
+            "developer_tools"
+        ),
+
         (
             "Enterprise Features",
             "enterprise_features"
         ),
+
         (
             "Major Customers",
             "major_customers"
         ),
+
         (
             "Major Partnerships",
             "major_partnerships"
         ),
+
+        (
+            "Geographic Presence",
+            "geographic_presence"
+        ),
+
         (
             "Competitive Differentiators",
             "competitive_differentiators"
         ),
     ]
 
-    for title, key in key_sections:
+    for title, key in (
+        key_sections
+    ):
 
         value = company.get(
             key
@@ -554,9 +850,14 @@ elif page == "Company Explorer":
             with st.expander(
                 title
             ):
-                render_value(value)
 
-    col1, col2 = st.columns(2)
+                render_value(
+                    value
+                )
+
+    col1, col2 = (
+        st.columns(2)
+    )
 
     with col1:
 
@@ -593,29 +894,39 @@ elif page == "Company Explorer":
     )
 
 
+# =========================================================
+# STRENGTHS AND WEAKNESSES
+# =========================================================
+
 elif page == "Strengths & Weaknesses":
 
     st.header(
         "Strengths, Weaknesses & Risks"
     )
 
-    selected_company = st.selectbox(
-        "Choose a competitor",
-        sorted(
-            company_lookup.keys()
-        ),
-        key="strength_company"
+    selected_company = (
+        st.selectbox(
+            "Choose a competitor",
+            sorted(
+                company_lookup.keys()
+            ),
+            key="strength_company"
+        )
     )
 
-    company = company_lookup[
-        selected_company
-    ]
+    company = (
+        company_lookup[
+            selected_company
+        ]
+    )
 
     st.subheader(
         selected_company
     )
 
-    col1, col2 = st.columns(2)
+    col1, col2 = (
+        st.columns(2)
+    )
 
     with col1:
 
@@ -701,19 +1012,28 @@ elif page == "Strengths & Weaknesses":
     )
 
 
+# =========================================================
+# MARKET GAPS
+# =========================================================
+
 elif page == "Market Gaps":
 
     st.header(
-        "Market Gaps & Strategic Opportunities"
+        "Market Gaps & "
+        "Strategic Opportunities"
     )
 
     if not comparison:
+
         st.warning(
             "No comparison file found."
         )
+
         st.stop()
 
-    col1, col2 = st.columns(2)
+    col1, col2 = (
+        st.columns(2)
+    )
 
     with col1:
 
@@ -777,6 +1097,10 @@ elif page == "Market Gaps":
     )
 
 
+# =========================================================
+# SOURCES
+# =========================================================
+
 elif page == "Sources":
 
     st.header(
@@ -785,30 +1109,39 @@ elif page == "Sources":
 
     st.caption(
         "Sources collected from official "
-        "competitor websites during the analysis."
+        "competitor websites during "
+        "the analysis."
     )
 
     for name, company in sorted(
         company_lookup.items()
     ):
 
-        with st.expander(name):
+        with st.expander(
+            name
+        ):
 
             source_section(
                 company
             )
 
 
+# =========================================================
+# FULL REPORT
+# =========================================================
+
 elif page == "Full Report":
 
     st.header(
-        "Full Competitive Intelligence Report"
+        "Full Competitive "
+        "Intelligence Report"
     )
 
     if not REPORT_FILE.exists():
 
         st.warning(
-            "The HTML report was not found."
+            "The HTML report was "
+            "not found."
         )
 
     else:
@@ -824,7 +1157,9 @@ elif page == "Full Report":
         )
 
         st.download_button(
-            label="Download Full HTML Report",
+            label=(
+                "Download Full HTML Report"
+            ),
             data=report_html,
             file_name=(
                 "it_contract_negotiation_"
@@ -834,8 +1169,9 @@ elif page == "Full Report":
         )
 
         st.caption(
-            "The report includes the market "
-            "comparison, individual competitor "
-            "profiles, risks, opportunities, "
-            "and source provenance."
+            "The report includes the "
+            "market comparison, individual "
+            "competitor profiles, risks, "
+            "opportunities, and source "
+            "provenance."
         )
