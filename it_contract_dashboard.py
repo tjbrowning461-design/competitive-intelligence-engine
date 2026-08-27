@@ -33,6 +33,156 @@ REPORT_FILE = (
 
 
 # =========================================================
+# COMPANY DESCRIPTIONS
+# =========================================================
+
+# These are intentionally very short.
+# They appear beneath each competitor name
+# in the left sidebar.
+
+SHORT_DESCRIPTIONS = {
+
+    "Mitigo Partners":
+        "Enterprise IT negotiation specialists.",
+
+    "UpperEdge":
+        "IT sourcing and negotiation advisors.",
+
+    "Dark Horse Intelligence":
+        "Technology deal negotiation specialists.",
+
+    "Miro Consulting":
+        "Software licensing and audit advisors.",
+
+    "ClarityQR":
+        "IT contract cost-optimization specialists.",
+
+    "Invictus Partners":
+        "Enterprise software licensing advisors.",
+
+    "Engage Delta":
+        "Independent IT negotiation consultants.",
+
+    "Dryden Group":
+        "Strategic sourcing and procurement consultants.",
+}
+
+
+# These longer descriptions are used only
+# in the Executive Overview.
+
+LONG_DESCRIPTIONS = {
+
+    "Mitigo Partners": (
+        "Mitigo Partners is an independent technology negotiation "
+        "advisory firm focused on helping organizations improve the "
+        "financial and commercial outcomes of IT and software deals. "
+        "Founded by former software executives, Mitigo can negotiate "
+        "directly with technology suppliers or operate behind the "
+        "scenes as an advisor to an internal sourcing team. Its approach "
+        "combines supplier experience, benchmark information, deal "
+        "assessment, and negotiation strategy to help clients secure "
+        "stronger pricing and business terms across enterprise software, "
+        "SaaS, and other technology purchases."
+    ),
+
+    "UpperEdge": (
+        "UpperEdge is a buy-side IT sourcing, negotiation, and commercial "
+        "advisory firm that helps organizations maximize the value of "
+        "their relationships with major technology suppliers. The firm "
+        "supports clients across the sourcing lifecycle, including "
+        "strategy, supplier evaluation, proposal analysis, negotiation, "
+        "contracting, cost optimization, and project execution. UpperEdge "
+        "uses market intelligence, deal benchmarks, proprietary tools, "
+        "and supplier-specific expertise to help enterprises negotiate "
+        "more competitive pricing, stronger commercial terms, greater "
+        "flexibility, and lower long-term technology risk."
+    ),
+
+    "Dark Horse Intelligence": (
+        "Dark Horse Intelligence is a specialized technology contract "
+        "negotiation and deal advisory firm focused heavily on the final "
+        "stages of software renewals and new purchases. The company helps "
+        "organizations determine whether a vendor's proposed pricing is "
+        "actually competitive and develops negotiation strategies designed "
+        "to improve the final commercial outcome. Dark Horse emphasizes "
+        "its independence from technology vendors and draws on a network "
+        "of former software sales executives to provide insight into "
+        "vendor pricing behavior, sales tactics, negotiation leverage, "
+        "and deal structure."
+    ),
+
+    "Miro Consulting": (
+        "Miro Consulting is a software licensing and software asset "
+        "management advisory firm that helps organizations manage the "
+        "financial, contractual, and compliance risks associated with "
+        "major enterprise software vendors. Its services include license "
+        "management, software audit advisory and defense, contract "
+        "negotiation support, cost containment, support management, "
+        "subscription analysis, and cloud licensing guidance. Miro's "
+        "work is particularly focused on helping clients understand their "
+        "software entitlements, prepare for vendor negotiations and audits, "
+        "maintain compliance, and improve the return on large software "
+        "investments."
+    ),
+
+    "ClarityQR": (
+        "ClarityQR is an IT contract negotiation and cost-optimization "
+        "firm that helps organizations reduce spending on new and existing "
+        "technology agreements. Its specialists work across software, SaaS, "
+        "cloud, and other IT contracts, using licensing expertise, pricing "
+        "benchmarks, contract analysis, and negotiation strategy to identify "
+        "potential savings. ClarityQR can support internal procurement teams "
+        "or participate more directly in negotiations, with services covering "
+        "contract renewals, new purchases, contract optimization, hardware "
+        "procurement, and negotiation advisory."
+    ),
+
+    "Invictus Partners": (
+        "Invictus Partners is an independent enterprise software advisory "
+        "firm focused on helping organizations gain greater control over "
+        "software costs, licensing, compliance, and vendor relationships. "
+        "Its services span software contract negotiation, license advisory, "
+        "software audit defense, software asset management, optimization, "
+        "vendor management, and enterprise software strategy. The firm draws "
+        "on specialists with experience inside major software vendors and "
+        "uses detailed knowledge of vendor licensing models and sales "
+        "processes to help clients prepare for renewals, reduce unnecessary "
+        "software expenditure, manage compliance exposure, and negotiate "
+        "stronger commercial agreements."
+    ),
+
+    "Engage Delta": (
+        "Engage Delta is an independent IT negotiation consulting and "
+        "advisory firm that helps organizations improve high-value "
+        "technology supplier deals. Its work covers enterprise software, "
+        "SaaS, cloud, infrastructure, software audits, compliance disputes, "
+        "and other strategic vendor relationships. Engage Delta develops "
+        "tailored negotiation frameworks, playbooks, contract optimization "
+        "strategies, and deal guidance designed to strengthen leverage, "
+        "reduce cost and commercial risk, and protect long-term value. "
+        "The firm positions its services as a complement to internal "
+        "procurement, legal, finance, and IT teams rather than a replacement "
+        "for them."
+    ),
+
+    "Dryden Group": (
+        "Dryden Group is a strategic sourcing, procurement, and indirect "
+        "spend advisory firm that helps organizations improve purchasing "
+        "performance and reduce operating costs. Its capabilities include "
+        "strategic sourcing, spend assessment, supplier selection and "
+        "management, benchmarking, procurement transformation, and contract "
+        "negotiation. Dryden uses procurement data, vendor information, "
+        "market research, and category expertise to evaluate existing "
+        "spending and identify opportunities for better pricing and terms. "
+        "Its broader procurement focus extends beyond technology, while its "
+        "IT-related work includes technology sourcing, supplier management, "
+        "benchmarking, and vendor contract negotiations."
+    ),
+}
+
+
+# =========================================================
 # PAGE CONFIG
 # =========================================================
 
@@ -42,7 +192,52 @@ st.set_page_config(
         "Competitive Intelligence"
     ),
     page_icon="📊",
-    layout="wide"
+    layout="wide",
+)
+
+
+# =========================================================
+# STYLING
+# =========================================================
+
+st.markdown(
+    """
+    <style>
+
+    /*
+    Competitor names in the sidebar are
+    real Streamlit buttons.
+
+    They are styled to look like links so
+    clicking them stays in the same session
+    and does not require another password.
+    */
+
+    [data-testid="stSidebar"] button[kind="tertiary"] {
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        min-height: 0 !important;
+        height: auto !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        box-shadow: none !important;
+    }
+
+    [data-testid="stSidebar"] button[kind="tertiary"] p {
+        font-weight: 700 !important;
+        text-decoration: underline !important;
+        text-underline-offset: 3px !important;
+        text-align: left !important;
+    }
+
+    [data-testid="stSidebar"] button[kind="tertiary"]:hover p {
+        opacity: 0.72;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
 
 
@@ -54,7 +249,7 @@ def check_password():
 
     if st.session_state.get(
         "authenticated",
-        False
+        False,
     ):
         return True
 
@@ -71,12 +266,12 @@ def check_password():
 
     password = st.text_input(
         "Password",
-        type="password"
+        type="password",
     )
 
     if st.button(
         "Access Report",
-        type="primary"
+        type="primary",
     ):
 
         if "APP_PASSWORD" not in st.secrets:
@@ -96,7 +291,7 @@ def check_password():
 
         if hmac.compare_digest(
             password,
-            correct_password
+            correct_password,
         ):
 
             st.session_state[
@@ -127,7 +322,7 @@ def load_json(path):
     with open(
         path,
         "r",
-        encoding="utf-8"
+        encoding="utf-8",
     ) as file:
 
         return json.load(file)
@@ -167,46 +362,6 @@ def prettify_key(key):
     )
 
 
-def render_list(items):
-
-    if not items:
-
-        st.caption(
-            "None disclosed"
-        )
-
-        return
-
-    for item in items:
-
-        if isinstance(
-            item,
-            dict
-        ):
-
-            with st.container(
-                border=True
-            ):
-
-                for key, value in (
-                    item.items()
-                ):
-
-                    st.markdown(
-                        f"**{prettify_key(key)}**"
-                    )
-
-                    render_value(
-                        value
-                    )
-
-        else:
-
-            st.markdown(
-                f"- {item}"
-            )
-
-
 def render_value(value):
 
     if value is None:
@@ -219,7 +374,7 @@ def render_value(value):
 
     if isinstance(
         value,
-        bool
+        bool,
     ):
 
         st.write(
@@ -232,7 +387,7 @@ def render_value(value):
 
     if isinstance(
         value,
-        str
+        str,
     ):
 
         st.write(
@@ -243,36 +398,78 @@ def render_value(value):
 
     if isinstance(
         value,
-        list
+        list,
     ):
 
-        render_list(
-            value
-        )
+        if not value:
+
+            st.caption(
+                "None disclosed"
+            )
+
+            return
+
+        for item in value:
+
+            if isinstance(
+                item,
+                dict,
+            ):
+
+                with st.container(
+                    border=True
+                ):
+
+                    for (
+                        key,
+                        nested_value,
+                    ) in item.items():
+
+                        st.markdown(
+                            f"**{prettify_key(key)}**"
+                        )
+
+                        render_value(
+                            nested_value
+                        )
+
+            else:
+
+                st.markdown(
+                    f"- {item}"
+                )
 
         return
 
     if isinstance(
         value,
-        dict
+        dict,
     ):
 
-        for key, item in (
-            value.items()
-        ):
+        for (
+            key,
+            nested_value,
+        ) in value.items():
 
             st.markdown(
                 f"**{prettify_key(key)}**"
             )
 
             render_value(
-                item
+                nested_value
             )
 
         return
 
     st.write(
         value
+    )
+
+
+def render_list(items):
+
+    render_value(
+        items
     )
 
 
@@ -284,7 +481,7 @@ def source_section(company):
 
     sources = company.get(
         "sources",
-        []
+        [],
     )
 
     if website:
@@ -310,7 +507,7 @@ def source_section(company):
 
         category = source.get(
             "category",
-            "source"
+            "source",
         )
 
         collected_at = source.get(
@@ -332,49 +529,47 @@ def source_section(company):
             )
 
 
-def company_meta_description(
-    company
+def short_description_for(
+    company_name
 ):
 
-    description = (
+    return SHORT_DESCRIPTIONS.get(
+        company_name,
+        "IT contract and technology advisory firm.",
+    )
+
+
+def long_description_for(
+    company_name,
+    company,
+):
+
+    custom_description = (
+        LONG_DESCRIPTIONS.get(
+            company_name
+        )
+    )
+
+    if custom_description:
+
+        return custom_description
+
+    value_proposition = (
         company.get(
             "value_proposition"
         )
-        or company.get(
-            "marketing_message"
-        )
-        or (
-            "Competitive profile available "
-            "in the Company Explorer."
-        )
     )
 
-    description = " ".join(
-        str(description).split()
+    if value_proposition:
+
+        return value_proposition
+
+    return (
+        "This company is included in the "
+        "competitive analysis of IT contract "
+        "negotiation consulting and advisory "
+        "providers."
     )
-
-    max_length = 155
-
-    if len(description) > max_length:
-
-        description = (
-            description[
-                :max_length
-            ]
-        )
-
-        if " " in description:
-
-            description = (
-                description.rsplit(
-                    " ",
-                    1
-                )[0]
-            )
-
-        description += "..."
-
-    return description
 
 
 # =========================================================
@@ -418,7 +613,7 @@ company_lookup = {
 
     company.get(
         "company_name",
-        "Unknown"
+        "Unknown",
     ): company
 
     for company in companies
@@ -454,44 +649,55 @@ if (
     ] = company_names[0]
 
 
+# =========================================================
+# SAME-WINDOW COMPANY NAVIGATION
+# =========================================================
+
 def open_company(
     company_name
 ):
 
     st.session_state[
-        "current_page"
-    ] = "Company Explorer"
-
-    st.session_state[
         "selected_company"
     ] = company_name
+
+    st.session_state[
+        "current_page"
+    ] = "Company Explorer"
 
 
 # =========================================================
 # SIDEBAR
 # =========================================================
 
-st.sidebar.title(
-    "Navigation"
-)
-
-
 navigation_pages = [
+
     "Executive Overview",
+
     "Competitor Comparison",
+
     "Company Explorer",
+
     "Strengths & Weaknesses",
+
     "Market Gaps",
+
     "Sources",
+
     "Full Report",
 ]
 
 
+st.sidebar.markdown(
+    "## Navigation"
+)
+
+
 page = st.sidebar.radio(
-    "Choose a section",
+    "Navigation",
     navigation_pages,
     key="current_page",
-    label_visibility="collapsed"
+    label_visibility="collapsed",
 )
 
 
@@ -500,7 +706,7 @@ st.sidebar.divider()
 
 st.sidebar.metric(
     "Competitors Analyzed",
-    len(companies)
+    len(companies),
 )
 
 
@@ -517,32 +723,30 @@ for index, name in enumerate(
     company_names
 ):
 
-    company = (
-        company_lookup[
-            name
-        ]
+    # Looks like a hyperlink but uses
+    # Streamlit navigation internally.
+
+    st.sidebar.button(
+        name,
+        key=(
+            f"competitor_link_"
+            f"{index}"
+        ),
+        type="tertiary",
+        on_click=open_company,
+        args=(name,),
+        use_container_width=False,
     )
 
-    st.sidebar.markdown(
-        f"**{name}**"
-    )
+
+    # Very short company description.
 
     st.sidebar.caption(
-        company_meta_description(
-            company
+        short_description_for(
+            name
         )
     )
 
-    st.sidebar.button(
-        "Open Company Explorer →",
-        key=(
-            f"sidebar_company_"
-            f"{index}"
-        ),
-        on_click=open_company,
-        args=(name,),
-        use_container_width=True
-    )
 
     if index < (
         len(company_names) - 1
@@ -564,7 +768,7 @@ st.sidebar.caption(
 
 if st.sidebar.button(
     "Log Out",
-    use_container_width=True
+    use_container_width=True,
 ):
 
     st.session_state[
@@ -606,41 +810,39 @@ if page == "Executive Overview":
 
     col1.metric(
         "Companies Analyzed",
-        len(companies)
+        len(companies),
     )
 
 
-    market_gaps = []
-
-    opportunities = []
-
-
-    if comparison:
-
-        market_gaps = (
-            comparison.get(
-                "market_gaps",
-                []
-            )
+    market_gaps = (
+        comparison.get(
+            "market_gaps",
+            [],
         )
+        if comparison
+        else []
+    )
 
-        opportunities = (
-            comparison.get(
-                "strategic_opportunities",
-                []
-            )
+
+    opportunities = (
+        comparison.get(
+            "strategic_opportunities",
+            [],
         )
+        if comparison
+        else []
+    )
 
 
     col2.metric(
         "Market Gaps",
-        len(market_gaps)
+        len(market_gaps),
     )
 
 
     col3.metric(
         "Strategic Opportunities",
-        len(opportunities)
+        len(opportunities),
     )
 
 
@@ -688,7 +890,7 @@ if page == "Executive Overview":
         battlegrounds = (
             comparison.get(
                 "competitive_battlegrounds",
-                []
+                [],
             )
         )
 
@@ -704,8 +906,17 @@ if page == "Executive Overview":
             )
 
 
-    st.subheader(
-        "Competitors"
+    st.divider()
+
+
+    st.header(
+        "Competitor Overview"
+    )
+
+
+    st.caption(
+        "A high-level look at each company "
+        "included in the competitive analysis."
     )
 
 
@@ -722,23 +933,20 @@ if page == "Executive Overview":
             border=True
         ):
 
-            st.markdown(
-                f"### {name}"
+            st.subheader(
+                name
             )
 
 
-            value = (
-                company.get(
-                    "value_proposition"
+            # Longer executive-level
+            # company description.
+
+            st.write(
+                long_description_for(
+                    name,
+                    company,
                 )
             )
-
-
-            if value:
-
-                st.write(
-                    value
-                )
 
 
             website = (
@@ -748,34 +956,11 @@ if page == "Executive Overview":
             )
 
 
-            col1, col2 = (
-                st.columns(
-                    [1, 1]
-                )
-            )
+            if website:
 
-
-            with col1:
-
-                if website:
-
-                    st.markdown(
-                        f"[Official Website]"
-                        f"({website})"
-                    )
-
-
-            with col2:
-
-                st.button(
-                    "View Company Profile →",
-                    key=(
-                        "overview_"
-                        + name
-                    ),
-                    on_click=open_company,
-                    args=(name,),
-                    use_container_width=True
+                st.markdown(
+                    f"[Visit Official Website]"
+                    f"({website})"
                 )
 
 
@@ -802,7 +987,7 @@ elif page == "Competitor Comparison":
     company_positions = (
         comparison.get(
             "companies",
-            []
+            [],
         )
     )
 
@@ -818,6 +1003,7 @@ elif page == "Competitor Comparison":
 
             rows.append(
                 {
+
                     "Company":
                         company.get(
                             "company_name"
@@ -874,7 +1060,7 @@ elif page == "Competitor Comparison":
         st.dataframe(
             rows,
             use_container_width=True,
-            hide_index=True
+            hide_index=True,
         )
 
 
@@ -882,49 +1068,50 @@ elif page == "Competitor Comparison":
 
         (
             "Market Leaders",
-            "market_leaders"
+            "market_leaders",
         ),
 
         (
             "Strongest Product Positions",
-            "strongest_product_positions"
+            "strongest_product_positions",
         ),
 
         (
             "Strongest Technology Positions",
-            "strongest_technology_positions"
+            "strongest_technology_positions",
         ),
 
         (
             "Strongest Commercial Positions",
-            "strongest_commercial_positions"
+            "strongest_commercial_positions",
         ),
 
         (
             "Strongest Enterprise Positions",
-            "strongest_enterprise_positions"
+            "strongest_enterprise_positions",
         ),
 
         (
             "Highest Execution Risks",
-            "highest_execution_risks"
+            "highest_execution_risks",
         ),
 
         (
             "Important Metrics to Watch",
-            "important_metrics_to_watch"
+            "important_metrics_to_watch",
         ),
     ]
 
 
-    for title, key in (
-        comparison_sections
-    ):
+    for (
+        title,
+        key,
+    ) in comparison_sections:
 
         values = (
             comparison.get(
                 key,
-                []
+                [],
             )
         )
 
@@ -967,7 +1154,7 @@ elif page == "Company Explorer":
         st.selectbox(
             "Choose a competitor",
             company_names,
-            key="selected_company"
+            key="selected_company",
         )
     )
 
@@ -981,6 +1168,13 @@ elif page == "Company Explorer":
 
     st.header(
         selected_company
+    )
+
+
+    st.caption(
+        short_description_for(
+            selected_company
+        )
     )
 
 
@@ -1021,79 +1215,80 @@ elif page == "Company Explorer":
 
         (
             "Target Customers",
-            "target_customers"
+            "target_customers",
         ),
 
         (
             "Products & Services",
-            "products_services"
+            "products_services",
         ),
 
         (
             "Core Technology",
-            "core_technology"
+            "core_technology",
         ),
 
         (
             "Use Cases",
-            "use_cases"
+            "use_cases",
         ),
 
         (
             "Industries Served",
-            "industries_served"
+            "industries_served",
         ),
 
         (
             "Customer Problems Addressed",
-            "customer_problems_addressed"
+            "customer_problems_addressed",
         ),
 
         (
             "Deployment Model",
-            "deployment_model"
+            "deployment_model",
         ),
 
         (
             "Integrations",
-            "integrations"
+            "integrations",
         ),
 
         (
             "Developer Tools",
-            "developer_tools"
+            "developer_tools",
         ),
 
         (
             "Enterprise Features",
-            "enterprise_features"
+            "enterprise_features",
         ),
 
         (
             "Major Customers",
-            "major_customers"
+            "major_customers",
         ),
 
         (
             "Major Partnerships",
-            "major_partnerships"
+            "major_partnerships",
         ),
 
         (
             "Geographic Presence",
-            "geographic_presence"
+            "geographic_presence",
         ),
 
         (
             "Competitive Differentiators",
-            "competitive_differentiators"
+            "competitive_differentiators",
         ),
     ]
 
 
-    for title, key in (
-        key_sections
-    ):
+    for (
+        title,
+        key,
+    ) in key_sections:
 
         value = (
             company.get(
@@ -1156,7 +1351,7 @@ elif page == "Company Explorer":
 
 
 # =========================================================
-# STRENGTHS AND WEAKNESSES
+# STRENGTHS & WEAKNESSES
 # =========================================================
 
 elif page == "Strengths & Weaknesses":
@@ -1170,7 +1365,7 @@ elif page == "Strengths & Weaknesses":
         st.selectbox(
             "Choose a competitor",
             company_names,
-            key="strength_company"
+            key="strength_company",
         )
     )
 
@@ -1201,7 +1396,7 @@ elif page == "Strengths & Weaknesses":
         render_list(
             company.get(
                 "strengths",
-                []
+                [],
             )
         )
 
@@ -1213,7 +1408,7 @@ elif page == "Strengths & Weaknesses":
         render_list(
             company.get(
                 "competitive_differentiators",
-                []
+                [],
             )
         )
 
@@ -1227,7 +1422,7 @@ elif page == "Strengths & Weaknesses":
         render_list(
             company.get(
                 "weaknesses",
-                []
+                [],
             )
         )
 
@@ -1239,7 +1434,7 @@ elif page == "Strengths & Weaknesses":
         render_list(
             company.get(
                 "business_risks",
-                []
+                [],
             )
         )
 
@@ -1254,7 +1449,7 @@ elif page == "Strengths & Weaknesses":
     render_list(
         company.get(
             "technical_risks",
-            []
+            [],
         )
     )
 
@@ -1266,7 +1461,7 @@ elif page == "Strengths & Weaknesses":
     render_list(
         company.get(
             "messaging_gaps",
-            []
+            [],
         )
     )
 
@@ -1278,7 +1473,7 @@ elif page == "Strengths & Weaknesses":
     render_list(
         company.get(
             "data_gaps",
-            []
+            [],
         )
     )
 
@@ -1318,7 +1513,7 @@ elif page == "Market Gaps":
         render_list(
             comparison.get(
                 "market_gaps",
-                []
+                [],
             )
         )
 
@@ -1332,7 +1527,7 @@ elif page == "Market Gaps":
         render_list(
             comparison.get(
                 "strategic_opportunities",
-                []
+                [],
             )
         )
 
@@ -1347,7 +1542,7 @@ elif page == "Market Gaps":
     render_list(
         comparison.get(
             "shared_industry_problems",
-            []
+            [],
         )
     )
 
@@ -1359,7 +1554,7 @@ elif page == "Market Gaps":
     render_list(
         comparison.get(
             "customer_problems",
-            []
+            [],
         )
     )
 
@@ -1371,7 +1566,7 @@ elif page == "Market Gaps":
     render_list(
         comparison.get(
             "competitive_battlegrounds",
-            []
+            [],
         )
     )
 
@@ -1396,19 +1591,14 @@ elif page == "Sources":
 
     for name in company_names:
 
-        company = (
-            company_lookup[
-                name
-            ]
-        )
-
-
         with st.expander(
             name
         ):
 
             source_section(
-                company
+                company_lookup[
+                    name
+                ]
             )
 
 
@@ -1455,7 +1645,7 @@ elif page == "Full Report":
                 "it_contract_negotiation_"
                 "competitive_intelligence.html"
             ),
-            mime="text/html"
+            mime="text/html",
         )
 
 
